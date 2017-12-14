@@ -1,6 +1,7 @@
 
+# lecture-2008-to-2013
 ------------------------------------------
-## Architectures of Wireless Transceivers (Lecture 2008  to 2013)
+## Architectures of Wireless Transceivers 
 
 In year of 2008 I composed a new lecture which addresses the  difficult trade of between advanced algorithm design for communication systems and the field of hardware design for mobile devices. The lecture ‘Architectures of Wireless Transceivers’ was given in the winter term 2011-2012 at Karlsruhe Institute of Technology (KIT) and will be given this summer term 2012 at the University of Kaiserslautern.
 

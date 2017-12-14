@@ -1,7 +1,6 @@
-
+# Lecture-since-2015
 ----------------------------------------
-### Lecture since 2015
-Focus to transpart my practice in the classroom by applying an inverted class room concept
+Focus to transport my practice in the classroom by applying an inverted class room concept
 
 #### Introduction to Data Science
 

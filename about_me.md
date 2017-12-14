@@ -1,4 +1,3 @@
-### about me
 Currently I am responsable for artificial intelligence and  data scientist at Camelot ITLab GmbH in Germany
 
 Before that I was working 5 years at Blue Yonder GmbH.

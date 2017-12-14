@@ -1,10 +1,8 @@
-### lecture-2008-to-2013
-
-##Architectures of Wireless Transceivers
+## Architectures of Wireless Transceivers
 
 In year of 2008 I composed a new lecture which addresses the  difficult trade of between advanced algorithm design for communication systems and the field of hardware design for mobile devices. The lecture ‘Architectures of Wireless Transceivers’ was given in the winter term 2011-2012 at Karlsruhe Institute of Technology (KIT) and will be given this summer term 2012 at the University of Kaiserslautern.
 
-#####Description:
+##### Description:
 The lecture ‘architectures for wireless receivers’ addresses students in electrical engineering, computer engineering and computer science who are interested in the field of communications engineering, architectures and microelectronic design. Special focus is put on implementation aspects and implementation constraints of modern channel coding techniques, which are utilized in current standards like UMTS, LTE, WiMAX and DVB-S2, DVB-T2, DVB-C2.
 A joint understanding of communication algorithms and implementation constraints is mandatory to obtain an efficient decoder design. A new trend of architecture constraint algorithm design has already entered communication standards committees. E.g., in the LTE standard, where algorithmic parts were introduced with an efficient implementation strategy in mind.
 The difficult trade off between the hardware world and the communications world is shown. The history of VLSI design and its expected trends will be presented. The microelectronic constraints are then linked to wireless communication standards and their evolving throughput and flexibility requirements. Flexibility demands raise the question: why don’t we just use a general purpose processor in a base station or in a mobile device?

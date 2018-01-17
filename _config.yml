@@ -9,11 +9,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Mastering data science - delivering value is my passion"
+title                    : "Mastering AI and data science"
 title_separator          : "-"
 name                     : "Frank Kienle"
 description              : "AI and data science"
-url                      : https://kienlef.github.io# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://kienlef.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -85,8 +85,8 @@ analytics:
 # Site Author
 author:
   name             : "Frank Kienle"
-  avatar           : https://avatars3.githubusercontent.com/u/9460073?s=400&v=4 # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Working hard, Party harder"
+  avatar           : /assets/images/frank_avatar.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Working hard and drink Riesling"
   location         : "Germany, Palatine"
   email            :
   uri              :

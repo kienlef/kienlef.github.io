@@ -7,9 +7,9 @@ main:
   #- title: "Sample Posts"
   #  url: /year-archive/
   - title: "Lecture since 2014"
-    url: /_pages/lecture-since-2014.md
+    url: /_pages/lecture-since-2014
   - title: "Lecture 2008-13"
-    url: /_pages/lecture-2008-to-2015.md
+    url: /_pages/lecture-2008-to-2015
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"

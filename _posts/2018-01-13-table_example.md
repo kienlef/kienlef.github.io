@@ -1,4 +1,4 @@
-|                           title                            |count_score|                         host                         |
+|                           title                            |count_score|                         link                         |
 |------------------------------------------------------------|----------:|------------------------------------------------------|
 |Visualization for Data Science  CS 5630 6630   Fall 2017  Le|       4848|[www.youtube.com](https://t.co/RHLyV0Yfkn)            |
 |10 Free Must-Read Books for Machine Learning and Data Scie  |        171|[www.kdnuggets.com](https://t.co/ELslDxUvw4)          |

@@ -1,7 +1,5 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "About"
     url: /_pages/about
   #- title: "Sample Posts"
@@ -9,7 +7,9 @@ main:
   - title: "Lecture since 2014"
     url: /_pages/lecture-since-2014
   - title: "Lecture 2008-13"
-    url: /_pages/lecture-2008-to-2015
+    url: /_pages/lecture-2008-to-2013
+  - title: "Quick-Start Guide"
+    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"

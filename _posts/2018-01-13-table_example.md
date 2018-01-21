@@ -1,3 +1,5 @@
+ Twitter trends on: 2018-01-13
+
 |                           title                            |score|                        source                        |
 |------------------------------------------------------------|----:|------------------------------------------------------|
 |Visualization for Data Science  CS 5630 6630   Fall 2017  Le| 4848|[www.youtube.com](https://t.co/RHLyV0Yfkn)            |

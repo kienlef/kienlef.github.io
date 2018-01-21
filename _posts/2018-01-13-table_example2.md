@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -166,4 +166,3 @@
   </tbody>
 </table>
 </body>
-</html><!DOCTYPE html>

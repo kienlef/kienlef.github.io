@@ -1,7 +1,7 @@
 ---
 #layout: article
 title: Data Science Introduction
-permalink: /docs/ds_intro
+permalink: /docs/DS_intro
 key: docs-ds-intro
 #mermaid: True
 ---

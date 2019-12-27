@@ -1,0 +1,56 @@
+header:
+  - title:      Docs
+    url:        /docs/overview
+    key:        docs
+  - title:      Archive
+    url:        /archive.html
+  - title:      About
+    url:        /about.html
+
+
+docs-nav:
+  - title:      Start
+    children:
+      - title: Overview
+        url: /docs/overview
+  - title:      Introduction
+    children:
+      - title:  Data Science Introduction
+        url:    /docs/DS_intro
+  - title:      Appendix
+    children:
+      - title:  Resources
+        url:    /docs/resources
+      - title:  Quick Start Webpage
+        url:    /docs/quick-start
+
+layouts:
+  - title: Layouts
+    children:
+      - title:  Single
+        url:    /page/single.html
+      - title:  Aside
+        url:    /page/aside.html
+      - title:  Sidebar
+        url:    /page/sidebar.html
+
+      - title:  Sidebar (Aside)
+        url:    /page/sidebar-aside.html
+      - title:  Article Header Overlay Background Fill
+        url:    /page/article-header-overlay-background-fill.html
+      - title:  Article Header Overlay Background Image
+        url:    /page/article-header-overlay-background-image.html
+
+      - title:  Article Header Image
+        url:    /page/article-header-cover-image.html
+      - title:  Article Header Overlay Background Image (Customized Header Background)
+        url:    /page/article-header-overlay-background-image-header-background.html
+      - title:  Article Header Image (Customized Header Background)
+        url:    /page/article-header-cover-image-header-background.html
+
+      - title:  Article Header Overlay Background Fill (Immersive + Translucent Header)
+        url:    /page/article-header-overlay-background-fill-immersive-translucent-header.html
+      - title:  Article Header Overlay Background Image (Immersive + Translucent Header)
+        url:    /page/article-header-overlay-background-image-immersive-translucent-header.html
+      - title:  Article Header Image (Immersive + Translucent Header)
+        url:    /page/article-header-cover-image-immersive-translucent-header.html

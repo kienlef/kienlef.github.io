@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-27T14:46:21+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Enterprise Data Science</title><subtitle>Entrprise Data Science the art to deliver value through data
+</subtitle><author><name>Frank Kienle</name></author><entry><title type="html">AI Visualization / Explanation</title><link href="http://localhost:4000/post/2019/11/01/VisualExplanation.html" rel="alternate" type="text/html" title="AI Visualization / Explanation" /><published>2019-11-01T00:00:00+01:00</published><updated>2019-11-01T00:00:00+01:00</updated><id>http://localhost:4000/post/2019/11/01/VisualExplanation</id><content type="html" xml:base="http://localhost:4000/post/2019/11/01/VisualExplanation.html">&lt;p&gt;Visualization techniques are of high importance in the field of data science and teaching to explain the concepts of AI.&lt;/p&gt;
+
+&lt;p&gt;Using charts, graphs, and animations to visualize complex topics is easier than poring over spreadsheets or reports.&lt;/p&gt;
+
+&lt;p&gt;Here, in this article, I started to collect excellent animations explaining parts within the complex world of artificial intelligence.&lt;/p&gt;
+
+&lt;p&gt;For sure many good links are missing, feel free to send comments, I will update the list.&lt;/p&gt;
+
+&lt;p&gt;Many thanks to the original and creative authors! Great piece of work.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.r2d3.us/visual-intro-to-machine-learning-part-1/&quot;&gt;Introduction to machine learning (part 1) &amp;amp; Bias-Variance (part2)&lt;/a&gt;
+&lt;img src=&quot;/assets/images/0.png&quot; alt=&quot;alt text&quot; /&gt;&lt;/p&gt;</content><author><name>Frank Kienle</name></author><category term="post" /><category term="VisualAnalytics" /><summary type="html">Visualization techniques are of high importance in the field of data science and teaching to explain the concepts of AI. Using charts, graphs, and animations to visualize complex topics is easier than poring over spreadsheets or reports. Here, in this article, I started to collect excellent animations explaining parts within the complex world of artificial intelligence. For sure many good links are missing, feel free to send comments, I will update the list. Many thanks to the original and creative authors! Great piece of work. Introduction to machine learning (part 1) &amp;amp; Bias-Variance (part2)</summary></entry><entry><title type="html">Micro-services and its link to customer value</title><link href="http://localhost:4000/post/2019/07/01/MicroServices.html" rel="alternate" type="text/html" title="Micro-services and its link to customer value" /><published>2019-07-01T00:00:00+02:00</published><updated>2019-07-01T00:00:00+02:00</updated><id>http://localhost:4000/post/2019/07/01/MicroServices</id><content type="html" xml:base="http://localhost:4000/post/2019/07/01/MicroServices.html">&lt;p&gt;When writing this article and during my daily work I often have the challenge to communicate and explain different topics. Sometimes it is challenging to explaining low-level technical aspects to high-level managers.&lt;/p&gt;
+
+&lt;p&gt;This article is an attempt, and I will bounce in wordings and argumentation between technology language and business language.&lt;/p&gt;
+
+&lt;p&gt;It is a thin line between explaining something and a bare listing of buzzwords, at least I try to define some expressions with respect to my point of view.&lt;/p&gt;
+
+&lt;p&gt;Within the age of digital transformation, a significant change within enterprise IT Infrastructure will take place. Micro-services will play a significant role in serving the customer.&lt;/p&gt;
+
+&lt;p&gt;Here, digital transformation describes all enterprise activities with the goal to leverage customer value by utilizing data in a prioritized way.&lt;/p&gt;
+
+&lt;p&gt;This concise definition shows already the complexity behind the expression of digital transformation. Sooner or later it covers all the activities of our daily work, at least every task which generates data or consumes data.&lt;/p&gt;
+
+&lt;p&gt;An enterprise is defined as any type of human endeavor involving people, its purpose to serve a customer, where various kinds of platforms support each activity.&lt;/p&gt;
+
+&lt;p&gt;The customer value describes the heart of an enterprise objective while delivering the value is often done via services and products affecting humans and their environment.&lt;/p&gt;
+
+&lt;p&gt;The term data covers all digitalized information mostly managed via IT infrastructure appropriately.&lt;/p&gt;
+
+&lt;p&gt;From a technology perspective, digital transformation is the path towards data-centric decision making resulting in data-centric value delivery.&lt;/p&gt;
+
+&lt;p&gt;Within the endeavor of a digital transformation, a significant change within enterprise IT Infrastructure will take place.&lt;/p&gt;
+
+&lt;p&gt;Micro-Services will play a significant role in the restructuring of the overall IT architecture. The change will have benefits for developers as well for the organization as well.&lt;/p&gt;
+
+&lt;p&gt;The significant change is the grouping around services instead of libraries.&lt;/p&gt;
+
+&lt;p&gt;A service has a link to a customer need, while a (software) library is typically defined as a collection of functional (software) packages made generally available.&lt;/p&gt;
+
+&lt;p&gt;However, a (micro-) service should fulfill a customer need (internal or external) and its design is managed and owned by joint development and operation teams with a strong link to business units. The business units have to review their value regularly.&lt;/p&gt;
+
+&lt;p&gt;Here, we can see the link to organization design and the consequences behind. The technical terminology is often linked to the DevOps movements - from high-level management it is the question of organizational design and who is responsible to build and manage a (digital) customer service.&lt;/p&gt;
+
+&lt;p&gt;It is all about purpose /value grouping instead of identical skill /functional grouping!&lt;/p&gt;
+
+&lt;p&gt;In summary, when discussing (technical) artifacts with practitioners or top managers only the terminology changes, the purpose should remain the same. Delivering value to customer’s needs, independent of internal or external customers, respectively.&lt;/p&gt;</content><author><name>Frank Kienle</name></author><category term="post" /><category term="MicroService" /><category term="DigitalTransformation" /><summary type="html">When writing this article and during my daily work I often have the challenge to communicate and explain different topics. Sometimes it is challenging to explaining low-level technical aspects to high-level managers. This article is an attempt, and I will bounce in wordings and argumentation between technology language and business language. It is a thin line between explaining something and a bare listing of buzzwords, at least I try to define some expressions with respect to my point of view. Within the age of digital transformation, a significant change within enterprise IT Infrastructure will take place. Micro-services will play a significant role in serving the customer. Here, digital transformation describes all enterprise activities with the goal to leverage customer value by utilizing data in a prioritized way. This concise definition shows already the complexity behind the expression of digital transformation. Sooner or later it covers all the activities of our daily work, at least every task which generates data or consumes data. An enterprise is defined as any type of human endeavor involving people, its purpose to serve a customer, where various kinds of platforms support each activity. The customer value describes the heart of an enterprise objective while delivering the value is often done via services and products affecting humans and their environment. The term data covers all digitalized information mostly managed via IT infrastructure appropriately. From a technology perspective, digital transformation is the path towards data-centric decision making resulting in data-centric value delivery. Within the endeavor of a digital transformation, a significant change within enterprise IT Infrastructure will take place. Micro-Services will play a significant role in the restructuring of the overall IT architecture. The change will have benefits for developers as well for the organization as well. The significant change is the grouping around services instead of libraries. A service has a link to a customer need, while a (software) library is typically defined as a collection of functional (software) packages made generally available. However, a (micro-) service should fulfill a customer need (internal or external) and its design is managed and owned by joint development and operation teams with a strong link to business units. The business units have to review their value regularly. Here, we can see the link to organization design and the consequences behind. The technical terminology is often linked to the DevOps movements - from high-level management it is the question of organizational design and who is responsible to build and manage a (digital) customer service. It is all about purpose /value grouping instead of identical skill /functional grouping! In summary, when discussing (technical) artifacts with practitioners or top managers only the terminology changes, the purpose should remain the same. Delivering value to customer’s needs, independent of internal or external customers, respectively.</summary></entry><entry><title type="html">Example - MathJax</title><link href="http://localhost:4000/post/2018/12/25/MathJax.html" rel="alternate" type="text/html" title="Example - MathJax" /><published>2018-12-25T00:00:00+01:00</published><updated>2018-12-25T00:00:00+01:00</updated><id>http://localhost:4000/post/2018/12/25/MathJax</id><content type="html" xml:base="http://localhost:4000/post/2018/12/25/MathJax.html">&lt;p&gt;A blog post to checkout MathJax:
+Nearly everything demends on probabilities:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;P(A\mid B) \; = \; \frac {P(B\mid A) \cdot P(A)} {P(B)}&lt;/script&gt;</content><author><name>Frank Kienle</name></author><category term="post" /><summary type="html">A blog post to checkout MathJax: Nearly everything demends on probabilities:</summary></entry><entry><title type="html">Page - Article Header Overlay Background Fill</title><link href="http://localhost:4000/page/article-header-overlay-background-fill.html" rel="alternate" type="text/html" title="Page - Article Header Overlay Background Fill" /><published>2018-12-24T00:00:00+01:00</published><updated>2018-12-24T00:00:00+01:00</updated><id>http://localhost:4000/page/article-header-overlay-background-fill</id><content type="html" xml:base="http://localhost:4000/page/article-header-overlay-background-fill.html">&lt;p&gt;A post has an article header overlay with a solid background color (#123).&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;strong&gt;front matter:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+layout: article
+title: Page - Article Header Overlay Background Fill
+article_header:
+  type: overlay
+  theme: dark
+  background_color: '#123'
+  background_image: false
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Frank Kienle</name></author><category term="post" /><summary type="html">A post has an article header overlay with a solid background color (#123).</summary></entry><entry><title type="html">Page - Sidebar (Aside)</title><link href="http://localhost:4000/page/sidebar-aside.html" rel="alternate" type="text/html" title="Page - Sidebar (Aside)" /><published>2018-12-23T00:00:00+01:00</published><updated>2018-12-23T00:00:00+01:00</updated><id>http://localhost:4000/page/sidebar+asdie</id><content type="html" xml:base="http://localhost:4000/page/sidebar-aside.html">&lt;p&gt;A post with a left sidebar.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;strong&gt;front matter:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+layout: article
+title: Page - Sidebar
+aside:
+  toc: true
+sidebar:
+  nav: layouts
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;header-1&quot;&gt;Header 1&lt;/h2&gt;
+
+&lt;h3 id=&quot;header-11&quot;&gt;Header 1.1&lt;/h3&gt;
+
+&lt;h3 id=&quot;header-12&quot;&gt;Header 1.2&lt;/h3&gt;
+
+&lt;h2 id=&quot;header-2&quot;&gt;Header 2&lt;/h2&gt;
+
+&lt;h3 id=&quot;header-21&quot;&gt;Header 2.1&lt;/h3&gt;
+
+&lt;h2 id=&quot;header-3&quot;&gt;Header 3&lt;/h2&gt;</content><author><name>Frank Kienle</name></author><category term="post" /><summary type="html">A post with a left sidebar.</summary></entry><entry><title type="html">Quick Start</title><link href="http://localhost:4000/docs/quick-start" rel="alternate" type="text/html" title="Quick Start" /><published>2018-10-26T00:00:00+02:00</published><updated>2018-10-26T00:00:00+02:00</updated><id>http://localhost:4000/docs/quick-start</id><content type="html" xml:base="http://localhost:4000/docs/quick-start">&lt;p&gt;TeXt Theme is 100% compatible with GitHub Pages and it has been developed as a &lt;a href=&quot;https://jekyllrb.com/docs/themes/&quot;&gt;gem-based themes&lt;/a&gt; for easier use.&lt;/p&gt;
+
+&lt;p&gt;In this document, you will learn how to &lt;strong&gt;install the theme&lt;/strong&gt;, &lt;strong&gt;setup your site&lt;/strong&gt;, &lt;strong&gt;local preview&lt;/strong&gt; for development, &lt;strong&gt;build&lt;/strong&gt; and &lt;strong&gt;publish&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;graph LR;
+    A0(Installing TeXt)
+    B0(Common Method)
+    B1[Ruby Gem Method]
+    C0[Fork this repo]
+    C1[Clone from GitHub]
+    C2[Download]
+    D0[Setup Your Site]
+    E0(Installing Development Environment)
+    F0[Installing Directly]
+    F1[Docker]
+    A0--&amp;gt;B0;
+    A0--&amp;gt;B1;
+    B0--&amp;gt;C0;
+    B0--&amp;gt;C1;
+    B0--&amp;gt;C2;
+    B1--&amp;gt;D0;
+    C1--&amp;gt;E0
+    C2--&amp;gt;E0
+    D0--&amp;gt;E0
+    E0--&amp;gt;F0
+    E0--&amp;gt;F1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;installing-the-theme&quot;&gt;Installing the Theme&lt;/h2&gt;
+
+&lt;h3 id=&quot;common-method&quot;&gt;Common Method&lt;/h3&gt;
+
+&lt;p&gt;To install it with common method, all you need to do is copying all the theme files to your project. There are several ways to do so:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Clone &lt;a href=&quot;https://github.com/kitian616/jekyll-TeXt-theme&quot;&gt;jekyll-TeXt-theme&lt;/a&gt; from github.&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;Clone with HTTPS:&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/kitian616/jekyll-TeXt-theme.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;&lt;strong&gt;Clone with SSH:&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone git@github.com:kitian616/jekyll-TeXt-theme.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Download and unzip the file to your Jekyll site directory.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a class=&quot;button button--success button--rounded&quot; href=&quot;https://github.com/kitian616/jekyll-TeXt-theme/archive/master.zip&quot;&gt;&lt;i class=&quot;fas fa-download&quot;&gt;&lt;/i&gt; Download TeXt Theme&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If you host your site on GitHub Pages, you can just fork &lt;a href=&quot;https://github.com/kitian616/jekyll-TeXt-theme&quot;&gt;jekyll-TeXt-theme&lt;/a&gt;, then rename the repository to &lt;strong&gt;USERNAME.github.io&lt;/strong&gt; — replacing &lt;strong&gt;USERNAME&lt;/strong&gt; with your GitHub username.&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/docs/assets/images/github-fork.jpg&quot; alt=&quot;Fork&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/docs/assets/images/github-rename-repo.jpg&quot; alt=&quot;Rename&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;ruby-gem-method&quot;&gt;Ruby Gem Method&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Add this line to your Jekyll site’s &lt;em&gt;Gemfile&lt;/em&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;jekyll-text-theme&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Add this line to your Jekyll site’s &lt;em&gt;_config.yml&lt;/em&gt; file:&lt;/p&gt;
+
+    &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;theme&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll-text-theme&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;setup-your-site&quot;&gt;Setup Your Site&lt;/h2&gt;
+
+&lt;p&gt;If you install the theme with common method, you can go straight to the next step. But &lt;strong&gt;if you install the theme with ruby gem method, you have to do some extra jobs&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;With gem-based themes, some of the site’s directories (such as the &lt;em&gt;assets&lt;/em&gt;, &lt;em&gt;_layouts&lt;/em&gt;, &lt;em&gt;_includes&lt;/em&gt; and &lt;em&gt;_sass&lt;/em&gt; directories) are stored in the theme’s gem, hidden from your immediate view. You need add some files in your Jekyll site directory:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;├── 404.html
+├── Gemfile
+├── _config.yml
+├── _data
+│   └── locale.yml
+├── _posts
+│   └── ...
+├── about.md
+├── archive.html
+└── index.html
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can refer to the &lt;a href=&quot;https://github.com/kitian616/jekyll-TeXt-theme/tree/master/test&quot;&gt;/test folder&lt;/a&gt;, this is a example with gem-based themes.&lt;/p&gt;
+
+&lt;h2 id=&quot;installing-development-environment&quot;&gt;Installing Development Environment&lt;/h2&gt;
+
+&lt;p&gt;If you want to run them them locally, you need first install Ruby and Jekyll, see &lt;a href=&quot;https://jekyllrb.com/docs/installation/&quot;&gt;Installation&lt;/a&gt; for details.&lt;/p&gt;
+
+&lt;p&gt;After that, run bundler to install the dependencies:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--path&lt;/span&gt; vendor/bundle
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And also, TeXt offer &lt;a href=&quot;https://www.docker.com/&quot;&gt;Docker&lt;/a&gt; support for development and public, this make it easier to setup environment.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/docs/assets/images/docker.jpg&quot; alt=&quot;Docker&quot; width=&quot;400px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;All you need todo is these 3 steps:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://docs.docker.com/install/&quot;&gt;Install Docker&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Generate &lt;em&gt;Gemfile.lock&lt;/em&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$PWD&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;:/usr/src/app &lt;span class=&quot;nt&quot;&gt;-w&lt;/span&gt; /usr/src/app ruby:2.6 bundle &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Build Docker image:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker-compose &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; ./docker/docker-compose.build-image.yml build
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;local-preview&quot;&gt;Local Preview&lt;/h2&gt;
+
+&lt;p&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt; to start the development server, then you can visit &lt;a href=&quot;http://localhost:4000/&quot;&gt;http://localhost:4000/&lt;/a&gt; to preview your site.&lt;/p&gt;
+
+&lt;p&gt;For Docker, run &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose -f ./docker/docker-compose.default.yml up&lt;/code&gt; to start the development server.&lt;/p&gt;
+
+&lt;h2 id=&quot;build-and-publish&quot;&gt;Build and Publish&lt;/h2&gt;
+
+&lt;p&gt;If you host your site on GitHub Pages, just push the source to the master branch of your USERNAME.github.io repository, GitHub would build automatically. You can visit your site on &lt;strong&gt;https://USERNAME.github.io&lt;/strong&gt; several minutes later.&lt;/p&gt;
+
+&lt;p&gt;If you host your site on your server, you need first run &lt;code class=&quot;highlighter-rouge&quot;&gt;JEKYLL_ENV=production bundle exec jekyll build&lt;/code&gt; to generated your site, then update the files in &lt;em&gt;_site&lt;/em&gt; folder to your server.&lt;/p&gt;</content><author><name>Frank Kienle</name></author><category term="post" /><summary type="html">TeXt Theme is 100% compatible with GitHub Pages and it has been developed as a gem-based themes for easier use. In this document, you will learn how to install the theme, setup your site, local preview for development, build and publish.</summary></entry><entry><title type="html">Post with Header Image</title><link href="http://localhost:4000/post/2018/06/01/header-image.html" rel="alternate" type="text/html" title="Post with Header Image" /><published>2018-06-01T00:00:00+02:00</published><updated>2018-06-01T00:00:00+02:00</updated><id>http://localhost:4000/post/2018/06/01/header-image</id><content type="html" xml:base="http://localhost:4000/post/2018/06/01/header-image.html">&lt;p&gt;A Post with Header Image, See &lt;a href=&quot;https://tianqi.name/jekyll-TeXt-theme/samples.html#page-layout&quot;&gt;Page layout&lt;/a&gt; for more examples.&lt;/p&gt;
+
+&lt;!--more--&gt;</content><author><name>Frank Kienle</name></author><category term="post" /><category term="TeXt" /><summary type="html">A Post with Header Image, See Page layout for more examples.</summary></entry></feed>

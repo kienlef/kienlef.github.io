@@ -1,5 +1,5 @@
 header:
-  - title:      Docs
+  - title:      Lecture-Docs
     url:        /docs/overview
     key:        docs
   - title:      Archive
@@ -17,9 +17,25 @@ docs-nav:
     children:
       - title:  Data Science Introduction
         url:    /docs/DS_intro
+  - title:      ML Modeling
+    children:
+      - title:  Machine Learning Intro
+        url:    /docs/ML_intro
+      - title:  Machine Learning Basics
+        url:    /docs/ML_basics
+      - title:  Machine Learning Basics II
+        url:    /docs/ML_basics_II
+      - title:  Machine Learning Forecast
+        url:    /docs/ML_forecast
+  - title:      Ethics
+    children:
+      - title:  AI for good
+        url:   /docs/AI_for_good
+      - title:  AI for good resources
+        url:   /docs/AI_for_good_resources
   - title:      Appendix
     children:
-      - title:  Resources
+      - title:  Overview Resources
         url:    /docs/resources
       - title:  Glossary
         url:    /docs/glossary

@@ -1,7 +1,8 @@
 ---
 layout: article
 key: page-about
-
+author: Frank Kienle
+show_author_profile: true
 ---
 
 Currently I am responsible for artificial intelligence and  data scientist at Camelot ITLab GmbH in Germany

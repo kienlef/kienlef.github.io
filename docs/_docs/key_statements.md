@@ -9,36 +9,49 @@ Key statements or a quote are typical sentences to express a reasoning on a topi
 
 Note, that I that I tried to map the quote towards its origin  
 
-\runinhead{Crawling} Collecting quotes is diligent but routine piece of work, making sense out of it might be data science   
+Crawling
+: Collecting quotes is diligent but routine piece of work, making sense out of it might be data science   
 
-\runinhead{Big Data} Handling big data is an art not a value by its own.
+Big Data
+: Handling big data is an art not a value by its own.
+
+Innovation
+: Innovation comes from small teams that work directly with customers. @WernerVogel, Amazon
+
+Machine Intelligence
+: There is no machine intelligence without (knowledge) representation
+
+Automation
+: automating a bad process will just make you fail faster
+
+Learning
+: mastering data science is a learning journey. You can't know everything right at the beginning, however, you need a long term standing and know it all attitude.
 
 
-\runinhead{Innovation}
-Innovation comes from small teams that work directly with customers. @WernerVogel, Amazon
+Customer
+: The customer is the only reason why a company exists @Peter Drucker
 
-\runinhead{Machine Intelligence} There is no machine intelligence without (knowledge) representation
+Careers
+: Successful careers are not planned: they develop when people are prepared for opportunities because they know their strengths, their method of work, and their values
 
-\runinhead{Automation} automating a bad process will just make you fail faster
+Projects
+: It is easy to prioritize new projects when the engineers really know the customer.
 
-\runinhead{Learning} Mastering data science is a learning journey. You can't know everything right at the beginning, however, you need a long term standing and know it all attitude.
+CTO Challenge
+: Transform ideas from exploitative money to operative investment
 
+ROI Challenge
+: prove me the return-of-invest before I will spent my budget in this long term endeavor
 
-\runinhead{Customer}{The customer is the only reason why a company exists}
+Mindset
+: nearly all projects driven by engineer mindset will push use case to the optimization problem
 
-\runinhead{Careers} Successful careers are not planned: they develop when people are prepared for opportunities because they know their strengths, their method of work, and their values
+Concentration
+: A fragmented day is a lazy day
 
-\runinhead{Projects} It is easy to prioritize new projects when the engineers really know the customer.
+Business Translator
+: each business translator has to understand the market, the customer, the product, and the technology
 
-\runinhead{CTO Challenge} Transform ideas from exploitative money to operative investment
-
-\runinhead{ROI Challenge} prove me the return-of-invest before I will spent my budget in this long term endeavor
-
-\runinhead{Mindset} nearly all projects driven by engineer mindset will push use case to the optimization problem
-
-\runinhead{Concentration} A fragmented day is a lazy day
-
-\runinhead{Business Translator} each business translator has to understand the market, the customer, the product, and the technology
-
-\runinhead{Technology cycle} Technology always follows the same path from primitive, via complex, to simple
-@Antonne de Saint ex
+Technology cycle
+: Technology always follows the same path from primitive, via complex, to simple
+@Antoine de Saint-Exupéry

@@ -21,9 +21,9 @@ docs-nav:
     children:
       - title:  Resources
         url:    /docs/resources
-      - title:  Definitions
-        url:    /docs/definitions
-      - title:  Definitions
+      - title:  Glossary
+        url:    /docs/glossary
+      - title:  Key Statements
         url:    /docs/key_statements
 
 layouts:

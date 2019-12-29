@@ -21,8 +21,10 @@ docs-nav:
     children:
       - title:  Resources
         url:    /docs/resources
-      - title:  Quick Start Webpage
-        url:    /docs/quick-start
+      - title:  Definitions
+        url:    /docs/definitions
+      - title:  Definitions
+        url:    /docs/key_statements
 
 layouts:
   - title: Layouts

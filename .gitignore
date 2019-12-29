@@ -3,3 +3,8 @@
 *.log
 *.sql
 *.sqlite
+
+.DS_Store
+Dockerfile.*
+.jekyll-cache*
+_site

@@ -19,39 +19,39 @@ Innovation
 : Innovation comes from small teams that work directly with customers. @WernerVogel, Amazon
 
 Machine Intelligence
-: There is no machine intelligence without (knowledge) representation
+: There is no machine intelligence without (knowledge) representation.
 
 Automation
-: automating a bad process will just make you fail faster
+: Automating a bad process will just make you fail faster.
 
 Learning
-: mastering data science is a learning journey. You can't know everything right at the beginning, however, you need a long term standing and know it all attitude.
+: Mastering data science is a learning journey. You can't know everything right at the beginning, however, you need a long term standing and know it all attitude.
 
 
 Customer
-: The customer is the only reason why a company exists @Peter Drucker
+: The customer is the only reason why a company exists, @Peter Drucker.
 
 Careers
-: Successful careers are not planned: they develop when people are prepared for opportunities because they know their strengths, their method of work, and their values
+: Successful careers are not planned: they develop when people are prepared for opportunities because they know their strengths, their method of work, and their values.
 
 Projects
 : It is easy to prioritize new projects when the engineers really know the customer.
 
 CTO Challenge
-: Transform ideas from exploitative money to operative investment
+: Transform ideas from exploitative money to operative investment.
 
 ROI Challenge
-: prove me the return-of-invest before I will spent my budget in this long term endeavor
+: Prove me the return-of-invest before I will spent my budget in this long term endeavor.
 
 Mindset
-: nearly all projects driven by engineer mindset will push use case to the optimization problem
+: Nearly all projects driven by engineer mindset will push use case to the optimization problem.
 
 Concentration
-: A fragmented day is a lazy day
+: A fragmented day is a lazy day.
 
 Business Translator
-: each business translator has to understand the market, the customer, the product, and the technology
+: Each business translator has to understand the market, the customer, the product, and the technology.
 
 Technology cycle
 : Technology always follows the same path from primitive, via complex, to simple
-@Antoine de Saint-Exupéry
+@Antoine de Saint-Exupéry.

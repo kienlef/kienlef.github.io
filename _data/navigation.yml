@@ -24,7 +24,7 @@ docs-nav:
   - title:     Data Structures
     children:
      - title: Big Data Overview
-       url: /docs/big_data
+       url: /docs/big_data_overview
      - title: Database Introduction
        url: /docs/database_intro
   - title:      ML Modeling

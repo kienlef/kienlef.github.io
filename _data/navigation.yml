@@ -2,6 +2,8 @@ header:
   - title:      Lecture-Docs
     url:        /docs/overview
     key:        docs
+  - title:      Blog
+    url:        /docs/
   - title:      Archive
     url:        /archive.html
   - title:      About

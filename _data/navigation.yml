@@ -23,7 +23,7 @@ docs-nav:
         url: /docs/python_setup
   - title:     Data Structures
     children:
-     - title: Big Data
+     - title: Big Data Overview
        url: /docs/big_data
      - title: Database Introduction
        url: /docs/database_intro

@@ -24,10 +24,10 @@ Nearly everything depends on probabilities:
 
 $$P(A\mid B) \; = \; \frac {P(B\mid A) \cdot P(A)} {P(B)}$$
 
-## pictures
+## Pictures
 ![Animated gif](/assets/images/cost_function.gif)
 
-## simple tables
+## Simple tables
 
 | ---- + --- |
 | Title | Key Message |
@@ -36,3 +36,14 @@ $$P(A\mid B) \; = \; \frac {P(B\mid A) \cdot P(A)} {P(B)}$$
 | ---- + --- |
 
 ## Plotly visuals
+
+## Syntax Highlighting
+```python
+def foo():
+    if not bar:
+        return True
+```
+
+## Emoji
+https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
+:robot:

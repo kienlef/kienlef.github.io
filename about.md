@@ -45,7 +45,7 @@ Supporting effective decisions through data means often supporting a human with 
 
 Supporting effective decision means most often the push towards automation or automation support.
 
-> *** Enterprise data science supports effective and efficient decisions within a company's value chain. ***
+*** Enterprise data science supports effective and efficient decisions within a company's value chain. ***
 
 ### Homepage Principles
 This Enterprise Data Science homepage is developed according to the following principles:

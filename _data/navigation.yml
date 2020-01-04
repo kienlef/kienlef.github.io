@@ -17,6 +17,16 @@ docs-nav:
     children:
       - title:  Data Science Introduction
         url:    /docs/DS_intro
+  - title:     Python
+    children:
+      - title: Python Modules
+        url: /docs/python_setup
+  - title:     Data Structures
+    children:
+     - title: Big Data
+       url: /docs/big_data
+     - title: Database Introduction
+       url: /docs/database_intro
   - title:      ML Modeling
     children:
       - title:  Machine Learning Intro
@@ -27,6 +37,10 @@ docs-nav:
         url:    /docs/ML_basics_II
       - title:  Machine Learning Forecast
         url:    /docs/ML_forecast
+  - title:      DevOps
+    children:
+     - title:   DevOps Introduction
+       url:   /docs/devops_intro
   - title:      Ethics
     children:
       - title:  AI for good

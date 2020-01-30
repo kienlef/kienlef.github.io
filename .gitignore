@@ -8,4 +8,4 @@
 Dockerfile.*
 .jekyll-cache*
 _site*
-_site/*
+_site/

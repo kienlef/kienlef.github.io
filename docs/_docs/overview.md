@@ -28,14 +28,15 @@ The lecture addresses students that are interested in the topic of big data, pro
 graph LR;
     A0(Enterprise Data Science)
     B0(Data Science)
-    B1[Enterprise Business]
-    C0[Math]
-    C1[Technology]
-    C2[Deploy and Explain]
-    D0[Understand the Process / Value]
-    E0(Continuous Operation)
-    F0[Homepage]
-    F1[App]
+    B1[Enterprise Processes]
+    C0[Math/ML]
+    C1[Explorative IT - Explain]
+    C2[Operational IT - Deploy]
+    D0[Understand the Decision and Impact]
+    E0(Continuous Support & Operation)
+    F0[Dashboards]
+    F1[Homepage / App]
+    F2[IT Backend]
     A0-->B0;
     A0-->B1;
     B0-->C0;
@@ -47,4 +48,5 @@ graph LR;
     D0-->E0
     E0-->F0
     E0-->F1
+    E0-->F2
 ```

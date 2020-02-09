@@ -36,7 +36,7 @@ In addition the link to modern business intelligence (BI) tools and in-memory da
 <!--more-->
 #### High level enterprise data science flow graph
 
-The graph gives only a very high level abstraction of enterprise data science. Note, that many lectures are focusing on the top (technical) data science part. Which is important especially to train mandatory programming / math skill sets, however, the enterprise world is more complicated. The link to business and the impact is vey challenging. In this lecture we try to address some high level aspects.
+The graph gives only a very high level abstraction of enterprise data science. Note, that many lectures are focusing on the top (technical) data science part. Which is important especially to train mandatory programming / math skill sets, however, the enterprise world is more complicated. The link to business and the impact is vey challenging. In the lecture series we try to address some high level aspects.
 
 ```mermaid
 graph LR;

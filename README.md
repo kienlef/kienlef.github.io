@@ -1,5 +1,10 @@
 
-this is the enterprise data science reposatory
-* blog posts
+
+### Enterprise Data Science
+
+This is the enterprise data science repository for the homepage:
+* Blog posts
 * Lecture material
-* gists
+* Gists
+
+![Enterprise Data Science Homepage](/assets/images/Enterprise_Data_Science_Homepage.png)

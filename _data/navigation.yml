@@ -13,11 +13,11 @@ header:
 docs-nav:
   - title:      Start
     children:
-      - title: Overview
+      - title: Lecture Overview
         url: /docs/overview
   - title:      Introduction
     children:
-      - title:  Data Science Introduction
+      - title:  Enterprise Data Science
         url:    /docs/DS_intro
   - title:     Python
     children:

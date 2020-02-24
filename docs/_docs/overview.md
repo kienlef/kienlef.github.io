@@ -5,21 +5,18 @@ permalink: /docs/overview
 key: docs-overview
 mermaid: True
 ---
-## Lecture - Introduction to Data Science
+## Lecture - Enterprise Data Science
 
-Focus in this lecture is to transport my practice into the classroom by applying an inverted class room concept.
+Focus in this lecture is to transport industry best practices into the classroom by applying an inverted classroom concept.
 
-The lecture addresses students that are interested in the topic of enterprise data science which is linking the enterprise business perspective to pragmatic mathematical model designing and IT constraints. All three topics are addressed – examples are presented with respect to machine learning and predictive models  in python.
+The lecture addresses students that are interested in the topic of data science applied within large cooperations. Enterprise data science is linking the business perspective to realistic mathematical models and the constraints of an enterprise IT environment. All three topics address the lecture with a focus on applied machine learning and predictive models in Python.
 
-The age data driven apps and data driven decisions describes the change in business and technology where modern information technology is penetrating all industrial processes.
-Here, each human touchpoint which can be desired will be automated while continuously gathering more and more information. The age of data gathering started already 20 years ago and is often coined under the term big data. Today, big data is any data that is expensive to manage and hard to extract value from.
+The age of data-driven apps and data-driven decisions describes the change in business and technology, where modern information technology is penetrating all industrial processes. Within this digital transformation, many human activities that can be described might be automated, while more and more data are continuously collected. The age of data gathering started already 20 years ago and is often coined under the term big data. Today, big data is any data that is expensive to manage and hard to extract value from.
+Predictive Analytics is the art to extract value out of big data with the task of leveraging industrial revenues by serving customers. In this lecture, we focus on predictive modeling (machine learning) via Python and how to solve the related business problem.
+Programming skills are mandatory for a data scientist; thus, programming exercises have to be done by the students. Predictive models forecast the future given historical data sets. For this machine learning might become appropriate. We will use the scikit-learn Python library and TensorFlow to demonstrate pitfalls and best practices to solve a problem. Also, the link to advanced business intelligence (BI) tools and in-memory databases is presented.
+Note that full coverage of these topics is not possible, and only a selective view is presented. Thus, only basic concepts are sketched by using demos, SQL, Python, and business process modeling and notation (BPMN) representation.
 
- Predictive Analytics is the art to extract value out of big data with the task to leveraging industrial revenues. In this lecture we focus on predictive modeling (machine learning) via python and how to solve the related business problem.
-
- Programming skills are mandatory for a data scientist; thus, programming exercises have to done by the students. Predictive models forecast the future given historic data sets. For this machine learning becomes mandatory. In this lecture we will use the so-called scikit-learn python library and tensorflow to demonstrate pitfalls and best practices to solve a problem.
-In addition the link to modern business intelligence (BI) tools and in-memory data bases is presented.
-
- Note that a full coverage of these topics is not possible. Thus, only basic concepts are sketched by using demos, SQL and the python programming language. One of the chief pitfalls of data analysis is attempting to solve the wrong problem. Thus, the lecture focuses heavily on the business side and how to address the correct data questions. Persons responsible to solve data science problem in industry needs to solve a business problem. The job profile is often denoted as data scientists. A further description of enterprise data science can be found within the [complementary blog posts](/docs/enterprise_data_science
+One of the chief pitfalls of data analysis is attempting to solve the wrong problem. Thus, the lecture focuses heavily on the business side and how to address the right data questions. Persons responsible for solving data science problem in the industry needs to solve a business problem. The job profile is often denoted as data scientists. A further description of enterprise data science can be found within the [complementary blog posts](/docs/enterprise_data_science
 )
 
 #### used python packages in the lecture

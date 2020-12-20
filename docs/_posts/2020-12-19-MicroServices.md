@@ -1,5 +1,5 @@
 ---
-title: How to explain Micro-services to managers
+title: How to explain microservices to managers
 tags: MicroService DigitalTransformation
 ---
 

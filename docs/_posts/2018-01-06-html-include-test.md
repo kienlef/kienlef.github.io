@@ -1,5 +1,5 @@
 ---
-title: The Analytics Translator
+title: HTML include test
 ---
 
-{% include The_Analytics_Translator_Wheel.html %}
+{% include foobar.html %}

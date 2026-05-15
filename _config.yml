@@ -20,9 +20,9 @@ text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate"
 highlight_theme: tomorrow-night # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
-title   : Enterprise Data Science
+title   : Practical AI, Analytics, and Operations
 description: > # this means to ignore newlines until "Language & timezone"
-  Entrprise Data Science the art to deliver value through data
+  Practical AI, analytics, and agentic automation for supply chain and operations — educational material, GitHub-backed examples, and business-facing frameworks.
 
 
 ## => Language and Timezone
@@ -38,7 +38,7 @@ author:
   name      : Frank Kienle
   url       :
   avatar    : # path or url of avatar image (square)
-  bio       : Passionate about data driven decision making
+  bio       : Practical AI, analytics, and agentic automation for supply chain and operations.
   email     :
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
@@ -55,7 +55,7 @@ author:
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: user_name/repo_name
+repository: kienlef/kienlef.github.io
 repository_tree: master
 
 

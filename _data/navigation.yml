@@ -1,11 +1,18 @@
 header:
-  - title:      Lecture-Docs
-    url:        /docs/overview
-    key:        docs
-  - title:      Blog
-    url:        /docs/
-  - title:      Archive
-    url:        /archive.html
+  - title:      Home
+    url:        /
+  - title:      Topics
+    url:        /topics/
+  - title:      Courses / Lectures
+    url:        /courses/
+  - title:      GitHub Projects
+    url:        /github-projects/
+  - title:      Knowledge Packages
+    url:        /knowledge-packages/
+  - title:      Register
+    url:        /register/
+  - title:      Talks / Contact
+    url:        /contact/
   - title:      About
     url:        /about.html
 

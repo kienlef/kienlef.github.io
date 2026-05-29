@@ -1,0 +1,84 @@
+///
+// Skin: Blue Trust (Frank Kienle)
+///
+
+// ── Core brand tokens ──────────────────────────────────────────────
+$brand-primary:        #2F2FE4;
+$brand-primary-active: #162E93;
+$brand-primary-soft:   #E8EAFF;
+$brand-indigo:         #1A1953;
+$brand-ink:            #080616;
+$brand-body:           #4B5068;
+$brand-muted:          #74798F;
+$brand-hairline:       #DDE2F0;
+$brand-canvas:         #FFFFFF;
+$brand-surface-soft:   #F6F7FB;
+
+// ── Main color mapping (theme contract) ────────────────────────────
+$main-color-1:     $brand-primary;      // primary action / accent
+$text-color-1:     #fff;                // text on primary
+
+$main-color-2:     $brand-indigo;       // secondary / headings
+$text-color-2:     #fff;                // text on dark headers
+
+$main-color-3:     $brand-surface-soft; // tertiary / neutral surfaces
+$text-color-3:     $brand-ink;          // text on neutral
+
+// ── Page background ────────────────────────────────────────────────
+$background-color: $brand-canvas;
+
+// ── Theme text colors ──────────────────────────────────────────────
+$main-color-theme-light: rgba($brand-ink, .9);
+$main-color-theme-dark:  rgba(#fff,     .9);
+
+$text-color-theme-light-d: $brand-ink;
+$text-color-theme-light:   $brand-body;
+$text-color-theme-light-l: $brand-muted;
+
+$text-color-theme-dark-d:  #fff;
+$text-color-theme-dark:    rgba(#fff, .95);
+$text-color-theme-dark-l:  rgba(#fff, .85);
+
+$text-color-d:     $text-color-theme-light-d;
+$text-color:       $text-color-theme-light;
+$text-color-l:     $text-color-theme-light-l;
+
+$text-background-color: rgba($brand-ink, .04);
+
+// ── Header & footer ────────────────────────────────────────────────
+$header-text-color: $text-color-3;
+$header-background: $brand-canvas;
+
+$footer-text-color: $brand-muted;
+$footer-background: $brand-surface-soft;
+
+// ── Borders & shadows ──────────────────────────────────────────────
+$border-color:     mix($brand-ink, $background-color, 12%);
+$border-color-l:   mix($brand-ink, $background-color, 6%);
+$decorate-color:   rgba($brand-ink, .08);
+$mask-color:       rgba($brand-ink, .88);
+$select-color:     rgba($brand-primary, .25);
+
+// ── Semantic function colors (blue trust palette, no bright green/red) ─
+$green:           $brand-primary-active;   // repurposed as “blue-positive”
+$blue:            $brand-primary;
+$yellow:          #B87512;
+$red:             #A64A6A;
+$text-color-function: #fff;
+
+// ── Social icon colors ─────────────────────────────────────────────
+$mail-color:       #0072c5;
+$facebook-color:   #4267b2;
+$twitter-color:    #1da1f2;
+$weibo-color:      #e6162d;
+$google-plus-color:#ea4335;
+$telegram-color:   #32afed;
+$medium-color:     #000;
+$zhihu-color:      #0084ff;
+$douban-color:     #42bd56;
+$linkedin-color:   #1074af;
+$github-color:     $brand-ink;
+$npm-color:        #fff;
+
+// ── Syntax highlight ───────────────────────────────────────────────
+@import "skins/highlight/tomorrow";

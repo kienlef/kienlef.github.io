@@ -9,85 +9,321 @@ license: false
 article_header: false
 ---
 
-<p><strong>Practical AI, analytics, and agentic automation for supply chain and operations.</strong></p>
+<style>
+.kf-hero {
+  padding: 64px 0 52px;
+  background: radial-gradient(circle at 80% 20%, #E8EAFF, transparent 35%), #fff;
+}
+.kf-hero h1 {
+  font-size: clamp(2.4rem, 5vw, 3.6rem) !important;
+  line-height: 1.0 !important;
+  letter-spacing: -2px !important;
+  font-weight: 500 !important;
+  margin: 24px 0 18px !important;
+}
+.kf-hero .lead {
+  color: #4B5068;
+  font-size: 1.15rem;
+  line-height: 1.55;
+  max-width: 760px;
+}
+.kf-hero .actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
 
-<p>Educational material, GitHub-backed examples, and business-facing frameworks for professionals who need analytics and AI to create operational value — not just demos.</p>
+.kf-section {
+  padding: 48px 0;
+}
+.kf-section.soft {
+  background: #F6F7FB;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  width: 100vw;
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+}
+.kf-section.dark {
+  background: #080616;
+  color: #fff;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  width: 100vw;
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+}
+.kf-section.dark h2,
+.kf-section.dark h3,
+.kf-section.dark p {
+  color: #fff !important;
+}
+.kf-section.dark .kf-eyebrow {
+  background: rgba(255,255,255,0.12);
+  color: #B7BCD1;
+}
 
-<p>
-  <a class="button button--primary button--rounded" href="/register/">Get the Agent Readiness Checklist</a>
-  <a class="button button--secondary button--rounded" href="/topics/">Explore the knowledge hub</a>
+.kf-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 18px;
+}
+@media (max-width: 850px) {
+  .kf-grid-3 { grid-template-columns: 1fr; }
+}
+
+.kf-card {
+  background: #fff;
+  border: 1px solid #EEF1F8;
+  border-radius: 28px;
+  padding: 28px;
+  box-shadow: 0 18px 60px rgba(8,6,22,.06);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.kf-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 64px rgba(8,6,22,.10);
+}
+.kf-card h3 {
+  font-size: 20px;
+  line-height: 1.25;
+  margin: 0 0 8px 0;
+  color: #1A1953;
+  font-weight: 650;
+}
+.kf-card h3 a { color: #1A1953 !important; }
+.kf-card h3 a:hover { color: #162E93 !important; }
+.kf-card p {
+  color: #4B5068;
+  line-height: 1.55;
+  margin: 0;
+  font-size: 0.95rem;
+}
+.kf-card ul { margin: 10px 0 0 0; padding-left: 1.1em; }
+.kf-card ul li { margin-bottom: 0.25em; font-size: 0.9rem; color: #4B5068; }
+.kf-card ul li a { color: #2F2FE4; }
+
+.kf-eyebrow {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 100px;
+  background: #E8EAFF;
+  color: #162E93;
+  font-size: 12px;
+  font-weight: 750;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+}
+
+.kf-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 16px;
+  background: #E8EAFF;
+  color: #2F2FE4;
+  display: inline-grid;
+  place-items: center;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.kf-dark-band a.btn-light {
+  background: #fff;
+  color: #080616;
+  border-radius: 100px;
+  padding: 14px 22px;
+  font-weight: 700;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all .2s ease;
+}
+.kf-dark-band a.btn-light:hover {
+  background: #ECEFFC;
+}
+
+.kf-repo-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 14px;
+}
+@media (max-width: 600px) {
+  .kf-repo-row { grid-template-columns: 1fr; }
+}
+.kf-repo-chip {
+  background: #fff;
+  border: 1px solid #EEF1F8;
+  border-radius: 18px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none !important;
+  color: #080616 !important;
+  transition: all .2s ease;
+}
+.kf-repo-chip:hover {
+  border-color: #2F2FE4;
+  box-shadow: 0 8px 24px rgba(8,6,22,.08);
+}
+.kf-repo-chip i { font-size: 22px; color: #2F2FE4; flex-shrink: 0; }
+.kf-repo-chip span { font-weight: 600; font-size: 0.95rem; }
+.kf-repo-chip small { color: #74798F; font-size: 0.8rem; display: block; margin-top: 2px; }
+
+.kf-trust-list {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 18px;
+}
+@media (max-width: 600px) { .kf-trust-list { grid-template-columns: 1fr; } }
+.kf-trust-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #4B5068;
+  font-size: 0.95rem;
+}
+.kf-trust-list li i { color: #2F2FE4; font-size: 18px; flex-shrink: 0; }
+</style>
+
+<!-- ── HERO ─────────────────────────────────────────────────────── -->
+<div class="kf-hero">
+  <span class="kf-eyebrow"><i class="ph ph-sparkle"></i> Blue Trust System</span>
+  <h1>Practical AI, analytics, and agentic automation — without the noise.</h1>
+  <p class="lead">
+    Educational material, GitHub-backed examples, and business-facing frameworks for professionals who need analytics and AI to create operational value — not just demos.
+  </p>
+  <div class="actions">
+    <a class="button button--primary button--pill" href="/register/">Get the Agent Readiness Checklist <i class="ph ph-arrow-right"></i></a>
+    <a class="button button--secondary button--pill" href="/topics/">Explore the knowledge hub <i class="ph ph-book-open"></i></a>
+  </div>
+</div>
+
+<!-- ── TRUST ANCHORS ────────────────────────────────────────────── -->
+<section class="kf-section">
+  <span class="kf-eyebrow"><i class="ph ph-shield-check"></i> Trust anchors</span>
+  <ul class="kf-trust-list">
+    <li><i class="ph ph-student"></i>Former university lecturer & industry digital leader</li>
+    <li><i class="ph ph-users-three"></i>18k+ LinkedIn audience</li>
+    <li><i class="ph ph-youtube-logo"></i>YouTube lecture archive</li>
+    <li><i class="ph ph-github-logo"></i>GitHub repositories as educational proof</li>
+  </ul>
+</section>
+
+<!-- ── FEATURED TOPICS ──────────────────────────────────────────── -->
+<section class="kf-section soft">
+  <span class="kf-eyebrow"><i class="ph ph-stack"></i> Featured topics</span>
+  <div class="kf-grid-3">
+
+    <div class="kf-card">
+      <div class="kf-icon"><i class="ph ph-truck"></i></div>
+      <h3><a href="/supply-chain-analytics/">Supply Chain Analytics</a></h3>
+      <p>Map analytics and AI use cases to planning, sourcing, production, risk, and delivery decisions.</p>
+      <ul>
+        <li><a href="https://www.youtube.com/playlist?list=PL6kUP6-NlVDKnB103rGFrH1AGes5fOeFB"><i class="ph ph-play-circle"></i> Watch playlist</a></li>
+        <li><a href="https://github.com/kienlef/supplychainanalytics"><i class="ph ph-github-logo"></i> Inspect repository</a></li>
+      </ul>
+    </div>
+
+    <div class="kf-card">
+      <div class="kf-icon"><i class="ph ph-globe-hemisphere-west"></i></div>
+      <h3><a href="/sdg-analytics/">SDG Analytics</a></h3>
+      <p>Learn responsible public-data analysis using Sustainable Development Goal data.</p>
+      <ul>
+        <li><a href="https://www.youtube.com/playlist?list=PL6kUP6-NlVDKq-6NWX9UoryWMUXyAts6v"><i class="ph ph-play-circle"></i> Watch playlist</a></li>
+        <li><a href="https://github.com/kienlef/data_science_on_SDGs"><i class="ph ph-github-logo"></i> Inspect repository</a></li>
+      </ul>
+    </div>
+
+    <div class="kf-card">
+      <div class="kf-icon"><i class="ph ph-translate"></i></div>
+      <h3><a href="/analytics-translator/">Analytics Translator 2.0</a></h3>
+      <p>Bridge business, analytics, IT, AI, and adoption in the agentic era.</p>
+      <ul>
+        <li><a href="https://www.youtube.com/playlist?list=PL6kUP6-NlVDJv_a3Joka2l3bX_rx1Z-4K"><i class="ph ph-play-circle"></i> Watch playlist</a></li>
+        <li><a href="https://github.com/kienlef/analyticstranslator"><i class="ph ph-github-logo"></i> Inspect repository</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── AI AGENTS IN OPERATIONS (dark band) ──────────────────────── -->
+<section class="kf-section dark">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;">
+    <div>
+      <span class="kf-eyebrow"><i class="ph ph-robot"></i> AI Agents in Operations</span>
+      <h2 style="margin-top:18px;font-size:2.2rem;line-height:1.08;letter-spacing:-1px;font-weight:500;">Choose bounded, reviewable workflows before investing in agentic automation.</h2>
+      <p style="color:#B7BCD1;margin-top:12px;">Start with the Agent Readiness Checklist — a practical framework for operations professionals who want to test boundaries before building.</p>
+      <div class="actions" style="margin-top:22px;">
+        <a class="button button--primary button--pill" href="/register/">Get the checklist <i class="ph ph-arrow-right"></i></a>
+        <a class="btn-light" href="https://github.com/kienlef/operations_use_case_selection"><i class="ph ph-github-logo"></i> Inspect repo</a>
+      </div>
+    </div>
+    <div class="kf-repo-row" style="margin-top:0;">
+      <div class="kf-repo-chip" style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.08);color:#fff !important;">
+        <i class="ph ph-check-circle" style="color:#7A6FF0;"></i>
+        <div><span>Workflow bounded?</span><small>Clear steps, no ambiguity</small></div>
+      </div>
+      <div class="kf-repo-chip" style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.08);color:#fff !important;">
+        <i class="ph ph-database" style="color:#1F8BFF;"></i>
+        <div><span>Data reliable?</span><small>Input quality known</small></div>
+      </div>
+      <div class="kf-repo-chip" style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.08);color:#fff !important;">
+        <i class="ph ph-warning-circle" style="color:#D89A2B;"></i>
+        <div><span>Failure visible?</span><small>Fallback path defined</small></div>
+      </div>
+      <div class="kf-repo-chip" style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.08);color:#fff !important;">
+        <i class="ph ph-user-check" style="color:#6F76F4;"></i>
+        <div><span>Human gate?</span><small>Reviewer assigned</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── GITHUB PROOF LAYER ───────────────────────────────────────── -->
+<section class="kf-section">
+  <span class="kf-eyebrow"><i class="ph ph-github-logo"></i> GitHub proof layer</span>
+  <p style="color:#4B5068;">No technical trust without a repo. These are the live educational proof artifacts:</p>
+  <div class="kf-repo-row">
+    <a class="kf-repo-chip" href="https://github.com/kienlef/supplychainanalytics">
+      <i class="ph ph-truck"></i><div><span>supplychainanalytics</span><small>Supply chain analytics use cases</small></div>
+    </a>
+    <a class="kf-repo-chip" href="https://github.com/kienlef/data_science_on_SDGs">
+      <i class="ph ph-globe-hemisphere-west"></i><div><span>data_science_on_SDGs</span><small>SDG analysis notebooks</small></div>
+    </a>
+    <a class="kf-repo-chip" href="https://github.com/kienlef/analyticstranslator">
+      <i class="ph ph-translate"></i><div><span>analyticstranslator</span><small>Analytics translator material</small></div>
+    </a>
+    <a class="kf-repo-chip" href="https://github.com/kienlef/operations_use_case_selection">
+      <i class="ph ph-robot"></i><div><span>operations_use_case_selection</span><small>AI agent readiness workflows</small></div>
+    </a>
+  </div>
+  <p style="margin-top:18px;">
+    <a class="button button--info button--pill" href="/github-projects/">View curated GitHub projects <i class="ph ph-arrow-right"></i></a>
+  </p>
+</section>
+
+<!-- ── TALKS / CONTACT ──────────────────────────────────────────── -->
+<section class="kf-section soft">
+  <span class="kf-eyebrow"><i class="ph ph-megaphone"></i> Talks & professional education</span>
+  <p style="color:#4B5068;margin-top:10px;">For selected talks, guest lectures, or professional education inquiries, reach out directly.</p>
+  <p style="margin-top:14px;">
+    <a class="button button--secondary button--pill" href="/contact/">Talks / Contact <i class="ph ph-envelope-simple"></i></a>
+  </p>
+</section>
+
+<!-- ── DISCLAIMER ───────────────────────────────────────────────── -->
+<p style="font-size:0.82rem;color:#74798F;margin-top:36px;line-height:1.5;border-top:1px solid #EEF1F8;padding-top:18px;">
+  Personal educational content by Frank Kienle. Views are personal. Examples are based on public, educational, historical, or synthetic material unless stated otherwise. No employer-confidential, customer-confidential, or supplier-confidential information is shared.
 </p>
-
-<h2>Trust anchors</h2>
-
-<ul>
-  <li>Former university lecturer and industry digital/analytics leader.</li>
-  <li>18k+ LinkedIn audience.</li>
-  <li>YouTube lecture archive with supply chain, SDG, analytics translator, and AI/analytics material.</li>
-  <li>GitHub repositories used as technical and educational proof artifacts.</li>
-</ul>
-
-<h2>Featured topics</h2>
-
-<h3><a href="/supply-chain-analytics/">Supply Chain Analytics</a></h3>
-<p>Map analytics and AI use cases to planning, sourcing, production, risk, and delivery decisions.</p>
-<ul>
-  <li>Watch: <a href="https://www.youtube.com/playlist?list=PL6kUP6-NlVDKnB103rGFrH1AGes5fOeFB">Supply Chain Analytics playlist</a></li>
-  <li>Inspect: <a href="https://github.com/kienlef/supplychainanalytics">supplychainanalytics on GitHub</a></li>
-  <li>Future resource: Supply Chain AI Use-Case Map</li>
-</ul>
-
-<h3><a href="/sdg-analytics/">SDG Analytics</a></h3>
-<p>Learn responsible public-data analysis and visualization using Sustainable Development Goal data.</p>
-<ul>
-  <li>Watch: <a href="https://www.youtube.com/playlist?list=PL6kUP6-NlVDKq-6NWX9UoryWMUXyAts6v">SDG Analytics playlist</a></li>
-  <li>Inspect: <a href="https://github.com/kienlef/data_science_on_SDGs">data_science_on_SDGs on GitHub</a></li>
-  <li>Future resource: SDG Analytics Starter Kit</li>
-</ul>
-
-<h3><a href="/analytics-translator/">Analytics Translator 2.0</a></h3>
-<p>Bridge business, analytics, IT, AI, process ownership, and adoption in the AI-agent era.</p>
-<ul>
-  <li>Watch: <a href="https://www.youtube.com/playlist?list=PL6kUP6-NlVDJv_a3Joka2l3bX_rx1Z-4K">Analytics Translator playlist</a></li>
-  <li>Inspect: <a href="https://github.com/kienlef/analyticstranslator">analyticstranslator on GitHub</a></li>
-  <li>Future resource: Analytics Translator 2.0 Skill Wheel</li>
-</ul>
-
-<h3><a href="/ai-agents-in-operations/">AI Agents in Operations</a></h3>
-<p>Choose bounded, reviewable operations workflows before investing time in AI-agent automation.</p>
-<ul>
-  <li>Start: <a href="https://www.youtube.com/@frankkienle7312">Frank's YouTube channel</a></li>
-  <li>Inspect: <a href="https://github.com/kienlef/operations_use_case_selection">operations_use_case_selection on GitHub</a></li>
-  <li>First free resource: Agent Readiness Checklist for Operations Professionals</li>
-</ul>
-
-<h2>GitHub proof layer</h2>
-
-<p>No technical trust without a repo. The current priority proof artifacts are:</p>
-
-<ul>
-  <li><a href="https://github.com/kienlef/supplychainanalytics">supplychainanalytics</a></li>
-  <li><a href="https://github.com/kienlef/data_science_on_SDGs">data_science_on_SDGs</a></li>
-  <li><a href="https://github.com/kienlef/analyticstranslator">analyticstranslator</a></li>
-  <li><a href="https://github.com/kienlef/operations_use_case_selection">operations_use_case_selection</a></li>
-</ul>
-
-<p><a class="button button--info button--rounded" href="/github-projects/">View curated GitHub projects</a></p>
-
-<h2>First free resource</h2>
-
-<p>The first planned free asset is the Agent Readiness Checklist for Operations Professionals. It will help operations, supply-chain, and analytics professionals test workflow boundaries, data readiness, human review points, failure modes, and ownership before attempting AI-agent automation.</p>
-
-<p><strong>Status:</strong> coming soon / draft for Frank's review. No live download is promised yet.</p>
-
-<p><a class="button button--primary button--rounded" href="/register/">Go to registration placeholder</a></p>
-
-<h2>Talks and professional education</h2>
-
-<p>For selected talks, guest lectures, or professional education inquiries, contact Frank. This route stays secondary to the knowledge hub, registration path, and future knowledge packages.</p>
-
-<p><a class="button button--secondary button--rounded" href="/contact/">Talks / Contact</a></p>
-
-<hr>
-
-<p>Personal educational content by Frank Kienle. Views are personal. Examples are based on public, educational, historical, or synthetic material unless stated otherwise. No employer-confidential, customer-confidential, or supplier-confidential information is shared.</p>

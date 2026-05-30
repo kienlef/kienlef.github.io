@@ -213,6 +213,150 @@ body, .article__content, .page__content, .main {
   .kf-grid-3 { grid-template-columns: 1fr; }
 }
 
+/* ── Section helpers for Markdown pages ───────────────────────── */
+.kf-section {
+  padding: 48px 0;
+}
+.kf-section.soft {
+  background: #F6F7FB;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  width: 100vw;
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+}
+.kf-section.dark {
+  background: #080616;
+  color: #fff;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  width: 100vw;
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+}
+.kf-section.dark h1,
+.kf-section.dark h2,
+.kf-section.dark h3,
+.kf-section.dark p,
+.kf-dark-band h1,
+.kf-dark-band h2,
+.kf-dark-band h3,
+.kf-dark-band p {
+  color: #fff !important;
+}
+.kf-section.dark .kf-eyebrow,
+.kf-dark-band .kf-eyebrow {
+  background: rgba(255,255,255,0.12);
+  color: #B7BCD1;
+}
+
+.kf-page-lead {
+  color: #4B5068;
+  font-size: 1.12rem;
+  line-height: 1.6;
+  max-width: 760px;
+  margin-top: 14px;
+}
+.kf-page-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.kf-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+@media (max-width: 850px) {
+  .kf-grid-2 { grid-template-columns: 1fr; }
+}
+
+.kf-trust-list {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 18px;
+}
+@media (max-width: 600px) {
+  .kf-trust-list { grid-template-columns: 1fr; }
+}
+.kf-trust-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #4B5068;
+  font-size: 0.95rem;
+}
+.kf-trust-list li i {
+  color: #2F2FE4;
+  font-size: 18px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.kf-repo-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 14px;
+}
+@media (max-width: 600px) {
+  .kf-repo-row { grid-template-columns: 1fr; }
+}
+.kf-repo-chip {
+  background: #fff;
+  border: 1px solid #EEF1F8;
+  border-radius: 18px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none !important;
+  color: #080616 !important;
+  transition: all .2s ease;
+}
+.kf-repo-chip:hover {
+  border-color: #2F2FE4;
+  box-shadow: 0 8px 24px rgba(8,6,22,.08);
+}
+.kf-repo-chip i {
+  font-size: 22px;
+  color: #2F2FE4;
+  flex-shrink: 0;
+}
+.kf-repo-chip span {
+  font-weight: 650;
+  font-size: 0.95rem;
+  color: #080616;
+}
+.kf-repo-chip small {
+  color: #74798F;
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 2px;
+}
+.kf-section.dark .kf-repo-chip {
+  background: rgba(255,255,255,0.04);
+  border-color: rgba(255,255,255,0.08);
+  color: #fff !important;
+}
+.kf-section.dark .kf-repo-chip span,
+.kf-section.dark .kf-repo-chip small {
+  color: #fff;
+}
+
+.kf-note {
+  border-left: 4px solid #2F2FE4;
+  background: #F1F4FF;
+  border-radius: 18px;
+  padding: 18px 20px;
+  color: #4B5068;
+}
+
 /* ── Link accent ──────────────────────────────────────────────── */
 a:not(.button) {
   color: #2F2FE4;

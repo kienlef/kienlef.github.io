@@ -9,38 +9,19 @@ aside:
   toc: true
 ---
 
-GitHub projects are the proof layer for Frank Kienle's public educational material. They make examples inspectable and keep technical claims grounded in visible artifacts.
+<span class="kf-eyebrow"><i class="ph ph-github-logo"></i> Proof layer</span>
 
-## Priority proof artifacts
+# Technical trust needs visible artifacts, not just claims.
 
-### [supplychainanalytics](https://github.com/kienlef/supplychainanalytics)
+<p class="kf-page-lead">GitHub projects are the proof layer for Frank Kienle's public educational material. They make examples inspectable and keep technical claims grounded in visible artifacts.</p>
 
-Related topic: [Supply Chain Analytics](/supply-chain-analytics/)
+<div class="kf-repo-row">
+  <a class="kf-repo-chip" href="https://github.com/kienlef/supplychainanalytics"><i class="ph ph-truck"></i><div><span>supplychainanalytics</span><small>Companion repository for supply-chain analytics concepts and operations examples.</small></div></a>
+  <a class="kf-repo-chip" href="https://github.com/kienlef/data_science_on_SDGs"><i class="ph ph-globe-hemisphere-west"></i><div><span>data_science_on_SDGs</span><small>Public-data analytics material for SDG analysis and visualization.</small></div></a>
+  <a class="kf-repo-chip" href="https://github.com/kienlef/analyticstranslator"><i class="ph ph-translate"></i><div><span>analyticstranslator</span><small>Frameworks for business, analytics, IT, AI, process, and adoption.</small></div></a>
+  <a class="kf-repo-chip" href="https://github.com/kienlef/operations_use_case_selection"><i class="ph ph-robot"></i><div><span>operations_use_case_selection</span><small>Use-case selection and readiness thinking for AI agents in operations.</small></div></a>
+</div>
 
-Companion repository for supply-chain analytics concepts, data models, and practical operations analytics examples.
+## Curation principle
 
-### [data_science_on_SDGs](https://github.com/kienlef/data_science_on_SDGs)
-
-Related topic: [SDG Analytics](/sdg-analytics/)
-
-Public-data analytics material for Sustainable Development Goal analysis, visualization, and responsible interpretation.
-
-### [analyticstranslator](https://github.com/kienlef/analyticstranslator)
-
-Related topic: [Analytics Translator 2.0](/analytics-translator/)
-
-Artifacts for analytics translator skills, frameworks, and the bridge between business, analytics, IT, AI, process, and adoption.
-
-### [operations_use_case_selection](https://github.com/kienlef/operations_use_case_selection)
-
-Related topic: [AI Agents in Operations](/ai-agents-in-operations/)
-
-Use-case selection material for choosing bounded, reviewable operations workflows before AI-agent automation.
-
-## Standard route
-
-Watch the lecture or playlist -> read the homepage topic page -> inspect the GitHub material -> use the free checklist or starter kit when available.
-
----
-
-These repositories are personal educational/knowledge projects by Frank Kienle. They are not affiliated with, endorsed by, or representative of any employer. Code, examples, and datasets are for learning and demonstration purposes. No employer-confidential data or internal business logic is included.
+Only repositories that support a public learning path, topic page, or future knowledge package should be featured here. The goal is reputation-safe proof, not a random repository dump.

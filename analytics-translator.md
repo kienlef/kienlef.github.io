@@ -9,34 +9,28 @@ aside:
   toc: true
 ---
 
-Analytics Translator 2.0 updates the analytics translator story for AI-enabled and agent-enabled operations.
+<span class="kf-eyebrow"><i class="ph ph-translate"></i> Translation layer</span>
 
-## Why analytics translation matters now
+# Analytics translation becomes more important when AI and agents enter operations work.
 
-AI and automation do not remove the translation problem. They make it more important. Useful analytics work still needs business framing, data and AI literacy, delivery awareness, process ownership, adoption work, and a clear definition of what decision or workflow changes.
+<p class="kf-page-lead">Analytics Translator 2.0 updates the analytics translator story for AI-enabled and agent-enabled operations.</p>
 
-## Skill wheel
-
-- Business framing: define the operational decision and value question.
-- Data and AI literacy: understand data limits, model behavior, and uncertainty.
-- Delivery and IT: connect prototypes with maintainable systems.
-- Process and adoption: align people, workflow, governance, and review points.
+<div class="kf-grid-2">
+  <div class="kf-card"><div class="kf-icon"><i class="ph ph-target"></i></div><h3>Business framing</h3><p>Define the operational decision, value question, and owner before discussing tools.</p></div>
+  <div class="kf-card"><div class="kf-icon"><i class="ph ph-brain"></i></div><h3>Data & AI literacy</h3><p>Understand data limits, model behavior, uncertainty, and where AI can fail.</p></div>
+  <div class="kf-card"><div class="kf-icon"><i class="ph ph-gear-six"></i></div><h3>Delivery & IT</h3><p>Connect prototypes with maintainable systems and realistic implementation paths.</p></div>
+  <div class="kf-card"><div class="kf-icon"><i class="ph ph-users-three"></i></div><h3>Process & adoption</h3><p>Align workflow, governance, people, review points, and change management.</p></div>
+</div>
 
 ## Featured learning path
 
-- Watch: [Analytics Translator playlist](https://www.youtube.com/playlist?list=PL6kUP6-NlVDJv_a3Joka2l3bX_rx1Z-4K)
-- Inspect the GitHub proof artifact: [analyticstranslator](https://github.com/kienlef/analyticstranslator)
+<div class="kf-repo-row">
+  <a class="kf-repo-chip" href="https://www.youtube.com/playlist?list=PL6kUP6-NlVDJv_a3Joka2l3bX_rx1Z-4K"><i class="ph ph-play-circle"></i><div><span>Analytics Translator playlist</span><small>YouTube learning path</small></div></a>
+  <a class="kf-repo-chip" href="https://github.com/kienlef/analyticstranslator"><i class="ph ph-github-logo"></i><div><span>analyticstranslator</span><small>GitHub proof artifact</small></div></a>
+</div>
 
-## Future package placeholder
-
-Future package: Analytics Translator 2.0 Skill Wheel.
-Status: planned / draft for review. It will only be linked as a product after Frank reviews the content, delivery path, and disclaimer.
-
-## Continue from here
-
-- Watch: [Analytics Translator playlist](https://www.youtube.com/playlist?list=PL6kUP6-NlVDJv_a3Joka2l3bX_rx1Z-4K)
-- Inspect: [analyticstranslator](https://github.com/kienlef/analyticstranslator)
-- Future resource: Analytics Translator 2.0 Skill Wheel — coming via [registration](/register/)
-- Explore all topics: [Topics](/topics/)
-
-This page contains personal educational material by Frank Kienle. Views are his own. Examples are based on public, educational, historical, or synthetic material unless stated otherwise. No employer-confidential, customer-confidential, or supplier-confidential information is shared.
+<section class="kf-section soft">
+  <span class="kf-eyebrow"><i class="ph ph-package"></i> Future package</span>
+  <h2>Analytics Translator 2.0 Skill Wheel</h2>
+  <p>Status: planned. The page keeps the route visible without overpromising a live product.</p>
+</section>

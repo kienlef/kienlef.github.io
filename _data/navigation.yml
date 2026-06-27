@@ -3,14 +3,14 @@ header:
     url:        /
   - title:      Topics
     url:        /topics/
+  - title:      AI Agents
+    url:        /ai-agents-in-operations/
   - title:      Courses / Lectures
     url:        /courses/
   - title:      GitHub Projects
     url:        /github-projects/
   - title:      Knowledge Packages
     url:        /knowledge-packages/
-  - title:      Register
-    url:        /register/
   - title:      Talks / Contact
     url:        /contact/
   - title:      About

@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hermes Agent Cheat Sheet</title>
+<style>
+  :root{
+    --bg:#0f1117;--panel:#161a23;--panel2:#1d2330;--ink:#f4f6fb;--muted:#aeb7c8;--line:#30384a;
+    --accent:#f5c84c;--accent2:#7dd3fc;--green:#86efac;--red:#fca5a5;--violet:#c4b5fd;
+    --shadow:0 18px 50px rgba(0,0,0,.32);--radius:18px;--mono:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
+    --sans:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  }
+  *{box-sizing:border-box} body{margin:0;background:linear-gradient(135deg,#0f1117 0%,#101725 55%,#17130d 100%);color:var(--ink);font-family:var(--sans);line-height:1.45}
+  a{color:var(--accent2)} code,kbd{font-family:var(--mono);font-size:.92em;background:#0b0e14;border:1px solid var(--line);border-radius:7px;padding:.13rem .35rem;color:#ffe08a}
+  pre{margin:.55rem 0 0;padding:.85rem 1rem;overflow:auto;background:#0b0e14;border:1px solid var(--line);border-radius:12px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.02)}
+  pre code{background:transparent;border:0;padding:0;color:#e9edf7}.wrap{max-width:1280px;margin:0 auto;padding:32px 22px 80px}.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:stretch;margin-bottom:22px}.card{background:rgba(22,26,35,.86);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}.hero h1{font-size:clamp(2.1rem,5vw,4.6rem);line-height:.92;margin:0 0 14px;letter-spacing:-.055em}.eyebrow{color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:.78rem}.subtitle{color:var(--muted);font-size:1.06rem;max-width:72ch}.meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:18px}.pill{display:flex;gap:8px;align-items:center;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);padding:10px 12px;border-radius:999px;color:#dbe3f3;font-size:.92rem}.dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(134,239,172,.12)}
+  .toc{position:sticky;top:16px}.toc h2{font-size:1.05rem;margin:0 0 12px}.toc a{display:block;text-decoration:none;color:#d7deed;padding:8px 10px;border-radius:10px;border:1px solid transparent}.toc a:hover{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.08)}
+  section{margin:22px 0}.section-title{display:flex;align-items:center;gap:12px;margin:0 0 14px}.section-title h2{margin:0;font-size:1.55rem;letter-spacing:-.025em}.num{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#f59e0b);color:#211607;font-weight:900}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.mini{background:rgba(29,35,48,.8);border:1px solid rgba(255,255,255,.075);border-radius:15px;padding:16px}.mini h3{margin:0 0 8px;font-size:1rem;color:#fff}.mini p{margin:.35rem 0;color:var(--muted)}.mini ul{margin:.5rem 0 0;padding-left:1.15rem;color:var(--muted)}.mini li{margin:.25rem 0}.tag{display:inline-block;margin:.18rem .25rem .18rem 0;padding:.22rem .5rem;border-radius:999px;background:rgba(125,211,252,.12);border:1px solid rgba(125,211,252,.24);color:#bdeaff;font-size:.78rem;font-weight:700}.danger{color:var(--red)}.ok{color:var(--green)}.warn{color:#fde68a}.violet{color:var(--violet)}
+  table{width:100%;border-collapse:collapse;overflow:hidden;border-radius:14px;font-size:.92rem}th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}th{background:#202737;color:#fff}td{color:#d3dbea}tr:nth-child(even) td{background:rgba(255,255,255,.025)}.kbdrow kbd{display:inline-block;min-width:70px;text-align:center;color:#fef3c7}.print-note{display:none}.footer{color:var(--muted);font-size:.9rem;text-align:center;margin-top:28px}.small{font-size:.88rem;color:var(--muted)}
+  @media (max-width:900px){.hero,.grid,.grid.two{grid-template-columns:1fr}.toc{position:static}.meta{grid-template-columns:1fr}.wrap{padding:18px 12px 60px}}
+  @media print{body{background:#fff;color:#111}.wrap{max-width:none;padding:0}.card,.mini{box-shadow:none;background:#fff;color:#111;border-color:#bbb;break-inside:avoid}a{color:#0645ad}code,kbd,pre{background:#f6f6f6;color:#111;border-color:#ccc}.toc{display:none}.hero{grid-template-columns:1fr}.print-note{display:block}.mini p,.mini li,td,.small,.subtitle{color:#333}.section-title h2{color:#111}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="card">
+      <div class="eyebrow">Nous Research · Hermes Agent</div>
+      <h1>Hermes Agent<br/>Cheat Sheet</h1>
+      <p class="subtitle">A public, profile-aware quick reference for running, configuring, extending, and troubleshooting Hermes from CLI, Discord/Telegram gateway, cron, skills, MCP, and local tool workflows. Keep secrets in local .env files and check the official docs for current commands.</p>
+      <div class="meta">
+        <div class="pill"><span class="dot"></span><strong>Profile:</strong> use your active profile</div>
+        <div class="pill"><span class="dot"></span><strong>Version:</strong> check current docs before use</div>
+        <div class="pill"><span class="dot"></span><strong>Docs:</strong> hermes-agent.nousresearch.com/docs</div>
+        <div class="pill"><span class="dot"></span><strong>Config:</strong> ~/.hermes/config.yaml or ~/.hermes/profiles/&lt;profile&gt;/config.yaml</div>
+      </div>
+      <p class="small print-note">Print tip: this sheet is print-optimized. Use landscape if you want the tables wider.</p>
+    </div>
+    <nav class="card toc" aria-label="Table of contents">
+      <h2>Jump to</h2>
+      <a href="#daily">Daily commands</a><a href="#config">Config & files</a><a href="#profiles">Profiles</a><a href="#gateway">Gateway & chat</a><a href="#tools">Tools & skills</a><a href="#agents">Agents & sessions</a><a href="#cron">Cron & webhooks</a><a href="#mcp">MCP</a><a href="#providers">Models & providers</a><a href="#security">Security</a><a href="#troubleshooting">Troubleshooting</a><a href="#developer">Developer quick ref</a>
+    </nav>
+  </header>
+
+  <section id="daily">
+    <div class="section-title"><span class="num">1</span><h2>Daily command palette</h2></div>
+    <div class="grid">
+      <div class="mini"><h3>Start / ask</h3><pre><code>hermes                       # interactive chat
+hermes --tui                 # modern TUI
+hermes --cli                 # classic REPL
+hermes chat -q "Hello"       # single query
+hermes -z "Only final text"  # oneshot for scripts</code></pre></div>
+      <div class="mini"><h3>Resume / isolate</h3><pre><code>hermes -c                    # continue latest
+hermes -c "project name"     # continue named lineage
+hermes -r &lt;session_id&gt;       # resume exact session
+hermes -w                    # isolated git worktree</code></pre></div>
+      <div class="mini"><h3>Health</h3><pre><code>hermes --version
+hermes status --all
+hermes doctor
+hermes logs --since 1h
+hermes dump                  # support summary</code></pre></div>
+    </div>
+  </section>
+
+  <section id="config">
+    <div class="section-title"><span class="num">2</span><h2>Configuration & important files</h2></div>
+    <div class="grid two">
+      <div class="mini"><h3>Config commands</h3><pre><code>hermes setup                 # full wizard
+hermes setup model           # section wizard
+hermes model                 # choose model/provider
+hermes config                # view config
+hermes config path           # config.yaml path
+hermes config env-path       # .env path
+hermes config edit           # open editor
+hermes config set KEY VALUE  # set dotted key
+hermes config check
+hermes config migrate</code></pre><p><strong>Operational rule:</strong> config changes usually require a fresh CLI session or <code>hermes gateway restart</code> for messaging platforms.</p></div>
+      <div class="mini"><h3>Filesystem map</h3><table><tr><th>Thing</th><th>Default profile</th><th>Named profile</th></tr><tr><td>Config</td><td><code>~/.hermes/config.yaml</code></td><td><code>~/.hermes/profiles/&lt;name&gt;/config.yaml</code></td></tr><tr><td>Secrets</td><td><code>~/.hermes/.env</code></td><td><code>~/.hermes/profiles/&lt;name&gt;/.env</code></td></tr><tr><td>Skills</td><td><code>~/.hermes/skills/</code></td><td><code>~/.hermes/profiles/&lt;name&gt;/skills/</code></td></tr><tr><td>Sessions</td><td><code>~/.hermes/sessions/</code></td><td><code>~/.hermes/profiles/&lt;name&gt;/sessions/</code></td></tr><tr><td>Logs</td><td><code>~/.hermes/logs/</code></td><td><code>~/.hermes/profiles/&lt;name&gt;/logs/</code></td></tr><tr><td>OAuth/pools</td><td><code>~/.hermes/auth.json</code></td><td><code>~/.hermes/profiles/&lt;name&gt;/auth.json</code></td></tr></table></div>
+    </div>
+    <div class="grid">
+      <div class="mini"><h3>High-impact config sections</h3><p><span class="tag">model</span><span class="tag">agent</span><span class="tag">terminal</span><span class="tag">display</span><span class="tag">memory</span><span class="tag">compression</span><span class="tag">delegation</span><span class="tag">approvals</span><span class="tag">privacy</span><span class="tag">security</span><span class="tag">discord / telegram / slack</span></p></div>
+      <div class="mini"><h3>Precedence</h3><ul><li>CLI flags override environment and config for that invocation.</li><li>Profile config isolates settings, credentials, sessions, skills, memory.</li><li>Secrets belong in <code>.env</code>, not <code>config.yaml</code>.</li><li>Tool/skill availability is snapshotted at session start.</li></ul></div>
+      <div class="mini"><h3>Useful global flags</h3><p><code>-p/--profile</code> use profile · <code>-m/--model</code> model override · <code>--provider</code> provider override · <code>-t/--toolsets</code> toolset override · <code>-s/--skills</code> preload skills · <code>--yolo</code> bypass approvals · <code>--safe-mode</code> disable customizations.</p></div>
+    </div>
+  </section>
+
+  <section id="profiles">
+    <div class="section-title"><span class="num">3</span><h2>Profiles: isolated Hermes instances</h2></div>
+    <div class="grid two">
+      <div class="mini"><h3>Profile commands</h3><pre><code>hermes profile list
+hermes profile create &lt;profile-name&gt;
+hermes profile create &lt;new-profile&gt; --clone &lt;profile-name&gt;
+hermes profile use &lt;profile-name&gt;
+hermes -p &lt;profile-name&gt; status --all
+hermes profile alias &lt;profile-name&gt;
+hermes profile export &lt;profile-name&gt;
+hermes profile import backup.tar.gz</code></pre></div>
+      <div class="mini"><h3>Profile hygiene</h3><ul><li><strong>Installed skill ≠ external authorization.</strong> Check each profile’s <code>.env</code>, OAuth files, and <code>status --all</code>.</li><li>For concurrent Discord gateways, use separate Discord bot tokens per profile.</li><li>Set per-profile allowed channels/users, then restart that profile’s gateway.</li><li>Do not edit another profile’s skills/cron/memory unless intentionally doing cross-profile maintenance.</li></ul></div>
+    </div>
+  </section>
+
+  <section id="gateway">
+    <div class="section-title"><span class="num">4</span><h2>Messaging gateway & slash commands</h2></div>
+    <div class="grid">
+      <div class="mini"><h3>Service management</h3><pre><code>hermes gateway setup
+hermes gateway run           # foreground
+hermes gateway install       # service
+hermes gateway start
+hermes gateway stop
+hermes gateway restart
+hermes gateway status
+hermes logs gateway --since 1h</code></pre></div>
+      <div class="mini"><h3>Gateway chat commands</h3><p class="kbdrow"><kbd>/help</kbd> <kbd>/commands</kbd> <kbd>/status</kbd> <kbd>/profile</kbd> <kbd>/platforms</kbd> <kbd>/sethome</kbd> <kbd>/restart</kbd> <kbd>/approve</kbd> <kbd>/deny</kbd> <kbd>/fast</kbd> <kbd>/new</kbd></p><p>Messaging gateway supports Telegram, Discord, Slack, WhatsApp, Signal, Matrix, Email, SMS, Home Assistant, webhooks/API server, and more.</p></div>
+      <div class="mini"><h3>Interactive CLI slash commands</h3><p class="kbdrow"><kbd>/new</kbd> <kbd>/clear</kbd> <kbd>/retry</kbd> <kbd>/undo</kbd> <kbd>/title</kbd> <kbd>/compress</kbd> <kbd>/stop</kbd> <kbd>/rollback</kbd> <kbd>/model</kbd> <kbd>/tools</kbd> <kbd>/skills</kbd> <kbd>/cron</kbd> <kbd>/reload-mcp</kbd></p></div>
+    </div>
+    <div class="mini"><h3>Platform gotchas</h3><ul><li><strong>Discord silent:</strong> enable Message Content Intent in the Discord Developer Portal.</li><li><strong>Discord token collision:</strong> one bot token cannot run two profile gateways concurrently.</li><li><strong>Telegram not connecting:</strong> verify a real BotFather token in that profile’s <code>.env</code>, allowed user IDs, and gateway logs.</li><li><strong>Tool changes:</strong> require <code>/reset</code> or new session; gateway config changes require restart.</li></ul></div>
+  </section>
+
+  <section id="tools">
+    <div class="section-title"><span class="num">5</span><h2>Tools, skills & memory</h2></div>
+    <div class="grid two">
+      <div class="mini"><h3>Toolsets</h3><pre><code>hermes tools                 # curses UI
+hermes tools list
+hermes tools enable terminal
+hermes tools disable image_gen</code></pre><p>Common toolsets: <span class="tag">web</span><span class="tag">browser</span><span class="tag">terminal</span><span class="tag">file</span><span class="tag">code_execution</span><span class="tag">vision</span><span class="tag">image_gen</span><span class="tag">tts</span><span class="tag">skills</span><span class="tag">memory</span><span class="tag">session_search</span><span class="tag">delegation</span><span class="tag">cronjob</span><span class="tag">computer_use</span></p><p><strong>Effect:</strong> changes take effect in the next session, not mid-turn.</p></div>
+      <div class="mini"><h3>Skills</h3><pre><code>hermes skills list
+hermes skills browse
+hermes skills search hermes
+hermes skills inspect &lt;id&gt;
+hermes skills install &lt;id-or-url&gt;
+hermes skills config
+hermes skills check
+hermes skills update
+hermes -s hermes-agent,codex</code></pre><p>Skills are reusable procedures. Use them for workflows; use memory for compact stable facts only.</p></div>
+    </div>
+    <div class="grid">
+      <div class="mini"><h3>Memory</h3><pre><code>hermes memory status
+hermes memory setup
+hermes memory off
+hermes memory reset</code></pre><p>Stores durable user/environment facts. Avoid saving temporary task progress.</p></div>
+      <div class="mini"><h3>File/tool discipline</h3><ul><li>Use read/write/patch/search tools for files.</li><li>Use terminal for builds, package managers, git, servers, system state.</li><li>Use browser automation when the page needs interaction.</li><li>Use delegation for parallel reasoning-heavy subtasks.</li></ul></div>
+      <div class="mini"><h3>Prompt size</h3><pre><code>hermes prompt-size
+hermes prompt-size --profile &lt;profile-name&gt;</code></pre><p>Good for diagnosing huge skill/tool/context overhead.</p></div>
+    </div>
+  </section>
+
+  <section id="agents">
+    <div class="section-title"><span class="num">6</span><h2>Sessions, subagents & spawned agents</h2></div>
+    <div class="grid">
+      <div class="mini"><h3>Session management</h3><pre><code>hermes sessions list
+hermes sessions browse
+hermes sessions rename &lt;id&gt; "Title"
+hermes sessions export sessions.jsonl
+hermes sessions prune --older-than 30d
+hermes sessions stats</code></pre></div>
+      <div class="mini"><h3>When to delegate</h3><ul><li><strong>delegate_task:</strong> quick isolated subtask, minutes, no user interaction.</li><li><strong>Spawn Hermes:</strong> independent mission, full tool access, hours/days.</li><li><strong>Cron:</strong> durable scheduled automation.</li><li><strong>Worktree mode:</strong> parallel code edits without git conflicts.</li></ul></div>
+      <div class="mini"><h3>Spawn examples</h3><pre><code>hermes chat -q "Research X and write ~/x.md"
+hermes -w chat -q "Implement feature Y"
+tmux new-session -d -s agent1 'hermes -w'
+tmux send-keys -t agent1 'Build API' Enter</code></pre></div>
+    </div>
+  </section>
+
+  <section id="cron">
+    <div class="section-title"><span class="num">7</span><h2>Cron jobs & webhooks</h2></div>
+    <div class="grid two">
+      <div class="mini"><h3>Cron CLI</h3><pre><code>hermes cron list
+hermes cron create "0 9 * * *"
+hermes cron edit &lt;id&gt;
+hermes cron run &lt;id&gt;
+hermes cron pause &lt;id&gt;
+hermes cron resume &lt;id&gt;
+hermes cron remove &lt;id&gt;
+hermes cron status</code></pre><p>Schedules: <code>30m</code>, <code>every 2h</code>, cron expressions, or one-shot ISO timestamps.</p></div>
+      <div class="mini"><h3>Cron design rules</h3><ul><li>Prompts must be self-contained; future runs have no current-chat context.</li><li>Use <code>skills=[...]</code> for reusable procedure context.</li><li>Use <code>workdir</code> for project-local jobs and AGENTS.md injection.</li><li>Use <code>no_agent=true</code> only when a script prints the exact user-facing output.</li><li>After creating: list jobs and verify enabled/state/next run.</li></ul></div>
+    </div>
+    <div class="grid two">
+      <div class="mini"><h3>Webhooks</h3><pre><code>hermes webhook subscribe build-done
+hermes webhook list
+hermes webhook test build-done
+hermes webhook remove build-done</code></pre></div>
+      <div class="mini"><h3>Delivery targets</h3><p><code>origin</code> returns to current chat; <code>local</code> saves only; <code>discord</code> home channel; explicit targets use <code>platform:chat_id[:thread_id]</code>.</p></div>
+    </div>
+  </section>
+
+  <section id="mcp">
+    <div class="section-title"><span class="num">8</span><h2>MCP — Model Context Protocol</h2></div>
+    <div class="grid">
+      <div class="mini"><h3>MCP commands</h3><pre><code>hermes mcp list
+hermes mcp add NAME --command "npx ..."
+hermes mcp add NAME --url https://...
+hermes mcp test NAME
+hermes mcp configure NAME
+hermes mcp remove NAME
+hermes mcp serve</code></pre></div>
+      <div class="mini"><h3>What it does</h3><ul><li>Registers external MCP server tools into Hermes.</li><li>Supports stdio and HTTP-style servers.</li><li>Per-server tool filtering reduces prompt/tool bloat.</li><li>Reload with <code>/reload-mcp</code> where supported.</li></ul></div>
+      <div class="mini"><h3>Security posture</h3><ul><li>Only install trusted MCPs.</li><li>Review tool names/descriptions before enabling broadly.</li><li>Keep secrets in env/config, not prompts.</li><li>Test one server at a time when troubleshooting.</li></ul></div>
+    </div>
+  </section>
+
+  <section id="providers">
+    <div class="section-title"><span class="num">9</span><h2>Models, providers & auth</h2></div>
+    <div class="grid two">
+      <div class="mini"><h3>Provider commands</h3><pre><code>hermes model                 # provider/model picker
+hermes auth add              # pooled credential wizard
+hermes auth list [provider]
+hermes auth remove &lt;p&gt; &lt;index&gt;
+hermes auth reset &lt;provider&gt;
+hermes portal                # Nous Portal setup
+hermes login --provider qwen-oauth</code></pre></div>
+      <div class="mini"><h3>Common providers</h3><table><tr><th>Provider</th><th>Auth</th><th>Env/config</th></tr><tr><td>OpenRouter</td><td>API key</td><td><code>OPENROUTER_API_KEY</code></td></tr><tr><td>OpenAI Codex</td><td>OAuth</td><td><code>hermes auth</code></td></tr><tr><td>Nous Portal</td><td>OAuth</td><td><code>hermes portal</code></td></tr><tr><td>Anthropic</td><td>API key</td><td><code>ANTHROPIC_API_KEY</code></td></tr><tr><td>Gemini</td><td>API key</td><td><code>GOOGLE_API_KEY</code> / <code>GEMINI_API_KEY</code></td></tr><tr><td>Local Ollama</td><td>custom endpoint</td><td><code>base_url=http://127.0.0.1:11434/v1</code></td></tr></table></div>
+    </div>
+    <div class="mini"><h3>Local Ollama pattern</h3><pre><code>ollama list
+curl http://127.0.0.1:11434/v1/models
+hermes config set model.provider custom
+hermes config set model.default &lt;ollama-model&gt;
+hermes config set model.base_url http://127.0.0.1:11434/v1
+hermes config set model.api_key ollama</code></pre><p>Restart gateway if the messaging bot should use the new model.</p></div>
+  </section>
+
+  <section id="security">
+    <div class="section-title"><span class="num">10</span><h2>Security, approvals & privacy</h2></div>
+    <div class="grid">
+      <div class="mini"><h3>Command approvals</h3><pre><code>hermes config set approvals.mode manual  # default
+hermes config set approvals.mode smart   # LLM-assisted
+hermes config set approvals.mode off     # same spirit as --yolo</code></pre><p class="danger"><strong>Careful:</strong> <code>--yolo</code> / approvals off bypasses dangerous command prompts.</p></div>
+      <div class="mini"><h3>Secret redaction</h3><pre><code>hermes config set security.redact_secrets true
+hermes config set security.redact_secrets false</code></pre><p><strong>Restart required.</strong> Redaction is snapshotted at startup.</p></div>
+      <div class="mini"><h3>Privacy & audits</h3><pre><code>hermes config set privacy.redact_pii true
+hermes security
+hermes secrets               # external secret sources</code></pre><p>Run broad diagnostics carefully if redaction is off; status dumps may show configured key prefixes.</p></div>
+    </div>
+  </section>
+
+  <section id="troubleshooting">
+    <div class="section-title"><span class="num">11</span><h2>Troubleshooting patterns</h2></div>
+    <div class="grid two">
+      <div class="mini"><h3>Fast triage flow</h3><ol><li>Check exact profile: <code>hermes profile list</code>.</li><li>Run <code>hermes -p &lt;profile&gt; status --all</code>.</li><li>Run <code>hermes -p &lt;profile&gt; doctor</code>.</li><li>Inspect recent logs: <code>hermes -p &lt;profile&gt; logs --since 1h</code>.</li><li>Verify config path and env path.</li><li>Restart gateway or start a new CLI session after config/tool changes.</li></ol></div>
+      <div class="mini"><h3>Frequent fixes</h3><ul><li><strong>Tool missing:</strong> <code>hermes tools list</code>, enable it, then <code>/reset</code>.</li><li><strong>Skill missing:</strong> <code>hermes skills list</code>, <code>skills config</code>, load with <code>/skill name</code>.</li><li><strong>Aux model error:</strong> configure per-task keys like <code>auxiliary.session_search.provider</code>; do not set only <code>auxiliary.provider</code>.</li><li><strong>Gateway crash:</strong> check gateway logs, reset failed service state if needed, then restart.</li><li><strong>Config not applied:</strong> new session/restart; many values are read at startup.</li></ul></div>
+    </div>
+    <div class="mini"><h3>Safe diagnostics without leaking secrets</h3><pre><code>hermes -p &lt;profile-name&gt; config path
+hermes -p &lt;profile-name&gt; config env-path
+hermes -p &lt;profile-name&gt; status --all
+hermes -p &lt;profile-name&gt; logs --since 1h
+# If sharing output publicly: enable security.redact_secrets first and restart.</code></pre></div>
+  </section>
+
+  <section id="developer">
+    <div class="section-title"><span class="num">12</span><h2>Developer / contributor quick reference</h2></div>
+    <div class="grid two">
+      <div class="mini"><h3>Repo map</h3><table><tr><th>Path</th><th>Purpose</th></tr><tr><td><code>run_agent.py</code></td><td>Core conversation loop</td></tr><tr><td><code>model_tools.py</code></td><td>Tool discovery and dispatch</td></tr><tr><td><code>toolsets.py</code></td><td>Toolset definitions</td></tr><tr><td><code>cli.py</code></td><td>Interactive CLI</td></tr><tr><td><code>hermes_cli/commands.py</code></td><td>Slash command registry</td></tr><tr><td><code>tools/</code></td><td>One file per tool</td></tr><tr><td><code>gateway/</code></td><td>Messaging adapters</td></tr><tr><td><code>cron/</code></td><td>Scheduler</td></tr><tr><td><code>tests/</code></td><td>Pytest suite</td></tr></table></div>
+      <div class="mini"><h3>Dev commands</h3><pre><code>python -m pytest tests/ -o 'addopts=' -q
+python -m pytest tests/tools/ -q
+python -m py_compile path/to/file.py
+hermes dashboard --status
+hermes dashboard --no-open
+hermes update</code></pre><p>Use <code>get_hermes_home()</code> for profile-safe paths. Tests redirect <code>HERMES_HOME</code> to temp dirs.</p></div>
+    </div>
+    <div class="grid">
+      <div class="mini"><h3>Adding a tool</h3><ol><li>Create <code>tools/your_tool.py</code>.</li><li>Register with <code>tools.registry.registry.register(...)</code>.</li><li>Add/check toolset mapping where needed.</li><li>Handler returns JSON string.</li><li>Add tests and run targeted suite.</li></ol></div>
+      <div class="mini"><h3>Adding a slash command</h3><ol><li>Add <code>CommandDef</code> in <code>hermes_cli/commands.py</code>.</li><li>Add handler in CLI path.</li><li>Add gateway handler if needed.</li><li>Verify help/autocomplete/gateway behavior.</li></ol></div>
+      <div class="mini"><h3>Key rules</h3><ul><li>Never break prompt caching unnecessarily.</li><li>Preserve message role alternation.</li><li>Config in <code>config.yaml</code>, secrets in <code>.env</code>.</li><li>New tools need <code>check_fn</code> and requirement gating.</li></ul></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    Built as a public quick reference from Hermes CLI behavior and official docs headings checked at publication time. Official docs remain source of truth: <a href="https://hermes-agent.nousresearch.com/docs/">hermes-agent.nousresearch.com/docs</a>.
+  </footer>
+</div>
+</body>
+</html>

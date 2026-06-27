@@ -13,7 +13,7 @@ aside:
 
 # Four public pillars connect learning material, GitHub proof, and future knowledge packages.
 
-<p class="kf-page-lead">The knowledge hub routes visitors to Frank Kienle's current public pillars. Each topic connects educational context, YouTube learning material, GitHub proof artifacts, and a future free or paid knowledge-package path.</p>
+<p class="kf-page-lead">The knowledge hub routes visitors to Frank Kienle's current public pillars. Each topic connects educational context, YouTube learning material, GitHub proof artifacts, and a public resources, YouTube learning material, GitHub proof artifacts, and later optional knowledge-package paths.</p>
 
 <div class="kf-grid-2">
   <div class="kf-card">
@@ -45,6 +45,6 @@ aside:
 <section class="kf-section dark">
   <span class="kf-eyebrow"><i class="ph ph-arrow-right"></i> Suggested next step</span>
   <h2>Start with agent readiness before building automation demos.</h2>
-  <p>The first free resource path is the Agent Readiness Checklist for Operations Professionals.</p>
-  <p><a class="button button--primary button--pill" href="/register/">Get the checklist</a></p>
+  <p>Read the AI Agents in Operations section and inspect the public resource sheets before any login, email registration, or download gate.</p>
+  <p><a class="button button--primary button--pill" href="/ai-agents-in-operations/">Open AI Agents in Operations</a> <a class="button button--secondary button--pill" href="/resources/agentic-operations-ai-resource-cheat-sheet.html">Open resource sheet</a></p>
 </section>

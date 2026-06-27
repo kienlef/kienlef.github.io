@@ -11,69 +11,49 @@ article_header: false
 
 <style>
 .kf-hero {
-  padding: 64px 0 52px;
-  background: radial-gradient(circle at 80% 20%, #E8EAFF, transparent 35%), #fff;
+  padding: 72px 0 58px;
+  background: radial-gradient(circle at 84% 18%, #E8EAFF, transparent 34%), #fff;
 }
 .kf-hero h1 {
-  font-size: clamp(2.4rem, 5vw, 3.6rem) !important;
-  line-height: 1.0 !important;
-  letter-spacing: -2px !important;
-  font-weight: 500 !important;
+  font-size: clamp(2.55rem, 5.2vw, 4.25rem) !important;
+  line-height: 0.98 !important;
+  letter-spacing: -2.4px !important;
+  font-weight: 520 !important;
   margin: 24px 0 18px !important;
+  max-width: 980px;
 }
 .kf-hero .lead {
   color: #4B5068;
-  font-size: 1.15rem;
-  line-height: 1.55;
-  max-width: 760px;
+  font-size: 1.18rem;
+  line-height: 1.58;
+  max-width: 900px;
 }
-.kf-hero .actions {
+.kf-hero .actions,
+.kf-actions {
   display: flex;
   gap: 14px;
   margin-top: 28px;
   flex-wrap: wrap;
 }
-
-.kf-section {
-  padding: 48px 0;
-}
-.kf-section.soft {
-  background: #F6F7FB;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  width: 100vw;
-  padding-left: calc(50vw - 50%);
-  padding-right: calc(50vw - 50%);
-}
+.kf-section { padding: 52px 0; }
+.kf-section.soft,
 .kf-section.dark {
-  background: #080616;
-  color: #fff;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
   width: 100vw;
   padding-left: calc(50vw - 50%);
   padding-right: calc(50vw - 50%);
 }
+.kf-section.soft { background: #F6F7FB; }
+.kf-section.dark { background: #080616; color: #fff; }
 .kf-section.dark h2,
 .kf-section.dark h3,
-.kf-section.dark p {
-  color: #fff !important;
-}
-.kf-section.dark .kf-eyebrow {
-  background: rgba(255,255,255,0.12);
-  color: #B7BCD1;
-}
-
-.kf-grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-  margin-top: 18px;
-}
-@media (max-width: 850px) {
-  .kf-grid-3 { grid-template-columns: 1fr; }
-}
-
+.kf-section.dark p { color: #fff !important; }
+.kf-section.dark .kf-eyebrow { background: rgba(255,255,255,0.12); color: #B7BCD1; }
+.kf-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 18px; }
+.kf-grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin-top: 18px; }
+.kf-split { display:grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.25fr); gap:36px; align-items:center; }
+@media (max-width: 900px) { .kf-grid-3,.kf-grid-2,.kf-split { grid-template-columns: 1fr; } }
 .kf-card {
   background: #fff;
   border: 1px solid #EEF1F8;
@@ -82,149 +62,98 @@ article_header: false
   box-shadow: 0 18px 60px rgba(8,6,22,.06);
   transition: transform .2s ease, box-shadow .2s ease;
 }
-.kf-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 22px 64px rgba(8,6,22,.10);
-}
-.kf-card h3 {
-  font-size: 20px;
-  line-height: 1.25;
-  margin: 0 0 8px 0;
-  color: #1A1953;
-  font-weight: 650;
-}
+.kf-card:hover { transform: translateY(-3px); box-shadow: 0 22px 64px rgba(8,6,22,.10); }
+.kf-card h3 { font-size: 20px; line-height: 1.25; margin: 0 0 8px 0; color: #1A1953; font-weight: 650; }
 .kf-card h3 a { color: #1A1953 !important; }
 .kf-card h3 a:hover { color: #162E93 !important; }
-.kf-card p {
-  color: #4B5068;
-  line-height: 1.55;
-  margin: 0;
-  font-size: 0.95rem;
-}
-.kf-card ul { margin: 10px 0 0 0; padding-left: 1.1em; }
+.kf-card p { color: #4B5068; line-height: 1.55; margin: 0; font-size: 0.96rem; }
+.kf-card ul { margin: 12px 0 0 0; padding-left: 1.1em; }
 .kf-card ul li { margin-bottom: 0.25em; font-size: 0.9rem; color: #4B5068; }
 .kf-card ul li a { color: #2F2FE4; }
-
 .kf-eyebrow {
-  display: inline-flex;
-  gap: 8px;
-  align-items: center;
-  padding: 8px 12px;
-  border-radius: 100px;
-  background: #E8EAFF;
-  color: #162E93;
-  font-size: 12px;
-  font-weight: 750;
-  letter-spacing: 0.10em;
-  text-transform: uppercase;
+  display: inline-flex; gap: 8px; align-items: center; padding: 8px 12px; border-radius: 100px;
+  background: #E8EAFF; color: #162E93; font-size: 12px; font-weight: 750; letter-spacing: 0.10em; text-transform: uppercase;
 }
-
-.kf-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 16px;
-  background: #E8EAFF;
-  color: #2F2FE4;
-  display: inline-grid;
-  place-items: center;
-  font-size: 24px;
-  margin-bottom: 16px;
-}
-
-.kf-dark-band a.btn-light {
-  background: #fff;
-  color: #080616;
-  border-radius: 100px;
-  padding: 14px 22px;
-  font-weight: 700;
-  font-size: 15px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-  transition: all .2s ease;
-}
-.kf-dark-band a.btn-light:hover {
-  background: #ECEFFC;
-}
-
-.kf-repo-row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
-  margin-top: 14px;
-}
-@media (max-width: 600px) {
-  .kf-repo-row { grid-template-columns: 1fr; }
-}
+.kf-icon { width: 44px; height: 44px; border-radius: 16px; background: #E8EAFF; color: #2F2FE4; display: inline-grid; place-items: center; font-size: 24px; margin-bottom: 16px; }
+.kf-repo-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 14px; }
+@media (max-width: 650px) { .kf-repo-row { grid-template-columns: 1fr; } }
 .kf-repo-chip {
-  background: #fff;
-  border: 1px solid #EEF1F8;
-  border-radius: 18px;
-  padding: 18px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none !important;
-  color: #080616 !important;
-  transition: all .2s ease;
+  background: #fff; border: 1px solid #EEF1F8; border-radius: 18px; padding: 18px; display: flex; align-items: center; gap: 12px;
+  text-decoration: none !important; color: #080616 !important; transition: all .2s ease;
 }
-.kf-repo-chip:hover {
-  border-color: #2F2FE4;
-  box-shadow: 0 8px 24px rgba(8,6,22,.08);
-}
+.kf-repo-chip:hover { border-color: #2F2FE4; box-shadow: 0 8px 24px rgba(8,6,22,.08); }
 .kf-repo-chip i { font-size: 22px; color: #2F2FE4; flex-shrink: 0; }
-.kf-repo-chip span { font-weight: 600; font-size: 0.95rem; }
+.kf-repo-chip span { font-weight: 650; font-size: 0.95rem; }
 .kf-repo-chip small { color: #74798F; font-size: 0.8rem; display: block; margin-top: 2px; }
-
-.kf-trust-list {
-  list-style: none;
-  padding: 0;
-  margin: 18px 0 0 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px 18px;
-}
+.kf-section.dark .kf-repo-chip { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.08); color:#fff !important; }
+.kf-section.dark .kf-repo-chip span,
+.kf-section.dark .kf-repo-chip small { color:#fff; }
+.kf-trust-list { list-style: none; padding: 0; margin: 18px 0 0 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px 18px; }
+@media (max-width: 900px) { .kf-trust-list { grid-template-columns: repeat(2,1fr); } }
 @media (max-width: 600px) { .kf-trust-list { grid-template-columns: 1fr; } }
-.kf-trust-list li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #4B5068;
-  font-size: 0.95rem;
-}
-.kf-trust-list li i { color: #2F2FE4; font-size: 18px; flex-shrink: 0; }
+.kf-trust-list li { display: flex; align-items: flex-start; gap: 10px; color: #4B5068; font-size: 0.95rem; }
+.kf-trust-list li i { color: #2F2FE4; font-size: 18px; flex-shrink: 0; margin-top: 3px; }
+.kf-note-inline { margin-top:18px; color:#74798F; font-size:.92rem; line-height:1.55; }
+.kf-dark-light { background:#fff; color:#080616; border-radius:100px; padding:14px 22px; font-weight:700; font-size:15px; display:inline-flex; align-items:center; gap:8px; text-decoration:none !important; }
 </style>
 
 <!-- ── HERO ─────────────────────────────────────────────────────── -->
 <div class="kf-hero">
-  <span class="kf-eyebrow"><i class="ph ph-sparkle"></i> Blue Trust System</span>
-  <h1>Practical AI, analytics, and agentic automation — without the noise.</h1>
+  <span class="kf-eyebrow"><i class="ph ph-shield-check"></i> Reputation-first knowledge hub</span>
+  <h1>Agentic AI in operations needs credibility before capture forms.</h1>
   <p class="lead">
-    Educational material, GitHub-backed examples, and business-facing frameworks for professionals who need analytics and AI to create operational value — not just demos.
+    Frank Kienle's public homepage now routes visitors to useful content first: LinkedIn-quality thinking, YouTube lecture proof, GitHub-backed examples, and resource sheets for AI agents in regulated operations. Registration and email capture stay secondary until the public trust loop is strong enough.
   </p>
   <div class="actions">
-    <a class="button button--primary button--pill" href="/register/">Get the Agent Readiness Checklist <i class="ph ph-arrow-right"></i></a>
+    <a class="button button--primary button--pill" href="/ai-agents-in-operations/">Start with AI Agents in Operations <i class="ph ph-arrow-right"></i></a>
     <a class="button button--secondary button--pill" href="/topics/">Explore the knowledge hub <i class="ph ph-book-open"></i></a>
   </div>
 </div>
 
 <!-- ── TRUST ANCHORS ────────────────────────────────────────────── -->
 <section class="kf-section">
-  <span class="kf-eyebrow"><i class="ph ph-shield-check"></i> Trust anchors</span>
+  <span class="kf-eyebrow"><i class="ph ph-seal-check"></i> Trust anchors</span>
   <ul class="kf-trust-list">
-    <li><i class="ph ph-student"></i>Former university lecturer & industry digital leader</li>
-    <li><i class="ph ph-users-three"></i>18k+ LinkedIn audience</li>
-    <li><i class="ph ph-youtube-logo"></i>YouTube lecture archive</li>
-    <li><i class="ph ph-github-logo"></i>GitHub repositories as educational proof</li>
+    <li><i class="ph ph-student"></i>Former university lecturer with reusable teaching assets</li>
+    <li><i class="ph ph-users-three"></i>18k+ LinkedIn audience; quality over AI slop</li>
+    <li><i class="ph ph-youtube-logo"></i>YouTube lecture archive as public proof</li>
+    <li><i class="ph ph-github-logo"></i>GitHub repositories and HTML artifacts as inspection layer</li>
   </ul>
+</section>
+
+<!-- ── AI AGENTS IN OPERATIONS ──────────────────────────────────── -->
+<section class="kf-section dark">
+  <div class="kf-split">
+    <div>
+      <span class="kf-eyebrow"><i class="ph ph-robot"></i> AI Agents in Operations</span>
+      <h2 style="margin-top:18px;font-size:2.35rem;line-height:1.06;letter-spacing:-1px;font-weight:520;">Make coordination work visible before pretending agents can automate it away.</h2>
+      <p style="color:#B7BCD1;margin-top:12px;">The current content focus is not a login area. It is a public argument: agents may reduce routine coordination loops, but they make decision ownership, validation, and review gates more important in regulated operations.</p>
+      <div class="kf-actions" style="margin-top:22px;">
+        <a class="button button--primary button--pill" href="/ai-agents-in-operations/">Read the AI agents section <i class="ph ph-arrow-right"></i></a>
+        <a class="kf-dark-light" href="/resources/agentic-operations-ai-resource-cheat-sheet.html"><i class="ph ph-list-checks"></i> 50-resource sheet</a>
+      </div>
+    </div>
+    <div class="kf-repo-row" style="margin-top:0;">
+      <a class="kf-repo-chip" href="/ai-agents-in-operations/#agentic-ai-will-streamline-coordination-work-not-remove-accountability">
+        <i class="ph ph-arrows-clockwise" style="color:#7A6FF0;"></i><div><span>LinkedIn thinking</span><small>Coordination debt → streamlined management → clearer ownership</small></div>
+      </a>
+      <a class="kf-repo-chip" href="/resources/agentic-operations-ai-resource-cheat-sheet.html">
+        <i class="ph ph-list-magnifying-glass" style="color:#1F8BFF;"></i><div><span>Agentic operations AI resource sheet</span><small>50 credible resources for narratives and prototypes</small></div>
+      </a>
+      <a class="kf-repo-chip" href="/resources/hermes-agent-cheat-sheet.html">
+        <i class="ph ph-terminal-window" style="color:#D89A2B;"></i><div><span>Hermes Agent cheat sheet</span><small>CLI, skills, memory, cron, MCP, gateway quick reference</small></div>
+      </a>
+      <a class="kf-repo-chip" href="https://github.com/kienlef/operations_use_case_selection">
+        <i class="ph ph-github-logo" style="color:#6F76F4;"></i><div><span>GitHub proof</span><small>Operations use-case selection and readiness workflows</small></div>
+      </a>
+    </div>
+  </div>
 </section>
 
 <!-- ── FEATURED TOPICS ──────────────────────────────────────────── -->
 <section class="kf-section soft">
-  <span class="kf-eyebrow"><i class="ph ph-stack"></i> Featured topics</span>
+  <span class="kf-eyebrow"><i class="ph ph-stack"></i> Featured public pillars</span>
   <div class="kf-grid-3">
-
     <div class="kf-card">
       <div class="kf-icon"><i class="ph ph-truck"></i></div>
       <h3><a href="/supply-chain-analytics/">Supply Chain Analytics</a></h3>
@@ -234,76 +163,40 @@ article_header: false
         <li><a href="https://github.com/kienlef/supplychainanalytics"><i class="ph ph-github-logo"></i> Inspect repository</a></li>
       </ul>
     </div>
-
-    <div class="kf-card">
-      <div class="kf-icon"><i class="ph ph-globe-hemisphere-west"></i></div>
-      <h3><a href="/sdg-analytics/">SDG Analytics</a></h3>
-      <p>Learn responsible public-data analysis using Sustainable Development Goal data.</p>
-      <ul>
-        <li><a href="https://www.youtube.com/playlist?list=PL6kUP6-NlVDKq-6NWX9UoryWMUXyAts6v"><i class="ph ph-play-circle"></i> Watch playlist</a></li>
-        <li><a href="https://github.com/kienlef/data_science_on_SDGs"><i class="ph ph-github-logo"></i> Inspect repository</a></li>
-      </ul>
-    </div>
-
     <div class="kf-card">
       <div class="kf-icon"><i class="ph ph-translate"></i></div>
       <h3><a href="/analytics-translator/">Analytics Translator 2.0</a></h3>
-      <p>Bridge business, analytics, IT, AI, and adoption in the agentic era.</p>
+      <p>Bridge business, analytics, IT, AI, process, and adoption in the agentic era.</p>
       <ul>
         <li><a href="https://www.youtube.com/playlist?list=PL6kUP6-NlVDJv_a3Joka2l3bX_rx1Z-4K"><i class="ph ph-play-circle"></i> Watch playlist</a></li>
         <li><a href="https://github.com/kienlef/analyticstranslator"><i class="ph ph-github-logo"></i> Inspect repository</a></li>
       </ul>
     </div>
-
-  </div>
-</section>
-
-<!-- ── AI AGENTS IN OPERATIONS (dark band) ──────────────────────── -->
-<section class="kf-section dark">
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;">
-    <div>
-      <span class="kf-eyebrow"><i class="ph ph-robot"></i> AI Agents in Operations</span>
-      <h2 style="margin-top:18px;font-size:2.2rem;line-height:1.08;letter-spacing:-1px;font-weight:500;">Choose bounded, reviewable workflows before investing in agentic automation.</h2>
-      <p style="color:#B7BCD1;margin-top:12px;">Start with the Agent Readiness Checklist — a practical framework for operations professionals who want to test boundaries before building.</p>
-      <div class="actions" style="margin-top:22px;">
-        <a class="button button--primary button--pill" href="/register/">Get the checklist <i class="ph ph-arrow-right"></i></a>
-        <a class="btn-light" href="https://github.com/kienlef/operations_use_case_selection"><i class="ph ph-github-logo"></i> Inspect repo</a>
-      </div>
-    </div>
-    <div class="kf-repo-row" style="margin-top:0;">
-      <div class="kf-repo-chip" style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.08);color:#fff !important;">
-        <i class="ph ph-check-circle" style="color:#7A6FF0;"></i>
-        <div><span>Workflow bounded?</span><small>Clear steps, no ambiguity</small></div>
-      </div>
-      <div class="kf-repo-chip" style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.08);color:#fff !important;">
-        <i class="ph ph-database" style="color:#1F8BFF;"></i>
-        <div><span>Data reliable?</span><small>Input quality known</small></div>
-      </div>
-      <div class="kf-repo-chip" style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.08);color:#fff !important;">
-        <i class="ph ph-warning-circle" style="color:#D89A2B;"></i>
-        <div><span>Failure visible?</span><small>Fallback path defined</small></div>
-      </div>
-      <div class="kf-repo-chip" style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.08);color:#fff !important;">
-        <i class="ph ph-user-check" style="color:#6F76F4;"></i>
-        <div><span>Human gate?</span><small>Reviewer assigned</small></div>
-      </div>
+    <div class="kf-card">
+      <div class="kf-icon"><i class="ph ph-globe-hemisphere-west"></i></div>
+      <h3><a href="/sdg-analytics/">SDG Analytics</a></h3>
+      <p>Keep the education archive useful for responsible data analysis and sustainability contexts.</p>
+      <ul>
+        <li><a href="https://www.youtube.com/playlist?list=PL6kUP6-NlVDKq-6NWX9UoryWMUXyAts6v"><i class="ph ph-play-circle"></i> Watch playlist</a></li>
+        <li><a href="https://github.com/kienlef/data_science_on_SDGs"><i class="ph ph-github-logo"></i> Inspect repository</a></li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- ── GITHUB PROOF LAYER ───────────────────────────────────────── -->
+<!-- ── RESOURCE / PROOF LAYER ───────────────────────────────────── -->
 <section class="kf-section">
-  <span class="kf-eyebrow"><i class="ph ph-github-logo"></i> GitHub proof layer</span>
-  <p style="color:#4B5068;">No technical trust without a repo. These are the live educational proof artifacts:</p>
+  <span class="kf-eyebrow"><i class="ph ph-github-logo"></i> Resource and proof layer</span>
+  <p style="color:#4B5068;max-width:880px;">Interesting generated content should not disappear into local folders. The homepage now exposes high-signal resources and proof artifacts while keeping any confidential or employer-specific material out of the public site.</p>
   <div class="kf-repo-row">
+    <a class="kf-repo-chip" href="/resources/agentic-operations-ai-resource-cheat-sheet.html">
+      <i class="ph ph-list-checks"></i><div><span>Agentic operations AI resource sheet</span><small>50 source links for credible agentic AI in operations</small></div>
+    </a>
+    <a class="kf-repo-chip" href="/resources/hermes-agent-cheat-sheet.html">
+      <i class="ph ph-terminal-window"></i><div><span>Hermes Agent cheat sheet</span><small>Public quick reference for the agent runtime behind the workflow</small></div>
+    </a>
     <a class="kf-repo-chip" href="https://github.com/kienlef/supplychainanalytics">
-      <i class="ph ph-truck"></i><div><span>supplychainanalytics</span><small>Supply chain analytics use cases</small></div>
-    </a>
-    <a class="kf-repo-chip" href="https://github.com/kienlef/data_science_on_SDGs">
-      <i class="ph ph-globe-hemisphere-west"></i><div><span>data_science_on_SDGs</span><small>SDG analysis notebooks</small></div>
-    </a>
-    <a class="kf-repo-chip" href="https://github.com/kienlef/analyticstranslator">
-      <i class="ph ph-translate"></i><div><span>analyticstranslator</span><small>Analytics translator material</small></div>
+      <i class="ph ph-truck"></i><div><span>supplychainanalytics</span><small>Supply-chain analytics use cases</small></div>
     </a>
     <a class="kf-repo-chip" href="https://github.com/kienlef/operations_use_case_selection">
       <i class="ph ph-robot"></i><div><span>operations_use_case_selection</span><small>AI agent readiness workflows</small></div>
@@ -317,7 +210,7 @@ article_header: false
 <!-- ── TALKS / CONTACT ──────────────────────────────────────────── -->
 <section class="kf-section soft">
   <span class="kf-eyebrow"><i class="ph ph-megaphone"></i> Talks & professional education</span>
-  <p style="color:#4B5068;margin-top:10px;">For selected talks, guest lectures, or professional education inquiries, reach out directly.</p>
+  <p style="color:#4B5068;margin-top:10px;max-width:850px;">For selected talks, guest lectures, or professional education inquiries around analytics translation, digital operations, agentic AI, physical AI, and regulated operations, reach out directly.</p>
   <p style="margin-top:14px;">
     <a class="button button--secondary button--pill" href="/contact/">Talks / Contact <i class="ph ph-envelope-simple"></i></a>
   </p>

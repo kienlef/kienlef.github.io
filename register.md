@@ -9,13 +9,13 @@ aside:
   toc: true
 ---
 
-<span class="kf-eyebrow"><i class="ph ph-clipboard-text"></i> First free resource</span>
+<span class="kf-eyebrow"><i class="ph ph-clipboard-text"></i> Future resource path</span>
 
-# Before you automate a workflow with AI agents, check whether the process is ready.
+# Registration is parked until the public content and reputation loop are stronger.
 
-<p class="kf-page-lead">A practical checklist for operations, supply-chain, and analytics professionals who want to evaluate agent use cases without falling for generic AI hype.</p>
+<p class="kf-page-lead">The current public strategy is content and reputation first: useful AI-agent resources, LinkedIn-quality thinking, YouTube proof, and GitHub artifacts before email capture or login mechanics.</p>
 
-<div class="kf-note"><strong>Status:</strong> coming soon / draft for Frank's review. The checklist asset, email provider account, and final form embed still need setup and approval before this page is linked publicly as a live download.</div>
+<div class="kf-note"><strong>Status:</strong> parked. No public login, email registration, or download gate is active here. Use the AI Agents in Operations section and public resource sheets first.</div>
 
 <div class="kf-grid-2">
   <div class="kf-card"><div class="kf-icon"><i class="ph ph-flow-arrow"></i></div><h3>Workflow boundaries</h3><p>Can the workflow be described with clear inputs, outputs, steps, and exceptions?</p></div>
@@ -24,7 +24,7 @@ aside:
   <div class="kf-card"><div class="kf-icon"><i class="ph ph-user-check"></i></div><h3>Human review</h3><p>Who approves, rejects, escalates, or stops the agent-supported workflow?</p></div>
 </div>
 
-## Registration flow placeholder
+## Later registration flow placeholder
 
 The intended Phase 2 implementation is a third-party embedded signup form, not a self-hosted backend. Brevo is the default provider because it supports embedded forms, double opt-in, contact lists, and email automation.
 
@@ -39,4 +39,4 @@ The intended Phase 2 implementation is a third-party embedded signup form, not a
 3. Approved checklist download link is delivered by email.
 4. Thank-you page routes back to the AI Agents in Operations topic and GitHub proof artifact.
 
-<p class="kf-page-actions"><a class="button button--secondary button--pill" href="/ai-agents-in-operations/">Read the related topic</a> <a class="button button--info button--pill" href="https://github.com/kienlef/operations_use_case_selection">Inspect GitHub proof</a></p>
+<p class="kf-page-actions"><a class="button button--primary button--pill" href="/ai-agents-in-operations/">Read AI Agents in Operations</a> <a class="button button--secondary button--pill" href="/resources/agentic-operations-ai-resource-cheat-sheet.html">Open public resource sheet</a></p>

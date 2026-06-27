@@ -10,6 +10,18 @@ body, .article__content, .page__content, .main {
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
+
+/* ── Wider editorial canvas ────────────────────────────────────── */
+.main {
+  max-width: 1180px !important;
+}
+.has-aside .main {
+  max-width: 1320px !important;
+}
+@media (min-width: 1280px) {
+  .main { padding-left: 3.25rem; padding-right: 3.25rem; }
+}
+
 /* ── Buttons: Blue Trust pill shape ───────────────────────────── */
 .button--primary {
   background: #2F2FE4 !important;

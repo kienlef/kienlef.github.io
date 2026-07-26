@@ -19,7 +19,7 @@ aside:
 
 <p class="kf-page-lead">[One sentence describing the campaign/resource and who it helps.]</p>
 
-<div class="kf-note"><strong>Status:</strong> [coming soon / draft for review / live]. Do not imply a live download or email automation until it is actually working.</div>
+<div class="kf-note"><strong>Status:</strong> [prepared / coming soon / live]. Do not imply a live download or email automation until it is actually working.</div>
 
 <div class="kf-grid-2">
   <div class="kf-card"><div class="kf-icon"><i class="ph ph-[icon]"></i></div><h3>[Asset 1]</h3><p>[status: live / draft / planned]</p></div>

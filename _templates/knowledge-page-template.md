@@ -48,5 +48,5 @@ aside:
 <section class="kf-section soft">
   <span class="kf-eyebrow"><i class="ph ph-package"></i> Future package</span>
   <h2>[Package/resource name]</h2>
-  <p>Status: [coming soon / draft for review / planned / live]. Keep the CTA honest.</p>
+  <p>Status: [prepared / coming soon / planned / live]. Keep the CTA honest.</p>
 </section>

@@ -15,7 +15,7 @@ aside:
 
 <p class="kf-page-lead">Thank you for requesting the Agent Readiness Checklist for Operations Professionals.</p>
 
-<div class="kf-note"><strong>Status:</strong> placeholder for Frank's review. The final checklist PDF and provider automation are not live yet.</div>
+<div class="kf-note"><strong>Status:</strong> prepared placeholder. The final checklist PDF and provider automation are not live yet.</div>
 
 ## What happens next
 

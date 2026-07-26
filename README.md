@@ -42,7 +42,7 @@ Reusable content classes:
 
 - Keep content practical, educational, and evidence-led.
 - Link every major claim path to a topic page, YouTube learning route, GitHub proof artifact, or future package placeholder.
-- Do not promise live downloads, products, or forms until Frank has reviewed and approved them.
+- Do not promise live downloads, products, or forms until they are actually implemented and verified.
 - Avoid generic AI hype and generic SaaS visuals.
 - Use blue hierarchy first; do not introduce bright green/red semantic styling.
 

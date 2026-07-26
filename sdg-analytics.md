@@ -32,5 +32,5 @@ aside:
 <section class="kf-section soft">
   <span class="kf-eyebrow"><i class="ph ph-package"></i> Future package</span>
   <h2>SDG Analytics Starter Kit</h2>
-  <p>Status: planned. This remains a learning route until Frank has reviewed and approved a public package.</p>
+  <p>Status: planned. This remains a public learning route while the starter-kit path is prepared.</p>
 </section>

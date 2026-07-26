@@ -52,6 +52,8 @@ article_header: false
 .kf-card ul { margin: 12px 0 0 0; padding-left: 1.1em; }
 .kf-card ul li { margin-bottom: 0.25em; font-size: 0.9rem; color: #4B5068; }
 .kf-card ul li a { color: #2F2FE4; }
+.kf-card-link { display:inline-flex; align-items:center; gap:6px; margin-top:16px; color:#2F2FE4 !important; font-size:.9rem; font-weight:700; text-decoration:none !important; }
+.kf-card-link:hover { color:#162E93 !important; }
 .kf-eyebrow { display: inline-flex; gap: 8px; align-items: center; padding: 8px 12px; border-radius: 100px; background: #E8EAFF; color: #162E93; font-size: 12px; font-weight: 750; letter-spacing: 0.10em; text-transform: uppercase; }
 .kf-icon { width: 44px; height: 44px; border-radius: 16px; background: #E8EAFF; color: #2F2FE4; display: inline-grid; place-items: center; font-size: 24px; margin-bottom: 16px; }
 .kf-repo-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 14px; }
@@ -77,22 +79,22 @@ article_header: false
   <span class="kf-eyebrow"><i class="ph ph-shield-check"></i> Practical AI for real operations</span>
   <h1>AI in Operations</h1>
   <p class="lead">
-    Practical AI, analytics, and agentic automation for operations leaders who need useful decisions, credible proof, and clean execution paths — not another collection of impressive demos with no operating model behind them.
+    Practical frameworks, public lectures, and GitHub-backed examples for applying AI in production, supply chain, quality, and regulated operations. Start with the decision, prove the workflow, then automate.
   </p>
   <div class="actions">
     <a class="button button--primary button--pill" href="/ai-agents-in-operations/">Start with AI in Operations <i class="ph ph-arrow-right"></i></a>
-    <a class="button button--secondary button--pill" href="/topics/">Explore the knowledge hub <i class="ph ph-book-open"></i></a>
+    <a class="button button--secondary button--pill" href="/topics/">Explore learning paths <i class="ph ph-book-open"></i></a>
   </div>
 </div>
 
 <!-- ── TRUST ANCHORS ────────────────────────────────────────────── -->
 <section class="kf-section">
-  <span class="kf-eyebrow"><i class="ph ph-seal-check"></i> Why this hub exists</span>
+  <span class="kf-eyebrow"><i class="ph ph-seal-check"></i> Built on public proof</span>
   <ul class="kf-trust-list">
-    <li><i class="ph ph-student"></i>Former university lecturer with reusable teaching assets</li>
-    <li><i class="ph ph-users-three"></i>19k+ LinkedIn audience; quality over AI slop</li>
-    <li><i class="ph ph-youtube-logo"></i>YouTube lecture archive as public proof</li>
-    <li><i class="ph ph-github-logo"></i>GitHub repositories as inspection layer</li>
+    <li><i class="ph ph-briefcase"></i>Digital operations leadership grounded in enterprise execution</li>
+    <li><i class="ph ph-student"></i>Former university lecturer with reusable learning material</li>
+    <li><i class="ph ph-users-three"></i>19k+ LinkedIn community around practical digital operations</li>
+    <li><i class="ph ph-github-logo"></i>YouTube lectures and GitHub repositories as inspectable proof</li>
   </ul>
 </section>
 
@@ -109,17 +111,17 @@ article_header: false
       </div>
     </div>
     <div class="kf-repo-row" style="margin-top:0;">
+      <a class="kf-repo-chip" href="https://github.com/kienlef/operations_use_case_selection">
+        <i class="ph ph-check-square-offset" style="color:#6F76F4;"></i><div><span>Use-case readiness</span><small>Bound the workflow, data, failure modes, and human gate</small></div>
+      </a>
       <a class="kf-repo-chip" href="/ai-agents-in-operations/#coordination-debt-and-decision-ownership">
-        <i class="ph ph-arrows-clockwise" style="color:#7A6FF0;"></i><div><span>Coordination debt</span><small>Agents can reduce chasing, but accountability gets sharper</small></div>
+        <i class="ph ph-arrows-clockwise" style="color:#7A6FF0;"></i><div><span>Decision ownership</span><small>Remove coordination loops without hiding accountability</small></div>
       </a>
       <a class="kf-repo-chip" href="/ai-agents-in-operations/#oee-before-ai-hype">
         <i class="ph ph-gauge" style="color:#1F8BFF;"></i><div><span>OEE before AI hype</span><small>Production AI starts with losses, not models</small></div>
       </a>
-      <a class="kf-repo-chip" href="/resources/hermes-agent-cheat-sheet.html">
-        <i class="ph ph-terminal-window" style="color:#D89A2B;"></i><div><span>Hermes Agent cheat sheet</span><small>Public quick reference for the agent runtime behind the workflow</small></div>
-      </a>
-      <a class="kf-repo-chip" href="https://github.com/kienlef/operations_use_case_selection">
-        <i class="ph ph-github-logo" style="color:#6F76F4;"></i><div><span>GitHub proof</span><small>Operations use-case selection and readiness workflows</small></div>
+      <a class="kf-repo-chip" href="/resources/agentic-operations-ai-resource-cheat-sheet.html">
+        <i class="ph ph-list-magnifying-glass" style="color:#D89A2B;"></i><div><span>Evidence library</span><small>50 public sources for agentic AI in operations</small></div>
       </a>
     </div>
   </div>
@@ -127,7 +129,7 @@ article_header: false
 
 <!-- ── FEATURED TOPICS ──────────────────────────────────────────── -->
 <section class="kf-section soft">
-  <span class="kf-eyebrow"><i class="ph ph-stack"></i> Logical topic paths</span>
+  <span class="kf-eyebrow"><i class="ph ph-stack"></i> Choose a learning path</span>
   <div class="kf-grid-3">
     <div class="kf-card">
       <div class="kf-icon"><i class="ph ph-robot"></i></div>
@@ -159,27 +161,29 @@ article_header: false
   </div>
 </section>
 
-<!-- ── PUBLIC CONTENT ROADMAP ───────────────────────────────────── -->
+<!-- ── OPERATIONAL USE CASES ────────────────────────────────────── -->
 <section class="kf-section">
-  <span class="kf-eyebrow"><i class="ph ph-map-trifold"></i> Public content to build on</span>
-  <p style="color:#4B5068;max-width:900px;">The site now points visitors toward content that is already grounded in public lectures, GitHub repositories, and prepared Obsidian drafts. The email/news path can be added later without hiding useful material too early.</p>
+  <span class="kf-eyebrow"><i class="ph ph-factory"></i> Operational use cases</span>
+  <h2 style="margin-top:18px;max-width:900px;">Start with the operating problem, not the model.</h2>
+  <p style="color:#4B5068;max-width:900px;">These public lectures connect AI methods to production constraints, process ownership, data quality, risk, and human decisions.</p>
   <div class="kf-grid-3">
-    <div class="kf-card"><div class="kf-icon"><i class="ph ph-gauge"></i></div><h3>OEE before AI hype</h3><p>Production AI starts with loss structure, data trust, root-cause loops, and shop-floor expertise.</p></div>
-    <div class="kf-card"><div class="kf-icon"><i class="ph ph-wrench"></i></div><h3>Predictive maintenance</h3><p>Not a model problem first: a decision, risk, validation, and intervention-design problem.</p></div>
-    <div class="kf-card"><div class="kf-icon"><i class="ph ph-eye"></i></div><h3>Vision systems & quality</h3><p>In regulated operations, computer vision must behave like a validated quality system.</p></div>
-    <div class="kf-card"><div class="kf-icon"><i class="ph ph-calendar-check"></i></div><h3>Production scheduling</h3><p>Agents should coordinate constraints and escalation instead of pretending factories have no physics.</p></div>
-    <div class="kf-card"><div class="kf-icon"><i class="ph ph-cube-focus"></i></div><h3>Digital twins</h3><p>Useful only when ownership, validation, operating decisions, and model boundaries are clear.</p></div>
-    <div class="kf-card"><div class="kf-icon"><i class="ph ph-shield-check"></i></div><h3>Traceability & enterprise architecture</h3><p>Agentic workflows need evidence trails, governed data, reusable services, and an operating model.</p></div>
+    <div class="kf-card"><div class="kf-icon"><i class="ph ph-gauge"></i></div><h3>OEE and root causes</h3><p>Separate schedule, availability, performance, and quality losses before applying machine learning.</p><a class="kf-card-link" href="https://www.youtube.com/watch?v=2cWvUChUmAI"><i class="ph ph-play-circle"></i> Watch the lecture</a></div>
+    <div class="kf-card"><div class="kf-icon"><i class="ph ph-wrench"></i></div><h3>Predictive maintenance</h3><p>Conceptually simple, operationally difficult: sensor resolution, feature engineering, risk, and maintenance decisions all matter.</p><a class="kf-card-link" href="https://www.youtube.com/watch?v=88Do5NlNFTU"><i class="ph ph-play-circle"></i> Watch the lecture</a></div>
+    <div class="kf-card"><div class="kf-icon"><i class="ph ph-eye"></i></div><h3>Vision systems and quality</h3><p>Start with proven classical vision. Add machine learning when the use case needs it and sufficient training images exist.</p><a class="kf-card-link" href="https://www.youtube.com/watch?v=Zl92TkCkFEw"><i class="ph ph-play-circle"></i> Watch the lecture</a></div>
+    <div class="kf-card"><div class="kf-icon"><i class="ph ph-calendar-check"></i></div><h3>Production scheduling</h3><p>Make objectives, constraints, data quality, and intraday rescheduling explicit before optimizing the plan.</p><a class="kf-card-link" href="https://www.youtube.com/watch?v=q7-MhGCMikw"><i class="ph ph-play-circle"></i> Watch the lecture</a></div>
+    <div class="kf-card"><div class="kf-icon"><i class="ph ph-cube-focus"></i></div><h3>Digital twins</h3><p>Begin with one decision and a clear abstraction level. Modeling everything is a fast route to parameter hell.</p><a class="kf-card-link" href="https://www.youtube.com/watch?v=h5GHI3gjuJo"><i class="ph ph-play-circle"></i> Watch the lecture</a></div>
+    <div class="kf-card"><div class="kf-icon"><i class="ph ph-file-search"></i></div><h3>Document compliance</h3><p>Use OCR and NLP to reduce paperwork while keeping human verification where compliance risk demands it.</p><a class="kf-card-link" href="https://www.youtube.com/watch?v=K6SOjemhXP8"><i class="ph ph-play-circle"></i> Watch the lecture</a></div>
   </div>
 </section>
 
 <!-- ── RESOURCE / PROOF LAYER ───────────────────────────────────── -->
 <section class="kf-section dark">
   <span class="kf-eyebrow"><i class="ph ph-github-logo"></i> Resource and proof layer</span>
-  <p style="color:#B7BCD1;max-width:880px;">Public value first: resource sheets, lecture routes, and GitHub artifacts. Registration and email can be prepared in the background without weakening the homepage with premature funnel language.</p>
+  <h2 style="margin-top:18px;max-width:850px;">Inspect the sources, lectures, and working artifacts.</h2>
+  <p style="color:#B7BCD1;max-width:880px;">Everything here is currently open: source collections, lecture routes, and GitHub artifacts. Optional email updates and downloadable packages can be added later.</p>
   <div class="kf-repo-row">
     <a class="kf-repo-chip" href="/resources/agentic-operations-ai-resource-cheat-sheet.html"><i class="ph ph-list-checks"></i><div><span>Agentic operations AI resource sheet</span><small>50 source links for credible agentic AI in operations</small></div></a>
-    <a class="kf-repo-chip" href="/resources/hermes-agent-cheat-sheet.html"><i class="ph ph-terminal-window"></i><div><span>Hermes Agent cheat sheet</span><small>Public quick reference for the agent runtime</small></div></a>
+    <a class="kf-repo-chip" href="/courses/"><i class="ph ph-play-circle"></i><div><span>Public lecture archive</span><small>Structured learning paths across operations, analytics, and AI</small></div></a>
     <a class="kf-repo-chip" href="https://github.com/kienlef/supplychainanalytics"><i class="ph ph-truck"></i><div><span>supplychainanalytics</span><small>Supply-chain analytics use cases</small></div></a>
     <a class="kf-repo-chip" href="https://github.com/kienlef/operations_use_case_selection"><i class="ph ph-robot"></i><div><span>operations_use_case_selection</span><small>AI agent readiness workflows</small></div></a>
   </div>

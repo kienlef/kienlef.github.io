@@ -1,0 +1,59 @@
+---
+layout: article
+title: Agent readiness canvas
+permalink: /labs/agent-readiness-canvas.html
+show_date: false
+sharing: false
+license: false
+---
+
+<style>
+.arc-wrap{max-width:980px;margin:0 auto;padding:18px 0 56px}.arc-hero{padding:42px;border-radius:30px;background:#080616;color:#fff;margin-bottom:28px}.arc-hero h1{color:#fff!important;font-size:clamp(2rem,5vw,3.6rem)!important;line-height:1.02;margin:18px 0 12px}.arc-hero p{color:#c4c8d8;max-width:760px;font-size:1.05rem;line-height:1.6}.arc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}@media(max-width:720px){.arc-grid{grid-template-columns:1fr}.arc-hero{padding:28px}}.arc-check{display:block;background:#fff;border:1px solid #e5e8f2;border-radius:22px;padding:22px;cursor:pointer;box-shadow:0 12px 36px rgba(8,6,22,.05)}.arc-check:hover{border-color:#2f2fe4}.arc-check input{width:20px;height:20px;accent-color:#2f2fe4;margin-right:10px;vertical-align:middle}.arc-check strong{color:#1a1953;font-size:1rem}.arc-check span{display:block;color:#5c6175;margin:9px 0 0 32px;line-height:1.45;font-size:.92rem}.arc-result{margin-top:24px;border-radius:24px;padding:26px;background:#f1f4ff;border-left:5px solid #2f2fe4}.arc-score{font-size:2.7rem;font-weight:700;color:#1a1953;line-height:1}.arc-status{font-size:1.12rem;font-weight:650;color:#162e93;margin-top:8px}.arc-detail{color:#4b5068;margin-top:7px}.arc-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.arc-btn{border:0;border-radius:100px;padding:12px 18px;font:inherit;font-weight:700;cursor:pointer}.arc-btn.primary{background:#2f2fe4;color:#fff}.arc-btn.secondary{background:#e8eaff;color:#080616}.arc-foot{font-size:.82rem;color:#74798f;margin-top:28px;padding-top:18px;border-top:1px solid #eef1f8}
+</style>
+
+<div class="arc-wrap">
+  <section class="arc-hero">
+    <span class="kf-eyebrow"><i class="ph ph-check-square-offset"></i> Interactive prototype</span>
+    <h1>Is this workflow ready for agent support?</h1>
+    <p>Tick only what you can defend in front of the people who operate, audit, or live with the result. This is a conversation tool, not a certification and definitely not an excuse to automate first and apologise later.</p>
+  </section>
+
+  <div class="arc-grid" id="arc-checks">
+    <label class="arc-check"><input type="checkbox" data-weight="1"><strong>The workflow is bounded</strong><span>Inputs, outputs, normal steps, and exceptions are described clearly enough for another person to challenge them.</span></label>
+    <label class="arc-check"><input type="checkbox" data-weight="1"><strong>The decision is named</strong><span>The team can explain what decision changes when the agent produces an output.</span></label>
+    <label class="arc-check"><input type="checkbox" data-weight="1"><strong>A human owner is named</strong><span>Someone can approve, reject, stop, or override the workflow and is accountable for the outcome.</span></label>
+    <label class="arc-check"><input type="checkbox" data-weight="1"><strong>The data is usable</strong><span>Availability, quality, timing, ownership, and relevant gaps are visible rather than assumed.</span></label>
+    <label class="arc-check"><input type="checkbox" data-weight="1"><strong>Failure is visible</strong><span>The team knows how wrong, missing, late, or contradictory output will be detected.</span></label>
+    <label class="arc-check"><input type="checkbox" data-weight="1"><strong>A safe fallback exists</strong><span>The process can continue, pause, or return to manual work without hiding the failure.</span></label>
+    <label class="arc-check"><input type="checkbox" data-weight="1"><strong>Actions are traceable</strong><span>Inputs, changes, approvals, tool calls, and outputs leave evidence suitable for review.</span></label>
+    <label class="arc-check"><input type="checkbox" data-weight="1"><strong>The people affected were involved</strong><span>Operators, planners, quality owners, or customer-facing teams helped define the boundaries and exceptions.</span></label>
+  </div>
+
+  <section class="arc-result" aria-live="polite">
+    <div class="arc-score"><span id="arc-score">0</span>/8</div>
+    <div class="arc-status" id="arc-status">Start with the workflow, not the agent.</div>
+    <div class="arc-detail" id="arc-detail">No box ticked yet. That is honest, and honesty is a better starting point than a confident demo.</div>
+    <div class="arc-actions"><button class="arc-btn secondary" id="arc-reset" type="button">Reset</button><a class="arc-btn primary" href="/operations-use-cases/" style="text-decoration:none">Explore 16 operational cases</a></div>
+  </section>
+
+  <p class="arc-foot">This browser-only prototype stores no data and sends nothing anywhere. It is based on Frank Kienle's public AI-in-operations readiness principles.</p>
+</div>
+
+<script>
+(function(){
+  const boxes=[...document.querySelectorAll('#arc-checks input[type="checkbox"]')];
+  const score=document.getElementById('arc-score');
+  const status=document.getElementById('arc-status');
+  const detail=document.getElementById('arc-detail');
+  function update(){
+    const n=boxes.filter(b=>b.checked).length; score.textContent=n;
+    if(n<=2){status.textContent='Not ready for agent action.';detail.textContent='Clarify the workflow, decision, and owner before discussing autonomy.';}
+    else if(n<=5){status.textContent='Useful discovery candidate.';detail.textContent='An agent may help with analysis or preparation, but the control and failure paths are still too weak for dependable action.';}
+    else if(n<=7){status.textContent='Ready for a bounded pilot.';detail.textContent='Keep the scope narrow, log everything, and test exceptions before increasing autonomy.';}
+    else{status.textContent='Strong pilot conditions.';detail.textContent='The basics are visible. Now test whether the controls survive real exceptions and changing process conditions.';}
+  }
+  boxes.forEach(b=>b.addEventListener('change',update));
+  document.getElementById('arc-reset').addEventListener('click',()=>{boxes.forEach(b=>b.checked=false);update();});
+  update();
+})();
+</script>

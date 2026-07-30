@@ -9,3 +9,6 @@ Dockerfile.*
 .jekyll-cache*
 _site*
 _site/*
+.bundle/
+vendor/
+assets/downloads/

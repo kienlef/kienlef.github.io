@@ -3,10 +3,12 @@ header:
     url:        /
   - title:      AI in Operations
     url:        /ai-agents-in-operations/
+  - title:      Use Cases
+    url:        /operations-use-cases/
+  - title:      Agent Workbench
+    url:        /agent-workbench/
   - title:      Learning Hub
     url:        /topics/
-  - title:      GitHub Proof
-    url:        /github-projects/
   - title:      About
     url:        /about.html
   - title:      Contact

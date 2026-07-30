@@ -9,111 +9,325 @@ article_header: false
 ---
 
 <style>
-.oim-shell{--oim-primary:#2F2FE4;--oim-active:#162E93;--oim-ink:#080616;--oim-indigo:#1A1953;--oim-body:#4B5068;--oim-muted:#74798F;--oim-line:#DDE2F0;--oim-soft:#F6F7FB;--oim-blue:#F1F4FF;--oim-warm:#D89A2B;width:min(1420px,calc(100vw - 32px));margin:0 0 48px 50%;transform:translateX(-50%);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--oim-ink)}
-.oim-shell .sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}.oim-intro{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(260px,.55fr);gap:40px;align-items:end;padding:24px 8px 26px}.oim-eyebrow{font-size:12px;font-weight:750;letter-spacing:.1em;text-transform:uppercase;color:var(--oim-primary)}.oim-intro h1{font-size:clamp(34px,4vw,52px);line-height:1.04;letter-spacing:-.04em;margin:10px 0 12px;max-width:820px}.oim-intro p{font-size:16px;line-height:1.55;color:var(--oim-body);margin:0;max-width:850px}.oim-rule{padding:16px 18px;border:1px solid var(--oim-line);background:var(--oim-soft);border-radius:12px;font-size:13px;line-height:1.5;color:var(--oim-indigo)}
-.oim-toolbar{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:14px;border:1px solid var(--oim-line);border-bottom:0;border-radius:18px 18px 0 0;background:#fff}.oim-lenses{display:flex;gap:7px;flex-wrap:wrap}.oim-lens{min-height:44px;border:1px solid var(--oim-line);border-radius:999px;background:#fff;color:var(--oim-indigo);font:700 14px/1 Inter,-apple-system,sans-serif;padding:0 16px;cursor:pointer}.oim-lens:hover,.oim-lens:focus-visible{border-color:var(--oim-primary);outline:3px solid #E8EAFF;outline-offset:1px}.oim-lens[aria-pressed="true"]{background:var(--oim-primary);border-color:var(--oim-primary);color:#fff}.oim-search{width:min(270px,28vw);min-height:44px;border:1px solid var(--oim-line);border-radius:999px;padding:0 16px;font:500 14px Inter,-apple-system,sans-serif;color:var(--oim-ink)}.oim-search:focus{border-color:var(--oim-primary);outline:3px solid #E8EAFF}
-.oim-workspace{display:grid;grid-template-columns:minmax(0,2.15fr) minmax(300px,.85fr);min-height:720px;border:1px solid var(--oim-line);border-radius:0 0 18px 18px;overflow:hidden;background:#fff}.oim-stage{position:relative;min-width:0;background:radial-gradient(circle at 50% 50%,#fff 0,#fff 28%,#F9FAFE 65%,#F4F6FC 100%);overflow:auto}.oim-stage-note{position:absolute;left:18px;top:16px;z-index:2;max-width:260px;font-size:12px;line-height:1.4;color:var(--oim-muted);pointer-events:none}.oim-graph{display:block;width:100%;min-width:760px;height:720px}.oim-edge{stroke:#CAD0E2;stroke-width:1.15;opacity:.72;transition:opacity .2s,stroke .2s,stroke-width .2s}.oim-edge.core{stroke:#AAB3D2;stroke-width:2}.oim-edge.active{stroke:var(--oim-primary);stroke-width:2.6;opacity:1}.oim-node{cursor:pointer;transition:opacity .18s}.oim-node:focus{outline:none}.oim-node.case circle{fill:#fff;stroke:#AAB3D2;stroke-width:1.5}.oim-node.case:hover circle,.oim-node.case:focus circle{stroke:var(--oim-primary);stroke-width:3;filter:drop-shadow(0 5px 8px rgba(47,47,228,.12))}.oim-node.case.active circle{fill:#E8EAFF;stroke:var(--oim-primary);stroke-width:3}.oim-node.hub rect{fill:var(--oim-indigo);stroke:#fff;stroke-width:2}.oim-node.center circle{fill:var(--oim-ink);stroke:#fff;stroke-width:4;filter:drop-shadow(0 8px 16px rgba(8,6,22,.2))}.oim-label{fill:var(--oim-indigo);font:650 11px Inter,-apple-system,sans-serif;text-anchor:middle;pointer-events:none}.oim-node.hub .oim-label,.oim-node.center .oim-label{fill:#fff;font-weight:750}.oim-node.dim{opacity:.14}.oim-node.hidden{opacity:.06;pointer-events:none}
-.oim-inspector{border-left:1px solid var(--oim-line);padding:30px 28px;background:#fff;overflow:auto}.oim-inspector-kicker{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--oim-primary);margin-bottom:10px}.oim-inspector h2{font-size:27px;line-height:1.12;letter-spacing:-.025em;margin:0 0 12px;color:var(--oim-ink)}.oim-inspector-copy{font-size:15px;line-height:1.55;color:var(--oim-body);margin:0 0 22px}.oim-owner{padding:14px 16px;background:var(--oim-blue);border-radius:10px;color:var(--oim-indigo);font-size:14px;line-height:1.45;margin-bottom:22px}.oim-owner strong{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}.oim-field{padding:13px 0;border-top:1px solid #EEF1F8}.oim-field h3{font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--oim-muted);margin:0 0 8px}.oim-chips{display:flex;gap:6px;flex-wrap:wrap}.oim-chip{display:inline-flex;padding:5px 8px;border-radius:999px;background:var(--oim-soft);color:var(--oim-indigo);font-size:12px;font-weight:650}.oim-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}.oim-action{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 15px;border-radius:999px;background:var(--oim-primary);color:#fff!important;text-decoration:none!important;font-size:13px;font-weight:750}.oim-action.secondary{background:#ECEFFC;color:var(--oim-indigo)!important}.oim-empty h2{font-size:24px}.oim-legend{display:flex;gap:14px;flex-wrap:wrap;padding:18px 8px 0;color:var(--oim-muted);font-size:12px}.oim-dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:0}.oim-source{margin:24px 8px 0;padding-top:18px;border-top:1px solid var(--oim-line);font-size:12px;line-height:1.55;color:var(--oim-muted)}
-@media(max-width:900px){.oim-intro{grid-template-columns:1fr}.oim-toolbar{align-items:stretch;flex-direction:column}.oim-search{width:100%}.oim-workspace{grid-template-columns:1fr}.oim-stage{border-bottom:1px solid var(--oim-line)}.oim-inspector{border-left:0;min-height:420px}.oim-intro h1{font-size:40px}}
-@media(prefers-reduced-motion:reduce){.oim-node,.oim-edge{transition:none}}
+.oim-shell{--oim-primary:#2F2FE4;--oim-active:#162E93;--oim-ink:#080616;--oim-indigo:#1A1953;--oim-body:#4B5068;--oim-muted:#74798F;--oim-line:#DDE2F0;--oim-soft:#F6F7FB;--oim-blue:#F1F4FF;--oim-warm:#D89A2B;--oim-stage:#0B0A22;--oim-stage-2:#141334;--oim-wire:#343A76;--oim-wire-hi:#7C87FF;--oim-onwire:#C9CEEA;width:min(1420px,calc(100vw - 32px));margin:0 0 48px 50%;transform:translateX(-50%);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--oim-ink)}
+.oim-shell .sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+.oim-intro{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(280px,.55fr);gap:40px;align-items:end;padding:24px 8px 22px}
+.oim-eyebrow{font-size:12px;font-weight:750;letter-spacing:.1em;text-transform:uppercase;color:var(--oim-primary)}
+.oim-intro h1{font-size:clamp(32px,3.7vw,50px);line-height:1.05;letter-spacing:-.04em;margin:10px 0 12px;max-width:860px}
+.oim-intro p{font-size:16px;line-height:1.55;color:var(--oim-body);margin:0;max-width:860px}
+.oim-rule{padding:16px 18px;border:1px solid var(--oim-line);background:var(--oim-soft);border-radius:12px;font-size:13px;line-height:1.5;color:var(--oim-indigo)}
+.oim-rule strong{display:block;margin-bottom:4px}
+.oim-stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;padding:0 8px 18px}
+.oim-stat{border:1px solid var(--oim-line);border-radius:12px;padding:13px 14px;background:#fff}
+.oim-stat b{display:block;font-size:23px;letter-spacing:-.03em;color:var(--oim-indigo);line-height:1.1}
+.oim-stat span{display:block;margin-top:3px;font-size:11.5px;line-height:1.35;color:#666B85}
+.oim-toolbar{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:14px;border:1px solid var(--oim-line);border-bottom:0;border-radius:18px 18px 0 0;background:#fff}
+.oim-lenses{display:flex;gap:7px;flex-wrap:wrap}
+.oim-lens{min-height:44px;border:1px solid var(--oim-line);border-radius:999px;background:#fff;color:var(--oim-indigo);font:700 13.5px/1 Inter,-apple-system,sans-serif;padding:0 15px;cursor:pointer;transition:background .16s,border-color .16s,color .16s}
+.oim-lens:hover,.oim-lens:focus-visible{border-color:var(--oim-primary);outline:3px solid #E8EAFF;outline-offset:1px}
+.oim-lens[aria-pressed="true"]{background:var(--oim-primary);border-color:var(--oim-primary);color:#fff}
+.oim-search{width:min(260px,28vw);min-height:44px;border:1px solid var(--oim-line);border-radius:999px;padding:0 16px;font:500 14px Inter,-apple-system,sans-serif;color:var(--oim-ink)}
+.oim-search:focus{border-color:var(--oim-primary);outline:3px solid #E8EAFF}
+.oim-workspace{display:grid;grid-template-columns:minmax(0,2.05fr) minmax(320px,.95fr);min-height:760px;border:1px solid var(--oim-line);border-radius:0 0 18px 18px;overflow:hidden;background:#fff}
+.oim-stage{position:relative;min-width:0;background:radial-gradient(circle at 50% 46%,var(--oim-stage-2) 0,var(--oim-stage) 62%,#07061A 100%);overflow:auto}
+.oim-stage-note{position:absolute;left:20px;top:18px;z-index:2;max-width:270px;font-size:11.5px;line-height:1.45;color:#8A91C4;pointer-events:none;letter-spacing:.01em}
+.oim-lens-tag{position:absolute;right:20px;top:18px;z-index:2;font-size:11px;font-weight:750;letter-spacing:.1em;text-transform:uppercase;color:#8A91C4;pointer-events:none}
+.oim-graph{display:block;width:100%;min-width:700px;aspect-ratio:1/1;max-height:860px;margin:0 auto}
+.oim-ring{fill:none;stroke:#232455;stroke-width:1}
+.oim-rail{fill:none;stroke:var(--oim-wire);stroke-width:3.5;stroke-linecap:round;opacity:.5}
+.oim-edge{fill:none;stroke:var(--oim-wire);stroke-width:1.1;opacity:.5;transition:opacity .2s,stroke .2s,stroke-width .2s}
+.oim-edge.core{stroke:#4A4FA0;stroke-width:1.9;opacity:.75}
+.oim-edge.active{stroke:var(--oim-wire-hi);stroke-width:2.4;opacity:1}
+.oim-node{cursor:pointer;transition:opacity .18s}
+.oim-node:focus{outline:none}
+.oim-node.case circle{fill:#171640;stroke:#3E4488;stroke-width:1.6;transition:fill .16s,stroke .16s}
+.oim-node.case text{fill:var(--oim-onwire);font:640 11.5px Inter,-apple-system,sans-serif;transition:fill .16s}
+.oim-node.case:hover circle,.oim-node.case:focus circle{stroke:var(--oim-wire-hi);stroke-width:2.6}
+.oim-node.case:hover text,.oim-node.case:focus text{fill:#fff}
+.oim-node.case.active circle{fill:var(--oim-primary);stroke:#AEB6FF;stroke-width:3}
+.oim-node.case.active text{fill:#fff;font-weight:750}
+.oim-node.case circle.pip{fill:#6E7BFF;stroke:none}
+.oim-node.case.active circle.pip{fill:#fff}
+.oim-node.hub rect{fill:#20205C;stroke:#4A4FA0;stroke-width:1.4}
+.oim-node.hub.lit rect{fill:var(--oim-primary);stroke:#AEB6FF}
+.oim-node.hub text{fill:#DDE1F7;font:700 11px Inter,-apple-system,sans-serif;text-anchor:middle}
+.oim-node.hub.lit text{fill:#fff}
+.oim-node.center circle{fill:#fff;stroke:#3E4488;stroke-width:2}
+.oim-node.center text{fill:var(--oim-indigo);font:750 12.5px Inter,-apple-system,sans-serif;text-anchor:middle}
+.oim-node.center text.sub{fill:var(--oim-primary);font:750 9.5px Inter,-apple-system,sans-serif;letter-spacing:.11em}
+.oim-node.dim{opacity:.16}
+.oim-node.hidden{opacity:.07;pointer-events:none}
+.oim-inspector{border-left:1px solid var(--oim-line);padding:30px 28px;background:#fff;overflow:auto}
+.oim-inspector-kicker{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--oim-primary);margin-bottom:10px}
+.oim-inspector h2{font-size:25px;line-height:1.14;letter-spacing:-.025em;margin:0 0 12px;color:var(--oim-ink)}
+.oim-inspector-copy{font-size:14.5px;line-height:1.58;color:var(--oim-body);margin:0 0 20px}
+.oim-scor{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
+.oim-code{display:inline-flex;align-items:center;gap:5px;padding:5px 9px;border:1px solid #D5DBF3;border-radius:7px;background:#fff;font:700 11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--oim-primary)}
+.oim-code em{font-style:normal;font-family:Inter,sans-serif;font-weight:600;color:var(--oim-indigo);font-size:11px}
+.oim-owner{padding:14px 16px;background:var(--oim-blue);border-radius:10px;color:var(--oim-indigo);font-size:13.5px;line-height:1.5;margin-bottom:8px}
+.oim-owner strong{display:block;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px;color:var(--oim-primary)}
+.oim-boundary{padding:13px 15px;border-left:3px solid var(--oim-warm);background:#FCF8F0;border-radius:0 8px 8px 0;font-size:13px;line-height:1.5;color:#5A4A28;margin-bottom:20px}
+.oim-boundary strong{display:block;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px;color:#96701C}
+.oim-field{padding:12px 0;border-top:1px solid #EEF1F8}
+.oim-field h3{font-size:10.5px;text-transform:uppercase;letter-spacing:.09em;color:var(--oim-muted);margin:0 0 8px;font-weight:750}
+.oim-chips{display:flex;gap:6px;flex-wrap:wrap}
+.oim-chip{display:inline-flex;padding:5px 9px;border-radius:999px;background:var(--oim-soft);color:var(--oim-indigo);font-size:11.5px;font-weight:650}
+.oim-chip.on{background:#E4E7FF;color:var(--oim-active)}
+.oim-chip.perf{background:#fff;border:1px solid var(--oim-line);color:var(--oim-body)}
+.oim-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.oim-action{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 15px;border-radius:999px;background:var(--oim-primary);color:#fff!important;text-decoration:none!important;font-size:12.5px;font-weight:750}
+.oim-action.secondary{background:#ECEFFC;color:var(--oim-indigo)!important}
+.oim-empty h2{font-size:23px}
+.oim-hint{margin-top:20px;padding-top:16px;border-top:1px solid #EEF1F8;font-size:12.5px;line-height:1.5;color:var(--oim-muted)}
+.oim-legend{display:flex;gap:16px;flex-wrap:wrap;align-items:center;padding:18px 8px 0;color:var(--oim-muted);font-size:12px}
+.oim-dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:0}
+.oim-source{margin:22px 8px 0;padding-top:18px;border-top:1px solid var(--oim-line);font-size:12px;line-height:1.6;color:var(--oim-muted)}
+@media(max-width:1080px){.oim-stats{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:900px){.oim-intro{grid-template-columns:1fr}.oim-toolbar{align-items:stretch;flex-direction:column}.oim-search{width:100%}.oim-workspace{grid-template-columns:1fr}.oim-stage{border-bottom:1px solid var(--oim-line)}.oim-inspector{border-left:0;min-height:420px}.oim-intro h1{font-size:36px}.oim-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(prefers-reduced-motion:reduce){.oim-node,.oim-edge,.oim-lens{transition:none}}
 </style>
 
 <div class="oim-shell">
   <header class="oim-intro">
     <div>
       <div class="oim-eyebrow">Operations intelligence map</div>
-      <h1>One operating system. Sixteen decisions. Five ways to see the connections.</h1>
-      <p>Use the lenses to explore how operational decisions connect through processes, people, systems, data, and AI. Click any use case to inspect the human owner and the supporting evidence.</p>
+      <h1>One operating system. Twenty-seven decisions. Six ways to see the connections.</h1>
+      <p>The map is structured on the ASCM SCOR Digital Standard — Orchestrate, Plan, Order, Source, Transform, Fulfill, Return. Switch the lens to see the same decisions through standard processes, roles, systems, data, and AI roles. Select any node for the decision owner, the boundary, and the supporting material.</p>
     </div>
-    <div class="oim-rule"><strong>The boundary:</strong> the map shows where an agent can predict, detect, optimise, simulate, monitor, or coordinate. It does not hand the decision to the software.</div>
+    <div class="oim-rule"><strong>The boundary</strong>The map shows where an agent can predict, detect, classify, optimise, simulate, monitor, coordinate, or summarise. It does not hand the decision to the software.</div>
   </header>
+
+  <div class="oim-stats">
+    <div class="oim-stat"><b>27</b><span>Operational decisions</span></div>
+    <div class="oim-stat"><b>7</b><span>SCOR DS processes covered</span></div>
+    <div class="oim-stat"><b>10</b><span>Named operating roles</span></div>
+    <div class="oim-stat"><b>10</b><span>Execution system families</span></div>
+    <div class="oim-stat"><b>25</b><span>Public presentations linked</span></div>
+  </div>
 
   <div class="oim-toolbar" aria-label="Map controls">
     <div class="oim-lenses" role="group" aria-label="Choose a map lens">
-      <button class="oim-lens" data-lens="process" aria-pressed="true">Process</button>
-      <button class="oim-lens" data-lens="people" aria-pressed="false">People</button>
+      <button class="oim-lens" data-lens="scor" aria-pressed="true">SCOR process</button>
+      <button class="oim-lens" data-lens="area" aria-pressed="false">Operating area</button>
+      <button class="oim-lens" data-lens="people" aria-pressed="false">Roles</button>
       <button class="oim-lens" data-lens="systems" aria-pressed="false">Systems</button>
       <button class="oim-lens" data-lens="data" aria-pressed="false">Data</button>
       <button class="oim-lens" data-lens="ai" aria-pressed="false">AI role</button>
     </div>
-    <label><span class="sr-only">Find a use case</span><input class="oim-search" id="oim-search" type="search" placeholder="Find a use case" autocomplete="off"></label>
+    <label><span class="sr-only">Find a decision</span><input class="oim-search" id="oim-search" type="search" placeholder="Find a decision" autocomplete="off"></label>
   </div>
 
   <main class="oim-workspace">
     <section class="oim-stage" aria-label="Interactive use-case relationship map">
-      <div class="oim-stage-note">Switch lenses to redraw the relationships. Select a node for the operational detail.</div>
-      <svg class="oim-graph" id="oim-graph" viewBox="0 0 1000 720" role="img" aria-labelledby="oim-map-title oim-map-desc">
+      <div class="oim-stage-note">Nodes are grouped around the hub they belong to, so the shape of the lens is the shape of the operation. Select a node for the operational detail.</div>
+      <div class="oim-lens-tag" id="oim-lens-tag">SCOR process</div>
+      <svg class="oim-graph" id="oim-graph" viewBox="0 0 1080 1080" role="img" aria-labelledby="oim-map-title oim-map-desc">
         <title id="oim-map-title">Operations intelligence relationship map</title>
-        <desc id="oim-map-desc">Sixteen operational AI use cases connected to shared processes, people, systems, data and AI roles.</desc>
+        <desc id="oim-map-desc">Twenty-seven operational AI decisions connected to ASCM SCOR Digital Standard processes, operating areas, roles, systems, data domains and AI roles.</desc>
       </svg>
     </section>
     <aside class="oim-inspector" id="oim-inspector" aria-live="polite"></aside>
   </main>
 
   <div class="oim-legend" aria-label="Map legend">
-    <span><i class="oim-dot" style="background:#080616"></i>Operating system</span>
-    <span><i class="oim-dot" style="background:#1A1953"></i>Current lens</span>
-    <span><i class="oim-dot" style="background:#fff;border:1px solid #AAB3D2"></i>Use case</span>
+    <span><i class="oim-dot" style="background:#fff;border:1px solid #AAB3D2"></i>Operating system core</span>
+    <span><i class="oim-dot" style="background:#2F2FE4"></i>Current lens hub</span>
+    <span><i class="oim-dot" style="background:#171640;border:1px solid #3E4488"></i>Decision</span>
+    <span><i class="oim-dot" style="background:#D89A2B"></i>Agent boundary</span>
     <span>Lines show curated operational relationships, not statistical correlation.</span>
   </div>
-  <p class="oim-source">Interaction concept informed by the World Economic Forum's <a href="https://www.weforum.org/stories/2017/11/what-is-a-transformation-map/">Transformation Maps</a>. This is an independent map of Frank Kienle's public operations material and is not affiliated with or endorsed by the World Economic Forum.</p>
+  <p class="oim-source">Process structure follows the <a href="https://scor.ascm.org/processes">ASCM SCOR Digital Standard</a> (Orchestrate, Plan, Order, Source, Transform, Fulfill, Return) and its performance attributes. SCOR is a standard of the Association for Supply Chain Management; this map is an independent application of the public framework and is not affiliated with or endorsed by ASCM. Interaction concept informed by the World Economic Forum's <a href="https://www.weforum.org/stories/2017/11/what-is-a-transformation-map/">Transformation Maps</a>; it is an independent map of Frank Kienle's public operations material and is not affiliated with or endorsed by the World Economic Forum.</p>
 </div>
 
 <script>
 (function(){
-  const lensLabels={process:'Process',people:'People',systems:'Systems',data:'Data',ai:'AI role'};
+  const DECK='https://kienlef.github.io/operations_use_case_selection/presentations/';
+  const lensLabels={scor:'SCOR process',area:'Operating area',people:'Roles',systems:'Systems',data:'Data',ai:'AI role'};
   const groups={
-    process:['Asset reliability','Quality assurance','Production execution','Planning & inventory','Network & partners','Logistics & service'],
-    people:['Maintenance & engineering','Quality & compliance','Production & scheduling','Supply chain planning','Procurement & suppliers','Logistics & customer service'],
-    systems:['CMMS & sensors','QMS & vision','MES & APS','ERP & planning','Control tower & twins','Supplier & document platforms','WMS, TMS & OMS'],
-    data:['Equipment & sensor data','Images & inspections','Orders, demand & forecasts','Inventory & capacity','Constraints & changeovers','Supplier & document data','Routes & customer promises'],
-    ai:['Predict','Detect','Optimise','Simulate','Monitor','Coordinate']
+    scor:['Orchestrate','Plan','Order','Source','Transform','Fulfill','Return'],
+    area:['Asset reliability','Quality assurance','Production execution','Planning & inventory','Sourcing & suppliers','Network & footprint','Logistics & transport','Order & customer service'],
+    people:['Maintenance & reliability','Quality & compliance','Production leadership','Manufacturing engineering','Supply & demand planning','S&OP leadership','Procurement & supplier mgmt','Warehouse & distribution','Transport & dispatch','Customer service'],
+    systems:['CMMS & asset sensors','MES & shop-floor execution','APS & scheduling','QMS & LIMS','Vision & inspection','ERP core','Demand & supply planning','Control tower & twin','SRM & supplier portal','WMS, TMS & OMS'],
+    data:['Equipment & sensor telemetry','Inspection images & defects','Batch & genealogy records','Master data, BOM & routing','Demand signals & forecasts','Orders & customer promises','Inventory & capacity','Constraints & changeovers','Supplier, contract & documents','Transport, route & cost'],
+    ai:['Predict','Detect','Classify','Optimise','Simulate','Monitor','Coordinate','Summarise']
   };
   const cases=[
-    {id:'predictive-maintenance',short:'Predictive maintenance',title:'Predictive maintenance is a decision problem first',owner:'Maintenance and engineering leaders',copy:'A model can flag risk. People decide when to stop equipment, what to inspect, and which production commitment can move.',process:['Asset reliability'],people:['Maintenance & engineering'],systems:['CMMS & sensors'],data:['Equipment & sensor data'],ai:['Predict','Monitor'],lecture:'https://www.youtube.com/watch?v=88Do5NlNFTU'},
-    {id:'computer-vision',short:'Computer vision',title:'Computer vision in quality is not AI magic',owner:'Quality owners and frontline inspectors',copy:'The difficult work is defining defects, evidence, and escalation. The camera is only one part of the quality system.',process:['Quality assurance'],people:['Quality & compliance'],systems:['QMS & vision'],data:['Images & inspections'],ai:['Detect','Monitor'],lecture:'https://www.youtube.com/watch?v=Zl92TkCkFEw'},
-    {id:'production-scheduling',short:'Production scheduling',title:'Scheduling agents cannot remove factory physics',owner:'Production planners and shop-floor leads',copy:'Agents can compare schedules quickly. Planners still own feasibility, line constraints, changeovers, and the cost of nervous replanning.',process:['Production execution'],people:['Production & scheduling'],systems:['MES & APS'],data:['Constraints & changeovers','Inventory & capacity'],ai:['Optimise','Coordinate'],lecture:'https://www.youtube.com/watch?v=q7-MhGCMikw'},
-    {id:'digital-twins',short:'Digital twins',title:'Digital twins need boring process truth',owner:'Engineering and operations owners',copy:'Simulation helps only when states, assumptions, and validation stay close to the real process.',process:['Asset reliability','Production execution'],people:['Maintenance & engineering','Production & scheduling'],systems:['Control tower & twins','MES & APS'],data:['Equipment & sensor data','Constraints & changeovers'],ai:['Simulate','Monitor'],lecture:'https://www.youtube.com/watch?v=h5GHI3gjuJo'},
-    {id:'batch-size',short:'Batch size',title:'Batch-size agents cannot ignore changeover pain',owner:'Production and planning leaders',copy:'Mathematical efficiency can collide with cleaning, setup, expiry, campaign, and service constraints.',process:['Production execution'],people:['Production & scheduling'],systems:['MES & APS'],data:['Constraints & changeovers','Inventory & capacity'],ai:['Optimise'],lecture:'https://www.youtube.com/watch?v=RhOjwnCaALo'},
-    {id:'control-towers',short:'Control towers',title:'Control towers do not remove trade-off owners',owner:'Cross-functional supply chain leaders',copy:'Visibility helps teams see conflicts earlier. It does not decide which customer, site, or product absorbs the impact.',process:['Planning & inventory','Network & partners'],people:['Supply chain planning'],systems:['Control tower & twins','ERP & planning'],data:['Orders, demand & forecasts','Inventory & capacity'],ai:['Monitor','Coordinate'],lecture:'https://www.youtube.com/watch?v=GlbDjtRqZ1Y'},
-    {id:'forecasting',short:'Forecasting',title:'Forecast agents need decision discipline',owner:'Demand planners and commercial partners',copy:'A forecast becomes useful only after a team agrees how bias, overrides, promotions, and uncertainty affect the plan.',process:['Planning & inventory'],people:['Supply chain planning'],systems:['ERP & planning'],data:['Orders, demand & forecasts'],ai:['Predict'],lecture:'https://www.youtube.com/watch?v=7jM9wyFaZJw'},
-    {id:'inventory',short:'Inventory',title:'Inventory agents make trade-offs visible',owner:'Inventory and supply planners',copy:'Stock is a buffer against uncertainty and a cost. Humans still choose which risk the business accepts.',process:['Planning & inventory'],people:['Supply chain planning'],systems:['ERP & planning'],data:['Inventory & capacity','Orders, demand & forecasts'],ai:['Optimise','Coordinate'],lecture:'https://www.youtube.com/watch?v=pW9szoHlmBo'},
-    {id:'multi-echelon',short:'Multi-echelon inventory',title:'Local inventory agents can create global mess',owner:'End-to-end network planners',copy:'Each node can optimise its own target and still make the network worse. Shared objectives and escalation rules matter.',process:['Planning & inventory','Network & partners'],people:['Supply chain planning'],systems:['ERP & planning','Control tower & twins'],data:['Inventory & capacity','Orders, demand & forecasts'],ai:['Optimise','Simulate'],lecture:'https://www.youtube.com/watch?v=YARQSNma7wQ'},
-    {id:'segmentation',short:'Segmentation',title:'Segmentation shows agents where not to generalise',owner:'Supply chain and customer-service leaders',copy:'Products and customers need different policies. The segmentation has to reflect operating reality, not a tidy clustering exercise.',process:['Planning & inventory','Network & partners'],people:['Supply chain planning','Logistics & customer service'],systems:['ERP & planning','WMS, TMS & OMS'],data:['Orders, demand & forecasts','Routes & customer promises'],ai:['Detect','Coordinate'],lecture:'https://www.youtube.com/watch?v=GAHNqEaXFS4'},
-    {id:'risk',short:'Supply risk',title:'Risk agents need escalation rules',owner:'Risk, procurement, and supply chain leaders',copy:'A long risk list is not management. Owners need thresholds, response options, and a clear point where the agent stops.',process:['Network & partners'],people:['Supply chain planning','Procurement & suppliers'],systems:['Control tower & twins','Supplier & document platforms'],data:['Supplier & document data','Inventory & capacity'],ai:['Monitor','Predict'],lecture:'https://www.youtube.com/watch?v=dPRwOyh4b0Y'},
-    {id:'network-design',short:'Network design',title:'Network-design agents simulate options, not commitments',owner:'Network strategy and supply chain leaders',copy:'Models can compare capacity, cost, resilience, and service. Leaders still own the irreversible choices.',process:['Network & partners'],people:['Supply chain planning'],systems:['Control tower & twins','ERP & planning'],data:['Inventory & capacity','Supplier & document data','Routes & customer promises'],ai:['Simulate','Optimise'],lecture:'https://www.youtube.com/watch?v=h6FMkkTPPnw'},
-    {id:'supplier-boundaries',short:'Supplier boundaries',title:'Supplier agents need trust boundaries',owner:'Procurement and supplier-management owners',copy:'Data sharing and commitments do not become neutral because software moves them. Supplier-facing owners define what the agent may see and do.',process:['Network & partners'],people:['Procurement & suppliers'],systems:['Supplier & document platforms'],data:['Supplier & document data'],ai:['Coordinate','Monitor'],lecture:'https://www.youtube.com/watch?v=TqwE4rvyrH8'},
-    {id:'compliance',short:'Document compliance',title:'Compliance agents should chase documents, not hide exceptions',owner:'Quality and compliance owners',copy:'Agents can follow up missing evidence. Functional owners decide what happens when documents, approvals, and reality do not match.',process:['Quality assurance','Network & partners'],people:['Quality & compliance','Procurement & suppliers'],systems:['Supplier & document platforms','QMS & vision'],data:['Supplier & document data'],ai:['Detect','Monitor'],lecture:'https://www.youtube.com/watch?v=K6SOjemhXP8'},
-    {id:'routing',short:'Routing',title:'Routing agents need human exception logic',owner:'Dispatch and logistics leads',copy:'A neat route can ignore a driver, loading dock, safety issue, or customer promise. Dispatch defines the exceptions that matter.',process:['Logistics & service'],people:['Logistics & customer service'],systems:['WMS, TMS & OMS'],data:['Routes & customer promises','Inventory & capacity'],ai:['Optimise','Coordinate'],lecture:'https://www.youtube.com/watch?v=My7X1fSJL7k'},
-    {id:'fulfillment',short:'Fulfillment',title:'Fulfillment agents must protect customer trust',owner:'Fulfillment and customer-service leaders',copy:'Shortages and delays become customer-facing decisions. People decide which promises can flex and which ones protect trust.',process:['Logistics & service','Planning & inventory'],people:['Logistics & customer service','Supply chain planning'],systems:['WMS, TMS & OMS','ERP & planning'],data:['Routes & customer promises','Inventory & capacity','Orders, demand & forecasts'],ai:['Coordinate','Optimise'],lecture:'https://www.youtube.com/watch?v=RyU0Y_Ioy5s'}
+    {id:'sop',short:'Sales & operations planning',title:'S&OP agents prepare the trade-off, they do not settle it',owner:'S&OP / IBP leadership with supply, demand, and production planning',copy:'Agents can assemble the scenario pack, reconcile demand and supply views, and expose the gap before the meeting. The consensus number is still a management commitment.',bound:'The agent may model and reconcile. It may not publish a consensus plan without the S&OP owners.',scor:['Orchestrate','Plan'],codes:[['OE11','Enterprise business planning'],['P1','Plan supply chain']],area:['Planning & inventory'],people:['S&OP leadership','Supply & demand planning','Production leadership'],systems:['Demand & supply planning','ERP core'],data:['Demand signals & forecasts','Inventory & capacity'],ai:['Simulate','Coordinate'],perf:['Profit','Responsiveness'],deck:'plan/18-sop/'},
+    {id:'segmentation',short:'Segmentation',title:'Segmentation shows agents where not to generalise',owner:'Supply chain, commercial, and customer-service leaders',copy:'Products and customers need different policies. The segmentation has to reflect operating reality, not a tidy clustering exercise.',bound:'The agent may cluster and propose. Segment policy and service promises stay with commercial and operations owners.',scor:['Orchestrate','Plan'],codes:[['OE12','Supply chain definition & segmentation'],['P1','Plan supply chain']],area:['Planning & inventory','Order & customer service'],people:['S&OP leadership','Customer service'],systems:['ERP core','Demand & supply planning'],data:['Demand signals & forecasts','Orders & customer promises'],ai:['Classify','Coordinate'],perf:['Profit','Responsiveness'],lecture:'https://www.youtube.com/watch?v=GAHNqEaXFS4',deck:'plan/17-segmentation/',anchor:'segmentation'},
+    {id:'risk',short:'Supply risk',title:'Risk agents need escalation rules',owner:'Risk, procurement, and supply chain leaders',copy:'A long risk list is not management. Owners need thresholds, response options, and a clear point where the agent stops.',bound:'The agent may watch and rank exposure. Mitigation spend and supplier consequences need a human mandate.',scor:['Orchestrate','Source'],codes:[['OE9','Risk management'],['S1','Strategic source']],area:['Sourcing & suppliers','Network & footprint'],people:['Procurement & supplier mgmt','S&OP leadership'],systems:['Control tower & twin','SRM & supplier portal'],data:['Supplier, contract & documents','Inventory & capacity'],ai:['Monitor','Predict'],perf:['Agility','Reliability'],lecture:'https://www.youtube.com/watch?v=dPRwOyh4b0Y',deck:'plan/19-risk-analysis/',anchor:'risk'},
+    {id:'network-design',short:'Network design',title:'Network-design agents simulate options, not commitments',owner:'Network strategy and supply chain leaders',copy:'Models can compare capacity, cost, resilience, service, and emissions. Leaders still own the irreversible choices.',bound:'The agent may run the scenario grid. Footprint decisions are capital decisions and stay with leadership.',scor:['Orchestrate','Plan'],codes:[['OE','Orchestrate: network design'],['P1','Plan supply chain']],area:['Network & footprint'],people:['S&OP leadership','Warehouse & distribution'],systems:['Control tower & twin','ERP core'],data:['Inventory & capacity','Transport, route & cost','Supplier, contract & documents'],ai:['Simulate','Optimise'],perf:['Cost','Agility','Environmental'],lecture:'https://www.youtube.com/watch?v=h6FMkkTPPnw',deck:'deliver/22-network-design/',anchor:'network-design'},
+    {id:'control-towers',short:'Control towers',title:'Control towers do not remove trade-off owners',owner:'Cross-functional supply chain leaders',copy:'Visibility helps teams see conflicts earlier. It does not decide which customer, site, or product absorbs the impact.',bound:'The agent may surface the conflict and the options. Allocation between customers stays a named human call.',scor:['Orchestrate','Fulfill'],codes:[['OE','Orchestrate: performance management'],['F2','Fulfill B2B']],area:['Network & footprint','Logistics & transport'],people:['S&OP leadership','Customer service','Transport & dispatch'],systems:['Control tower & twin','WMS, TMS & OMS'],data:['Orders & customer promises','Inventory & capacity'],ai:['Monitor','Coordinate'],perf:['Responsiveness','Agility'],lecture:'https://www.youtube.com/watch?v=GlbDjtRqZ1Y',anchor:'control-towers'},
+    {id:'supplier-boundaries',short:'Supplier boundaries',title:'Supplier agents need trust boundaries',owner:'Procurement and supplier-management owners',copy:'Data sharing and commitments do not become neutral because software moves them. Supplier-facing owners define what the agent may see and do.',bound:'Agent read and write rights across the company boundary are contractual, not technical, decisions.',scor:['Orchestrate','Source'],codes:[['OE','Orchestrate: contracts & agreements'],['S1','Strategic source']],area:['Sourcing & suppliers'],people:['Procurement & supplier mgmt','Quality & compliance'],systems:['SRM & supplier portal','ERP core'],data:['Supplier, contract & documents','Master data, BOM & routing'],ai:['Coordinate','Monitor'],perf:['Agility','Social'],lecture:'https://www.youtube.com/watch?v=TqwE4rvyrH8',anchor:'supplier-boundaries'},
+    {id:'forecasting',short:'Forecasting',title:'Forecast agents need decision discipline',owner:'Demand planners and commercial partners',copy:'A forecast becomes useful only after a team agrees how bias, overrides, promotions, and uncertainty affect the plan.',bound:'The agent may generate and challenge the baseline. Overrides need a named owner and a recorded reason.',scor:['Plan','Order'],codes:[['P1','Plan supply chain'],['P2','Plan order']],area:['Planning & inventory'],people:['Supply & demand planning','S&OP leadership'],systems:['Demand & supply planning','ERP core'],data:['Demand signals & forecasts','Orders & customer promises'],ai:['Predict','Monitor'],perf:['Responsiveness','Assets'],lecture:'https://www.youtube.com/watch?v=7jM9wyFaZJw',deck:'plan/13-demand-forecasting/',anchor:'forecasting'},
+    {id:'inventory',short:'Inventory optimisation',title:'Inventory agents make trade-offs visible',owner:'Inventory and supply planners',copy:'Stock is a buffer against uncertainty and a cost. Humans still choose which risk the business accepts.',bound:'The agent may recommend targets. Accepting a service-level risk is a business decision.',scor:['Plan'],codes:[['P1','Plan supply chain'],['P5','Plan fulfill']],area:['Planning & inventory'],people:['Supply & demand planning','Warehouse & distribution'],systems:['Demand & supply planning','ERP core'],data:['Inventory & capacity','Demand signals & forecasts'],ai:['Optimise','Monitor'],perf:['Assets','Cost','Reliability'],lecture:'https://www.youtube.com/watch?v=pW9szoHlmBo',deck:'plan/14-inventory-optimization/',anchor:'inventory'},
+    {id:'multi-echelon',short:'Multi-echelon stock',title:'Local inventory agents can create global mess',owner:'End-to-end network planners',copy:'Each node can optimise its own target and still make the network worse. Shared objectives and escalation rules matter.',bound:'Node-level autonomy needs a network-level objective, or the agents will compete with each other.',scor:['Plan','Fulfill'],codes:[['P1','Plan supply chain'],['F3','Fulfill intra-company']],area:['Planning & inventory','Network & footprint'],people:['Supply & demand planning','Warehouse & distribution'],systems:['Demand & supply planning','Control tower & twin'],data:['Inventory & capacity','Demand signals & forecasts'],ai:['Optimise','Simulate'],perf:['Assets','Responsiveness'],lecture:'https://www.youtube.com/watch?v=YARQSNma7wQ',deck:'plan/15-multi-echelon/',anchor:'multi-echelon'},
+    {id:'vmi',short:'Vendor managed inventory',title:'VMI agents move work, not accountability',owner:'Procurement and supply planning with the supplier',copy:'Handing replenishment to a supplier agent changes who acts first. It does not change who answers for a stockout on the line.',bound:'The agent may replenish inside an agreed band. Band changes are a joint commercial decision.',scor:['Source','Plan'],codes:[['S2','Direct procure'],['P3','Plan source']],area:['Sourcing & suppliers','Planning & inventory'],people:['Procurement & supplier mgmt','Supply & demand planning'],systems:['SRM & supplier portal','Demand & supply planning'],data:['Inventory & capacity','Supplier, contract & documents'],ai:['Coordinate','Optimise'],perf:['Assets','Reliability'],deck:'plan/16-vmi/'},
+    {id:'customer-satisfaction',short:'Customer satisfaction',title:'Satisfaction agents read signals, people repair trust',owner:'Customer service and commercial operations leaders',copy:'Text, tickets, and delivery data can be mined for early dissatisfaction. The recovery gesture, and its cost, is a human choice.',bound:'The agent may detect and summarise sentiment. It may not make goodwill commitments to a customer.',scor:['Order','Fulfill'],codes:[['O1','Order B2C'],['F1','Fulfill B2C']],area:['Order & customer service'],people:['Customer service','S&OP leadership'],systems:['WMS, TMS & OMS','ERP core'],data:['Orders & customer promises','Demand signals & forecasts'],ai:['Detect','Summarise'],perf:['Reliability','Profit'],deck:'deliver/20-customer-satisfaction/'},
+    {id:'fulfillment',short:'Order fulfillment',title:'Fulfillment agents must protect customer trust',owner:'Fulfillment and customer-service leaders',copy:'Shortages and delays become customer-facing decisions. People decide which promises can flex and which ones protect trust.',bound:'The agent may re-sequence and propose. Breaking a promised date is a commercial conversation.',scor:['Fulfill','Order'],codes:[['F2','Fulfill B2B'],['O2','Order B2B']],area:['Order & customer service','Logistics & transport'],people:['Customer service','Warehouse & distribution'],systems:['WMS, TMS & OMS','ERP core'],data:['Orders & customer promises','Inventory & capacity'],ai:['Coordinate','Optimise'],perf:['Reliability','Responsiveness'],lecture:'https://www.youtube.com/watch?v=RyU0Y_Ioy5s',deck:'deliver/21-order-fulfillment/',anchor:'fulfillment'},
+    {id:'delivery-time',short:'Delivery time prediction',title:'A better ETA is only useful if someone acts on it',owner:'Transport, dispatch, and customer-service leads',copy:'Predicting a late delivery early is cheap. Deciding to expedite, re-route, or call the customer is the part that costs something.',bound:'The agent may predict and alert. Expediting spend and customer notification follow agreed thresholds.',scor:['Fulfill'],codes:[['F2','Fulfill B2B']],area:['Logistics & transport'],people:['Transport & dispatch','Customer service'],systems:['WMS, TMS & OMS','Control tower & twin'],data:['Transport, route & cost','Orders & customer promises'],ai:['Predict','Monitor'],perf:['Responsiveness','Reliability'],deck:'deliver/24-delivery-time/'},
+    {id:'routing',short:'Route optimisation',title:'Routing agents need human exception logic',owner:'Dispatch and logistics leads',copy:'A neat route can ignore a driver, loading dock, safety issue, or customer promise. Dispatch defines the exceptions that matter.',bound:'The agent may optimise the plan. Driver, safety, and site exceptions override the optimum.',scor:['Fulfill'],codes:[['F1','Fulfill B2C'],['F2','Fulfill B2B']],area:['Logistics & transport'],people:['Transport & dispatch','Warehouse & distribution'],systems:['WMS, TMS & OMS'],data:['Transport, route & cost','Orders & customer promises'],ai:['Optimise','Coordinate'],perf:['Cost','Responsiveness','Environmental'],lecture:'https://www.youtube.com/watch?v=My7X1fSJL7k',deck:'deliver/25-route-optimization/',anchor:'routing'},
+    {id:'transportation-cost',short:'Transportation cost',title:'Freight-cost agents expose the drivers, not the deal',owner:'Transport management and procurement',copy:'Lane-level analysis shows where cost, mode, and service diverge. Carrier strategy and negotiation stay with people who own the relationship.',bound:'The agent may analyse and prepare the negotiation fact base. It does not commit volume to a carrier.',scor:['Fulfill','Orchestrate'],codes:[['F2','Fulfill B2B'],['OE','Orchestrate: contracts & agreements']],area:['Logistics & transport'],people:['Transport & dispatch','Procurement & supplier mgmt'],systems:['WMS, TMS & OMS','ERP core'],data:['Transport, route & cost','Orders & customer promises'],ai:['Predict','Optimise'],perf:['Cost','Environmental'],deck:'deliver/23-transportation-cost/'},
+    {id:'returns',short:'Returns & MRO disposition',title:'Return agents can triage, but disposition is a judgement',owner:'Customer service, quality, and warehouse leaders',copy:'Reverse flows carry condition, entitlement, and compliance questions at once. An agent can classify and route the case; scrap, rework, or credit remains a decision with cost and quality consequences.',bound:'The agent may triage and prepare. Disposition, credit, and scrap approvals stay with quality and commercial owners.',scor:['Return','Plan'],codes:[['R1','Return product'],['R3','Return MRO'],['P6','Plan return']],area:['Quality assurance','Logistics & transport'],people:['Customer service','Quality & compliance','Warehouse & distribution'],systems:['WMS, TMS & OMS','QMS & LIMS'],data:['Orders & customer promises','Inspection images & defects'],ai:['Classify','Coordinate'],perf:['Environmental','Cost','Social'],note:'Reverse flow is the least instrumented part of most operations. That gap is the point.'},
+    {id:'supplier-performance',short:'Supplier performance',title:'Supplier scorecard agents need an agreed definition of late',owner:'Procurement and supplier quality',copy:'Automated scorecards fail on definitions long before they fail on data. Confirmed date or requested date changes the whole picture.',bound:'The agent may score against an agreed rule set. Escalation and supplier status changes are human.',scor:['Source'],codes:[['S1','Strategic source']],area:['Sourcing & suppliers'],people:['Procurement & supplier mgmt','Quality & compliance'],systems:['SRM & supplier portal','ERP core'],data:['Supplier, contract & documents','Orders & customer promises'],ai:['Monitor','Detect'],perf:['Reliability','Cost'],deck:'source/01-supplier-performance/'},
+    {id:'supplier-capacity',short:'Supplier capacity',title:'Capacity signals from suppliers are claims, not facts',owner:'Procurement and supply planning',copy:'An agent can track declared capacity, lead-time drift, and allocation behaviour. Whether to believe it, buffer against it, or dual-source is a judgement call.',bound:'The agent may model exposure. Dual-sourcing and pre-buy commitments need procurement authority.',scor:['Source','Plan'],codes:[['S1','Strategic source'],['P3','Plan source']],area:['Sourcing & suppliers'],people:['Procurement & supplier mgmt','Supply & demand planning'],systems:['SRM & supplier portal','Demand & supply planning'],data:['Supplier, contract & documents','Inventory & capacity'],ai:['Predict','Simulate'],perf:['Agility','Responsiveness'],deck:'source/03-supplier-capacity/'},
+    {id:'raw-materials-quality',short:'Incoming material quality',title:'Incoming-quality agents work inside a validated system',owner:'Quality, supplier quality, and procurement',copy:'Trend detection on incoming lots is useful. In a regulated environment the release decision follows a validated procedure, not a model score.',bound:'The agent may flag drift and prioritise inspection. Lot release stays with qualified quality personnel.',scor:['Source','Transform'],codes:[['S2','Direct procure'],['T1','Transform product']],area:['Quality assurance','Sourcing & suppliers'],people:['Quality & compliance','Procurement & supplier mgmt'],systems:['QMS & LIMS','SRM & supplier portal'],data:['Inspection images & defects','Supplier, contract & documents'],ai:['Detect','Predict'],perf:['Reliability','Cost'],deck:'source/05-raw-materials-quality/'},
+    {id:'compliance',short:'Document compliance',title:'Compliance agents should chase documents, not hide exceptions',owner:'Quality and compliance owners',copy:'Agents can follow up missing evidence. Functional owners decide what happens when documents, approvals, and reality do not match.',bound:'Chasing is delegable. Deciding that an exception is acceptable is not.',scor:['Source','Orchestrate'],codes:[['S1','Strategic source'],['OE10','Environment, social & governance']],area:['Quality assurance'],people:['Quality & compliance','Procurement & supplier mgmt'],systems:['SRM & supplier portal','QMS & LIMS'],data:['Supplier, contract & documents'],ai:['Detect','Summarise'],perf:['Reliability','Social'],lecture:'https://www.youtube.com/watch?v=K6SOjemhXP8',deck:'source/04-compliance-tracking/',anchor:'compliance'},
+    {id:'predictive-maintenance',short:'Predictive maintenance',title:'Predictive maintenance is a decision problem first',owner:'Maintenance and engineering leaders',copy:'A model can flag risk. People decide when to stop equipment, what to inspect, and which production commitment can move.',bound:'The agent may predict and prioritise. Stopping a qualified line is a production and quality decision.',scor:['Transform','Plan','Return'],codes:[['T3','Transform MRO'],['P4','Plan transform'],['R3','Return MRO']],area:['Asset reliability'],people:['Maintenance & reliability','Production leadership'],systems:['CMMS & asset sensors','MES & shop-floor execution'],data:['Equipment & sensor telemetry','Batch & genealogy records'],ai:['Predict','Monitor'],perf:['Reliability','Assets','Cost'],lecture:'https://www.youtube.com/watch?v=88Do5NlNFTU',deck:'make/09-predictive-maintenance/',anchor:'predictive-maintenance'},
+    {id:'computer-vision',short:'Vision quality inspection',title:'Computer vision in quality is not AI magic',owner:'Quality owners and frontline inspectors',copy:'The difficult work is defining defects, evidence, and escalation. The camera is only one part of the quality system.',bound:'The agent may detect and classify. Defect definitions, validation, and release stay with quality.',scor:['Transform'],codes:[['T1','Transform product']],area:['Quality assurance'],people:['Quality & compliance','Production leadership'],systems:['Vision & inspection','QMS & LIMS'],data:['Inspection images & defects','Batch & genealogy records'],ai:['Detect','Classify'],perf:['Reliability','Cost'],lecture:'https://www.youtube.com/watch?v=Zl92TkCkFEw',deck:'make/10-ai-quality/',anchor:'computer-vision'},
+    {id:'production-scheduling',short:'Production scheduling',title:'Scheduling agents cannot remove factory physics',owner:'Production planners and shop-floor leads',copy:'Agents can compare schedules quickly. Planners still own feasibility, line constraints, changeovers, and the cost of nervous replanning.',bound:'The agent may propose a sequence. Freezing and releasing the schedule stays with production.',scor:['Plan','Transform'],codes:[['P4','Plan transform'],['T1','Transform product']],area:['Production execution'],people:['Production leadership','Supply & demand planning'],systems:['APS & scheduling','MES & shop-floor execution'],data:['Constraints & changeovers','Inventory & capacity'],ai:['Optimise','Coordinate'],perf:['Responsiveness','Assets','Cost'],lecture:'https://www.youtube.com/watch?v=q7-MhGCMikw',deck:'make/07-production-scheduling/',anchor:'production-scheduling'},
+    {id:'batch-size',short:'Batch size',title:'Batch-size agents cannot ignore changeover pain',owner:'Production and planning leaders',copy:'Mathematical efficiency can collide with cleaning, setup, expiry, campaign, and service constraints.',bound:'The agent may optimise lot sizes. Campaign structure and cleaning validation set the hard limits.',scor:['Transform','Plan'],codes:[['T1','Transform product'],['P4','Plan transform']],area:['Production execution'],people:['Production leadership','Supply & demand planning'],systems:['APS & scheduling','ERP core'],data:['Constraints & changeovers','Inventory & capacity'],ai:['Optimise','Simulate'],perf:['Cost','Assets','Environmental'],lecture:'https://www.youtube.com/watch?v=RhOjwnCaALo',deck:'make/08-batch-size/',anchor:'batch-size'},
+    {id:'oee',short:'Equipment effectiveness',title:'OEE agents can only measure what the floor honestly records',owner:'Production leadership and manufacturing engineering',copy:'Automated OEE exposes losses fast. It also exposes how loss reasons are coded, which is a people problem before it is an analytics problem.',bound:'The agent may compute and rank losses. Reason codes and improvement priorities need the line teams.',scor:['Transform'],codes:[['T1','Transform product']],area:['Production execution','Asset reliability'],people:['Production leadership','Manufacturing engineering'],systems:['MES & shop-floor execution','CMMS & asset sensors'],data:['Equipment & sensor telemetry','Batch & genealogy records'],ai:['Monitor','Detect'],perf:['Assets','Cost','Reliability'],deck:'make/12-oee/'},
+    {id:'manufacturing-cost',short:'Manufacturing cost',title:'Cost agents need one version of the cost model',owner:'Manufacturing engineering, production, and controlling',copy:'Product cost analysis is only as good as routings, BOMs, and overhead logic. Agents amplify a shared cost model or amplify the argument about it.',bound:'The agent may analyse variance and simulate. Standard-cost changes stay with controlling.',scor:['Transform','Orchestrate'],codes:[['T1','Transform product'],['OE11','Enterprise business planning']],area:['Production execution'],people:['Manufacturing engineering','Production leadership'],systems:['ERP core','MES & shop-floor execution'],data:['Batch & genealogy records','Master data, BOM & routing'],ai:['Predict','Optimise'],perf:['Cost','Profit'],deck:'make/06-manufacturing-cost/'},
+    {id:'digital-twins',short:'Digital twins',title:'Digital twins need boring process truth',owner:'Engineering and operations owners',copy:'Simulation helps only when states, assumptions, and validation stay close to the real process.',bound:'A twin may advise. It may not become the record of what actually happened.',scor:['Transform','Orchestrate'],codes:[['T1','Transform product'],['OE','Orchestrate: technology & analytics']],area:['Production execution','Asset reliability'],people:['Manufacturing engineering','Maintenance & reliability'],systems:['Control tower & twin','MES & shop-floor execution'],data:['Equipment & sensor telemetry','Constraints & changeovers','Master data, BOM & routing'],ai:['Simulate','Monitor'],perf:['Reliability','Assets'],lecture:'https://www.youtube.com/watch?v=h5GHI3gjuJo',deck:'make/11-digital-twin/',anchor:'digital-twins'}
   ];
-  const svg=document.getElementById('oim-graph'), inspector=document.getElementById('oim-inspector'), search=document.getElementById('oim-search');
-  let lens='process', selected=null, query='';
+
+  const svg=document.getElementById('oim-graph'),inspector=document.getElementById('oim-inspector'),search=document.getElementById('oim-search'),lensTag=document.getElementById('oim-lens-tag');
   const NS='http://www.w3.org/2000/svg';
-  function el(name,attrs={}){const n=document.createElementNS(NS,name);Object.entries(attrs).forEach(([k,v])=>n.setAttribute(k,v));return n}
-  function words(text,max=15){const parts=text.split(' '),lines=[];let line='';parts.forEach(w=>{if((line+' '+w).trim().length>max&&line){lines.push(line);line=w}else line=(line+' '+w).trim()});if(line)lines.push(line);return lines.slice(0,3)}
-  function label(parent,text,x,y,cls,max=15){const t=el('text',{x,y,class:cls});words(text,max).forEach((line,i)=>{const span=el('tspan',{x,dy:i===0?0:13});span.textContent=line;t.appendChild(span)});parent.appendChild(t)}
-  function polar(index,total,r,cx=500,cy=360,start=-Math.PI/2){const a=start+(Math.PI*2*index/total);return{x:cx+Math.cos(a)*r,y:cy+Math.sin(a)*r}}
-  function clear(){while(svg.lastChild&&svg.lastChild.tagName!=='desc'&&svg.lastChild.tagName!=='title')svg.removeChild(svg.lastChild);Array.from(svg.children).filter(n=>!['title','desc'].includes(n.tagName)).forEach(n=>n.remove())}
+  const CX=540,CY=540,R_CASE=352,R_CENTER=84;
+  // hub ring is sized from the hub count so cards can never collide
+  function hubMetrics(n){
+    const w=n>=10?120:(n>=8?132:146);
+    const r=Math.min(268,Math.max(214,Math.ceil((w+34)/(2*Math.sin(Math.PI/n)))));
+    return{w,r,chars:n>=10?14:16};
+  }
+  let lens='scor',selected=null,query='';
+
+  function el(n,a={}){const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);return e}
+  function wrap(t,max){const p=t.split(' '),l=[];let c='';p.forEach(w=>{if((c+' '+w).trim().length>max&&c){l.push(c);c=w}else c=(c+' '+w).trim()});if(c)l.push(c);return l.slice(0,3)}
+  function pt(a,r){return{x:CX+Math.cos(a)*r,y:CY+Math.sin(a)*r}}
+  function clear(){Array.from(svg.children).filter(n=>n.tagName!=='title'&&n.tagName!=='desc').forEach(n=>n.remove())}
+  function arcPath(a0,a1,r){const s=pt(a0,r),e=pt(a1,r),large=(a1-a0)>Math.PI?1:0;return`M${s.x} ${s.y}A${r} ${r} 0 ${large} 1 ${e.x} ${e.y}`}
+  function curve(a,b){const mx=(a.x+b.x)/2,my=(a.y+b.y)/2,qx=mx+(CX-mx)*0.28,qy=my+(CY-my)*0.28;return`M${a.x} ${a.y}Q${qx} ${qy} ${b.x} ${b.y}`}
+  function matches(c){return !query||(`${c.short} ${c.title} ${c.owner} ${c.copy} ${c.scor.join(' ')} ${c.people.join(' ')} ${c.systems.join(' ')}`).toLowerCase().includes(query)}
+
   function render(){
-    clear(); const hubs=groups[lens], hubPos={}, casePos={};
-    hubs.forEach((h,i)=>hubPos[h]=polar(i,hubs.length,170));
-    cases.forEach((c,i)=>casePos[c.id]=polar(i,cases.length,315));
-    const edges=el('g',{'aria-hidden':'true'});svg.appendChild(edges);
-    hubs.forEach(h=>{const p=hubPos[h],line=el('line',{x1:500,y1:360,x2:p.x,y2:p.y,class:'oim-edge core'});if(selected&&cases.find(c=>c.id===selected)[lens].includes(h))line.classList.add('active');edges.appendChild(line)});
-    cases.forEach(c=>c[lens].forEach(h=>{const a=hubPos[h],b=casePos[c.id],line=el('line',{x1:a.x,y1:a.y,x2:b.x,y2:b.y,class:'oim-edge','data-case':c.id});if(selected===c.id)line.classList.add('active');edges.appendChild(line)}));
-    const center=el('g',{class:'oim-node center',transform:'translate(500 360)'});center.appendChild(el('circle',{r:72}));label(center,'AI / Digital in Operations',0,-13,'oim-label',14);svg.appendChild(center);
-    hubs.forEach(h=>{const p=hubPos[h],g=el('g',{class:'oim-node hub',transform:`translate(${p.x} ${p.y})`});g.appendChild(el('rect',{x:-63,y:-30,width:126,height:60,rx:12}));label(g,h,0,-5,'oim-label',17);svg.appendChild(g)});
-    cases.forEach(c=>{const p=casePos[c.id],isMatch=!query||(`${c.short} ${c.title} ${c.owner}`).toLowerCase().includes(query),g=el('g',{class:`oim-node case${selected===c.id?' active':''}${isMatch?'':' hidden'}`,transform:`translate(${p.x} ${p.y})`,tabindex:'0',role:'button','aria-label':`${c.short}. Open details.`,'data-id':c.id});g.appendChild(el('circle',{r:43}));label(g,c.short,0,-5,'oim-label',13);g.addEventListener('click',()=>select(c.id));g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select(c.id)}});svg.appendChild(g)});
+    clear();
+    const hubs=groups[lens];
+    const HM=hubMetrics(hubs.length),R_HUB=HM.r;
+    // order cases so members of the same hub sit next to each other
+    const ordered=cases.slice().sort((x,y)=>{
+      const ix=hubs.indexOf(x[lens][0]),iy=hubs.indexOf(y[lens][0]);
+      return ix===iy?cases.indexOf(x)-cases.indexOf(y):ix-iy;
+    });
+    const step=Math.PI*2/ordered.length,start=-Math.PI/2;
+    const caseAngle={};
+    ordered.forEach((c,i)=>caseAngle[c.id]=start+step*i);
+    // hub angle = circular mean of its members, then evenly redistributed in that
+    // order so hub cards can never collide regardless of how many hubs a lens has
+    const hubSpan={},mean={};
+    hubs.forEach(h=>{
+      const mem=ordered.filter(c=>c[lens].includes(h)).map(c=>caseAngle[c.id]);
+      const own=ordered.filter(c=>c[lens][0]===h).map(c=>caseAngle[c.id]);
+      const use=own.length?own:mem;
+      const sx=use.reduce((s,a)=>s+Math.cos(a),0),sy=use.reduce((s,a)=>s+Math.sin(a),0);
+      mean[h]=Math.atan2(sy,sx);
+      if(own.length)hubSpan[h]=[Math.min.apply(null,own),Math.max.apply(null,own)];
+    });
+    const norm=a=>{let v=(a-start)%(Math.PI*2);return v<0?v+Math.PI*2:v};
+    const seq=hubs.slice().sort((a,b)=>norm(mean[a])-norm(mean[b]));
+    const hubStep=Math.PI*2/seq.length;
+    const anchor=Math.round(norm(mean[seq[0]])/hubStep)*hubStep;
+    const hubAngle={};
+    seq.forEach((h,i)=>hubAngle[h]=start+anchor+hubStep*i);
+
+    const gRings=el('g',{'aria-hidden':'true'});
+    [R_HUB,R_CASE].forEach(r=>gRings.appendChild(el('circle',{cx:CX,cy:CY,r,class:'oim-ring'})));
+    hubs.forEach(h=>{if(hubSpan[h]&&hubSpan[h][1]>hubSpan[h][0])gRings.appendChild(el('path',{d:arcPath(hubSpan[h][0],hubSpan[h][1],R_CASE),class:'oim-rail'}))});
+    svg.appendChild(gRings);
+
+    const sel=selected?cases.find(c=>c.id===selected):null;
+    const gEdges=el('g',{'aria-hidden':'true'});
+    hubs.forEach(h=>{
+      const p=pt(hubAngle[h],R_HUB),a={x:CX+(p.x-CX)*(R_CENTER/R_HUB),y:CY+(p.y-CY)*(R_CENTER/R_HUB)};
+      const l=el('path',{d:`M${a.x} ${a.y}L${p.x} ${p.y}`,class:'oim-edge core'});
+      if(sel&&sel[lens].includes(h))l.classList.add('active');
+      gEdges.appendChild(l);
+    });
+    ordered.forEach(c=>c[lens].forEach(h=>{
+      const a=pt(hubAngle[h],R_HUB),b=pt(caseAngle[c.id],R_CASE);
+      const l=el('path',{d:curve(a,b),class:'oim-edge'});
+      if(sel&&sel.id===c.id)l.classList.add('active');
+      gEdges.appendChild(l);
+    }));
+    svg.appendChild(gEdges);
+
+    const center=el('g',{class:'oim-node center',transform:`translate(${CX} ${CY})`});
+    center.appendChild(el('circle',{r:R_CENTER}));
+    const sub=el('text',{y:-24,class:'sub'});sub.textContent='SCOR DS';center.appendChild(sub);
+    const ct=el('text',{y:-2});wrap('AI in regulated operations',13).forEach((s,i)=>{const t=el('tspan',{x:0,dy:i?15:0});t.textContent=s;ct.appendChild(t)});
+    center.appendChild(ct);svg.appendChild(center);
+
+    hubs.forEach(h=>{
+      const p=pt(hubAngle[h],R_HUB),lines=wrap(h,HM.chars);
+      const g=el('g',{class:`oim-node hub${sel&&sel[lens].includes(h)?' lit':''}`,transform:`translate(${p.x} ${p.y})`});
+      const hgt=lines.length*14+18;
+      g.appendChild(el('rect',{x:-HM.w/2,y:-hgt/2,width:HM.w,height:hgt,rx:9}));
+      const t=el('text',{y:-hgt/2+18});
+      lines.forEach((s,i)=>{const ts=el('tspan',{x:0,dy:i?14:0});ts.textContent=s;t.appendChild(ts)});
+      g.appendChild(t);svg.appendChild(g);
+    });
+
+    ordered.forEach(c=>{
+      const a=caseAngle[c.id],deg=a*180/Math.PI,flip=Math.cos(a)<0;
+      const on=matches(c);
+      const g=el('g',{class:`oim-node case${selected===c.id?' active':''}${on?'':' hidden'}`,transform:`rotate(${deg} ${CX} ${CY}) translate(${CX+R_CASE} ${CY})`,tabindex:'0',role:'button','aria-label':`${c.short}. Open details.`,'data-id':c.id});
+      g.appendChild(el('circle',{r:19}));
+      g.appendChild(el('circle',{r:5,class:'pip'}));
+      const t=el('text',{x:flip?-27:27,y:4,'text-anchor':flip?'end':'start',transform:flip?`rotate(180)`:''});
+      t.textContent=c.short;
+      if(flip)t.setAttribute('transform','rotate(180)');
+      g.appendChild(t);
+      g.addEventListener('click',()=>select(c.id));
+      g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select(c.id)}});
+      svg.appendChild(g);
+    });
   }
-  function chips(label,values){return `<div class="oim-field"><h3>${label}</h3><div class="oim-chips">${values.map(v=>`<span class="oim-chip">${v}</span>`).join('')}</div></div>`}
-  function show(c){if(!c){inspector.innerHTML=`<div class="oim-empty"><div class="oim-inspector-kicker">How to read this</div><h2>Start with a lens, then follow a decision.</h2><p class="oim-inspector-copy">The centre stays fixed. The inner relationships change as you move through process, people, systems, data, and AI role. That is the point: one use case sits inside several operating realities.</p><div class="oim-owner"><strong>Human-centred by design</strong>The graph connects technology to named operating owners. It does not treat an AI capability as an organisation chart.</div></div>`;return}
-    inspector.innerHTML=`<div class="oim-inspector-kicker">${lensLabels[lens]} lens</div><h2>${c.title}</h2><p class="oim-inspector-copy">${c.copy}</p><div class="oim-owner"><strong>Decision owner</strong>${c.owner}</div>${chips('Process',c.process)}${chips('People',c.people)}${chips('Systems',c.systems)}${chips('Data',c.data)}${chips('AI role',c.ai)}<div class="oim-actions"><a class="oim-action" href="${c.lecture}">Watch lecture</a><a class="oim-action secondary" href="/operations-use-cases/#${c.id}">Read use case</a></div>`;
+
+  function chips(title,values,hot){return`<div class="oim-field"><h3>${title}</h3><div class="oim-chips">${values.map(v=>`<span class="oim-chip${hot&&hot.includes(v)?' on':''}">${v}</span>`).join('')}</div></div>`}
+  function show(c){
+    if(!c){
+      inspector.innerHTML=`<div class="oim-empty"><div class="oim-inspector-kicker">How to read this</div><h2>Start with a lens, then follow a decision.</h2><p class="oim-inspector-copy">The centre stays fixed. The ring regroups as you move through SCOR process, operating area, roles, systems, data, and AI role. That is the point: one decision sits inside several operating realities at once.</p><div class="oim-owner"><strong>Human-centred by design</strong>The graph connects technology to named operating owners. It does not treat an AI capability as an organisation chart.</div><div class="oim-boundary"><strong>Standard reference</strong>Processes follow the ASCM SCOR Digital Standard so the map can be compared against a recognised framework instead of a private taxonomy.</div><p class="oim-hint">Twenty-seven decisions, seven SCOR processes, ten roles, ten system families, ten data domains, eight AI roles, and eight SCOR performance attributes.</p></div>`;
+      return;
+    }
+    const acts=[];
+    if(c.lecture)acts.push(`<a class="oim-action" href="${c.lecture}">Watch lecture</a>`);
+    if(c.deck)acts.push(`<a class="oim-action${c.lecture?' secondary':''}" href="${DECK}${c.deck}">Open presentation</a>`);
+    if(c.anchor)acts.push(`<a class="oim-action secondary" href="/operations-use-cases/#${c.anchor}">Read use case</a>`);
+    inspector.innerHTML=`<div class="oim-inspector-kicker">${lensLabels[lens]} lens</div>
+      <h2>${c.title}</h2>
+      <div class="oim-scor">${c.codes.map(k=>`<span class="oim-code">${k[0]}<em>${k[1]}</em></span>`).join('')}</div>
+      <p class="oim-inspector-copy">${c.copy}</p>
+      <div class="oim-owner"><strong>Decision owner</strong>${c.owner}</div>
+      <div class="oim-boundary"><strong>Agent boundary</strong>${c.bound}</div>
+      ${chips('SCOR process',c.scor,lens==='scor'?c.scor:null)}
+      ${chips('Operating area',c.area)}
+      ${chips('Roles',c.people)}
+      ${chips('Systems',c.systems)}
+      ${chips('Data',c.data)}
+      ${chips('AI role',c.ai)}
+      <div class="oim-field"><h3>SCOR performance attributes</h3><div class="oim-chips">${c.perf.map(p=>`<span class="oim-chip perf">${p}</span>`).join('')}</div></div>
+      ${c.note?`<p class="oim-hint">${c.note}</p>`:''}
+      ${acts.length?`<div class="oim-actions">${acts.join('')}</div>`:'<p class="oim-hint">No public presentation for this decision yet. The framing comes from the operating model, not from a published deck.</p>'}`;
   }
-  function select(id){selected=selected===id?null:id;render();show(cases.find(c=>c.id===selected));if(window.innerWidth<900&&selected)inspector.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'})}
-  document.querySelectorAll('.oim-lens').forEach(b=>b.addEventListener('click',()=>{lens=b.dataset.lens;document.querySelectorAll('.oim-lens').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));render();show(cases.find(c=>c.id===selected))}));
+  function select(id){
+    selected=selected===id?null:id;
+    render();show(selected?cases.find(c=>c.id===selected):null);
+    if(window.innerWidth<900&&selected)inspector.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+  }
+  document.querySelectorAll('.oim-lens').forEach(b=>b.addEventListener('click',()=>{
+    lens=b.dataset.lens;
+    document.querySelectorAll('.oim-lens').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));
+    lensTag.textContent=lensLabels[lens];
+    render();show(selected?cases.find(c=>c.id===selected):null);
+  }));
   search.addEventListener('input',()=>{query=search.value.trim().toLowerCase();render()});
   show(null);render();
-  window.oimDebug=()=>({lens,selected,query,cases:cases.length,hubs:groups[lens].length,nodes:svg.querySelectorAll('.oim-node').length,edges:svg.querySelectorAll('.oim-edge').length});
+  window.oimDebug=()=>{
+    const hubs=groups[lens];
+    const empty=hubs.filter(h=>!cases.some(c=>c[lens].includes(h)));
+    return{lens,selected,query,cases:cases.length,hubs:hubs.length,emptyHubs:empty,
+      nodes:svg.querySelectorAll('.oim-node').length,edges:svg.querySelectorAll('.oim-edge').length,
+      decks:cases.filter(c=>c.deck).length,lectures:cases.filter(c=>c.lecture).length,anchors:cases.filter(c=>c.anchor).length};
+  };
 })();
 </script>

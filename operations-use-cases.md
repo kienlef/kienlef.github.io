@@ -14,6 +14,8 @@ article_header: false
 
 <p class="kf-page-lead">I wrote this series because operational AI becomes vague very quickly. These sixteen cases start with a concrete decision, the people who live with its consequences, and the boundary an agent must respect. The sequence moves from the factory, through planning and network choices, to supplier and customer commitments.</p>
 
+<p class="kf-page-actions"><a class="button button--primary button--pill" href="/operations-intelligence-map/">Explore the interactive relationship map</a></p>
+
 <div class="kf-note">
   <strong>The common thread:</strong> agents can monitor, compare, prepare, chase, and simulate. A named human still owns the trade-off, the exception, and the commitment.
 </div>
@@ -64,8 +66,8 @@ article_header: false
 <section class="kf-section soft">
   <span class="kf-eyebrow"><i class="ph ph-cursor-click"></i> Explore the working material</span>
   <h2>Move from the argument to the artifact.</h2>
-  <p style="color:#4B5068;max-width:850px;">The public use-case library contains 25+ interactive HTML presentations across source, make, plan, and deliver. The readiness canvas helps test whether a workflow is bounded enough for agent support.</p>
-  <p class="kf-page-actions"><a class="button button--primary button--pill" href="https://kienlef.github.io/operations_use_case_selection/">Open the interactive use-case library</a> <a class="button button--secondary button--pill" href="/labs/agent-readiness-canvas.html">Try the readiness canvas</a></p>
+  <p style="color:#4B5068;max-width:850px;">The operations map connects the sixteen cases through process, people, systems, data, and AI roles. The broader public library contains 25+ interactive HTML presentations across source, make, plan, and deliver.</p>
+  <p class="kf-page-actions"><a class="button button--primary button--pill" href="/operations-intelligence-map/">Open the operations map</a> <a class="button button--secondary button--pill" href="https://kienlef.github.io/operations_use_case_selection/">Browse the presentation library</a></p>
 </section>
 
 <p style="font-size:0.82rem;color:#74798F;margin-top:36px;line-height:1.5;border-top:1px solid #EEF1F8;padding-top:18px;">These summaries are adapted from Frank Kienle's LinkedIn article series and public supply-chain analytics lectures. They use educational examples and contain no employer-, customer-, or supplier-confidential information.</p>

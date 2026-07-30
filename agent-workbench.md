@@ -18,7 +18,13 @@ article_header: false
 
 ## Try the public prototypes
 
-<div class="kf-grid-2">
+<div class="kf-grid-3">
+  <div class="kf-card">
+    <div class="kf-icon"><i class="ph ph-graph"></i></div>
+    <h3><a href="/operations-intelligence-map/">Operations intelligence map</a></h3>
+    <p>Sixteen decisions connected through process, people, systems, data, and AI roles. Change the lens instead of pretending one diagram explains the whole operating system.</p>
+    <p><a href="/operations-intelligence-map/">Explore the map</a></p>
+  </div>
   <div class="kf-card">
     <div class="kf-icon"><i class="ph ph-check-square-offset"></i></div>
     <h3><a href="/labs/agent-readiness-canvas.html">Agent readiness canvas</a></h3>

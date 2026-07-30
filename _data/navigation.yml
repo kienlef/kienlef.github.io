@@ -3,8 +3,8 @@ header:
     url:        /
   - title:      AI in Operations
     url:        /ai-agents-in-operations/
-  - title:      Use Cases
-    url:        /operations-use-cases/
+  - title:      Use Case Map
+    url:        /operations-intelligence-map/
   - title:      Agent Workbench
     url:        /agent-workbench/
   - title:      Learning Hub

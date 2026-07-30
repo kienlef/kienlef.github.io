@@ -5,8 +5,7 @@ permalink: /operations-use-cases/
 show_date: false
 sharing: false
 license: false
-aside:
-  toc: true
+article_header: false
 ---
 
 <span class="kf-eyebrow"><i class="ph ph-path"></i> LinkedIn use-case series</span>
@@ -58,7 +57,7 @@ aside:
 <div class="kf-grid-2">
   <div class="kf-card" id="supplier-boundaries"><div class="kf-icon"><i class="ph ph-handshake"></i></div><h3>Supplier agents need trust boundaries</h3><p>Data sharing and commitments do not become neutral because software moves them. Supplier-facing owners define what the agent may see and do.</p><p><a href="https://www.youtube.com/watch?v=TqwE4rvyrH8">Watch the lecture</a></p></div>
   <div class="kf-card" id="compliance"><div class="kf-icon"><i class="ph ph-file-search"></i></div><h3>Compliance agents should chase documents, not hide exceptions</h3><p>Agents can follow up missing evidence. Functional owners decide what happens when documents, approvals, and reality do not match.</p><p><a href="https://www.youtube.com/watch?v=K6SOjemhXP8">Watch the lecture</a></p></div>
-  <div class="kf-card" id="routing"><div class="kf-icon"><i class="ph ph-route"></i></div><h3>Routing agents need human exception logic</h3><p>A neat route can ignore a driver, loading dock, safety issue, or customer promise. Dispatch leads define the exceptions that matter.</p><p><a href="https://www.youtube.com/watch?v=My7X1fSJL7k">Watch the lecture</a></p></div>
+  <div class="kf-card" id="routing"><div class="kf-icon"><i class="ph ph-path"></i></div><h3>Routing agents need human exception logic</h3><p>A neat route can ignore a driver, loading dock, safety issue, or customer promise. Dispatch leads define the exceptions that matter.</p><p><a href="https://www.youtube.com/watch?v=My7X1fSJL7k">Watch the lecture</a></p></div>
   <div class="kf-card" id="fulfillment"><div class="kf-icon"><i class="ph ph-package"></i></div><h3>Fulfillment agents must protect customer trust</h3><p>Shortages and delays become customer-facing decisions. Fulfillment leaders decide which promises can flex and which ones protect trust.</p><p><a href="https://www.youtube.com/watch?v=RyU0Y_Ioy5s">Watch the lecture</a></p></div>
 </div>
 

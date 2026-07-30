@@ -5,8 +5,7 @@ permalink: /agent-workbench/
 show_date: false
 sharing: false
 license: false
-aside:
-  toc: true
+article_header: false
 ---
 
 <span class="kf-eyebrow"><i class="ph ph-hammer"></i> Agent workbench</span>

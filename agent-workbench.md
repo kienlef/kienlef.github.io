@@ -22,7 +22,7 @@ article_header: false
   <div class="kf-card">
     <div class="kf-icon"><i class="ph ph-graph"></i></div>
     <h3><a href="/operations-intelligence-map/">Operations intelligence map</a></h3>
-    <p>Sixteen decisions connected through process, people, systems, data, and AI roles. Change the lens instead of pretending one diagram explains the whole operating system.</p>
+    <p>Twenty-seven decisions connected through six lenses: SCOR process, operating area, roles, systems, data, and AI role. Change the lens instead of pretending one diagram explains the whole operating system.</p>
     <p><a href="/operations-intelligence-map/">Explore the map</a></p>
   </div>
   <div class="kf-card">
@@ -34,7 +34,7 @@ article_header: false
   <div class="kf-card">
     <div class="kf-icon"><i class="ph ph-presentation-chart"></i></div>
     <h3><a href="https://kienlef.github.io/operations_use_case_selection/">Interactive operations use-case library</a></h3>
-    <p>Twenty-five-plus static HTML presentations across source, make, plan, and deliver. Useful as a learning path and as a workshop prompt.</p>
+    <p>Twenty-five static HTML presentations across source, make, plan, and deliver. Useful as a learning path and as a workshop prompt.</p>
     <p><a href="https://kienlef.github.io/operations_use_case_selection/">Browse the library</a> · <a href="https://github.com/kienlef/operations_use_case_selection">Inspect the source</a></p>
   </div>
 </div>

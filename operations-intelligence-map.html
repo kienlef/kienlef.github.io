@@ -102,7 +102,7 @@ article_header: false
     <div class="oim-stat"><b>7</b><span>SCOR DS processes covered</span></div>
     <div class="oim-stat"><b>10</b><span>Named operating roles</span></div>
     <div class="oim-stat"><b>10</b><span>Execution system families</span></div>
-    <div class="oim-stat"><b>25</b><span>Public presentations linked</span></div>
+    <div class="oim-stat"><b>25</b><span>One-page analytical briefs</span></div>
   </div>
 
   <div class="oim-toolbar" aria-label="Map controls">
@@ -142,6 +142,7 @@ article_header: false
 <script>
 (function(){
   const DECK='https://kienlef.github.io/operations_use_case_selection/presentations/';
+  const LIBRARY='https://kienlef.github.io/operations_use_case_selection/index.html#case-';
   const lensLabels={scor:'SCOR process',area:'Operating area',people:'Roles',systems:'Systems',data:'Data',ai:'AI role'};
   const groups={
     scor:['Orchestrate','Plan','Order','Source','Transform','Fulfill','Return'],
@@ -290,8 +291,12 @@ article_header: false
       return;
     }
     const acts=[];
-    if(c.lecture)acts.push(`<a class="oim-action" href="${c.lecture}">Watch lecture</a>`);
-    if(c.deck)acts.push(`<a class="oim-action${c.lecture?' secondary':''}" href="${DECK}${c.deck}">Open presentation</a>`);
+    if(c.deck){
+      const caseSlug=c.deck.split('/').filter(Boolean).pop();
+      acts.push(`<a class="oim-action" href="${LIBRARY}${caseSlug}">Read analytical case</a>`);
+    }
+    if(c.lecture)acts.push(`<a class="oim-action secondary" href="${c.lecture}">Watch lecture</a>`);
+    if(c.deck)acts.push(`<a class="oim-action secondary" href="${DECK}${c.deck}">Open slide version</a>`);
     if(c.anchor)acts.push(`<a class="oim-action secondary" href="/operations-use-cases/#${c.anchor}">Read use case</a>`);
     inspector.innerHTML=`<div class="oim-inspector-kicker">${lensLabels[lens]} lens</div>
       <h2>${c.title}</h2>

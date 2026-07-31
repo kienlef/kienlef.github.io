@@ -33,9 +33,9 @@ article_header: false
   </div>
   <div class="kf-card">
     <div class="kf-icon"><i class="ph ph-presentation-chart"></i></div>
-    <h3><a href="https://kienlef.github.io/operations_use_case_selection/">Interactive operations use-case library</a></h3>
-    <p>Twenty-five static HTML presentations across source, make, plan, and deliver. Useful as a learning path and as a workshop prompt.</p>
-    <p><a href="https://kienlef.github.io/operations_use_case_selection/">Browse the library</a> · <a href="https://github.com/kienlef/operations_use_case_selection">Inspect the source</a></p>
+    <h3><a href="https://kienlef.github.io/operations_use_case_selection/index.html">One-page operations case library</a></h3>
+    <p>Twenty-five searchable analytical briefs across source, transform, plan, and fulfill. The methods, data requirements, and KPIs now live on one page; the original slide versions remain available.</p>
+    <p><a href="https://kienlef.github.io/operations_use_case_selection/index.html">Open all cases on one page</a> · <a href="https://github.com/kienlef/operations_use_case_selection">Inspect the source</a></p>
   </div>
 </div>
 

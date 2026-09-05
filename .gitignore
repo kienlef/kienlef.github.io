@@ -11,4 +11,6 @@ _site*
 _site/*
 .bundle/
 vendor/
-assets/downloads/
+# Keep generated downloads ignored by default, but publish approved versioned assets.
+assets/downloads/*
+!assets/downloads/agent-readiness-checklist-v0.1-2026-05-10.pdf

@@ -11,6 +11,11 @@ _site*
 _site/*
 .bundle/
 vendor/
+node_modules/
+tools/agent-readiness-workshop/qa/
 # Keep generated downloads ignored by default, but publish approved versioned assets.
 assets/downloads/*
 !assets/downloads/agent-readiness-checklist-v0.1-2026-05-10.pdf
+!assets/downloads/agent-readiness-workshop-v0.2-2026-09-06.pptx
+!assets/downloads/agent-readiness-workshop-v0.2-2026-09-06.pdf
+!assets/downloads/agent-readiness-workshop-print-kit-v0.2-2026-09-06.pdf

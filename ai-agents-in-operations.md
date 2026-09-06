@@ -82,6 +82,7 @@ Public proof: [OEE analytics lecture](https://www.youtube.com/watch?v=2cWvUChUmA
 ## Public resources and proof
 
 <div class="kf-repo-row">
+  <a class="kf-repo-chip" href="/agent-readiness-workshop/"><i class="ph ph-cards-three"></i><div><span>Agent readiness workshop</span><small>Editable deck and tactile print kit for a 25–35 minute readiness decision</small></div></a>
   <a class="kf-repo-chip" href="/operations-use-cases/"><i class="ph ph-path"></i><div><span>27 operational decision cases</span><small>Human-centred lessons structured across the ASCM SCOR Digital Standard</small></div></a>
   <a class="kf-repo-chip" href="/agent-workbench/"><i class="ph ph-hammer"></i><div><span>Agent workbench</span><small>Public prototypes, HTML tools, and reusable execution practices</small></div></a>
   <a class="kf-repo-chip" href="/resources/agentic-operations-ai-resource-cheat-sheet.html"><i class="ph ph-list-magnifying-glass"></i><div><span>Agentic operations AI resource sheet</span><small>50 credible source links for agentic AI in operations</small></div></a>

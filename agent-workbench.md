@@ -18,7 +18,7 @@ article_header: false
 
 ## Try the public prototypes
 
-<div class="kf-grid-3">
+<div class="kf-grid-2">
   <div class="kf-card">
     <div class="kf-icon"><i class="ph ph-graph"></i></div>
     <h3><a href="/operations-intelligence-map/">Operations intelligence map</a></h3>
@@ -32,9 +32,15 @@ article_header: false
     <p><a href="/labs/agent-readiness-canvas.html">Open the prototype</a></p>
   </div>
   <div class="kf-card">
+    <div class="kf-icon"><i class="ph ph-cards-three"></i></div>
+    <h3><a href="/agent-readiness-workshop/">Agent readiness workshop</a></h3>
+    <p>A tactile 25–35 minute session with a 15-slide deck and printable canvas, evidence cards, score tokens, blocker tokens, and a decision-owner baton.</p>
+    <p><a href="/agent-readiness-workshop/">Open the workshop page</a></p>
+  </div>
+  <div class="kf-card">
     <div class="kf-icon"><i class="ph ph-presentation-chart"></i></div>
     <h3><a href="https://kienlef.github.io/operations_use_case_selection/index.html">One-page operations case library</a></h3>
-    <p>Twenty-five searchable analytical briefs across source, transform, plan, and fulfill. The methods, data requirements, and KPIs now live on one page; the original slide versions remain available.</p>
+    <p>Twenty-seven searchable analytical briefs across source, transform, plan, and fulfill. The methods, data requirements, and KPIs now live on one page; the original slide versions remain available.</p>
     <p><a href="https://kienlef.github.io/operations_use_case_selection/index.html">Open all cases on one page</a> · <a href="https://github.com/kienlef/operations_use_case_selection">Inspect the source</a></p>
   </div>
 </div>

@@ -1,0 +1,18 @@
+{
+  "name": "agent-readiness-workshop-deck",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Build Frank Kienle's Agent Readiness Workshop deck and printable kit.",
+  "scripts": {
+    "build": "node build.js",
+    "verify": "python3 verify.py"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
+    "pptxgenjs": "^4.0.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "sharp": "^0.35.4"
+  }
+}

@@ -15,7 +15,8 @@ The site is now aligned with the **Frank Kienle Blue Trust System**: calm instit
 - [Analytics Translator 2.0](https://kienlef.github.io/analytics-translator/) — business/data/IT/process translation in the AI era
 - [AI Agents in Operations](https://kienlef.github.io/ai-agents-in-operations/) — bounded, reviewable agent-workflow readiness
 - [GitHub Projects](https://kienlef.github.io/github-projects/) — proof artifacts for public learning paths
-- [Agent Readiness Checklist](https://kienlef.github.io/register/) — future free resource registration placeholder
+- [Agent Readiness Workshop](https://kienlef.github.io/agent-readiness-workshop/) — tactile deck, printable evidence cards, score tokens, and decision canvas
+- [Agent Readiness Checklist](https://kienlef.github.io/register/) — email-delivered original checklist
 
 ## Design system implementation
 

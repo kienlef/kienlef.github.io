@@ -96,8 +96,11 @@ chart: # false (default), true
 
 ## => Paginate
 ##############################
-paginate: 8
-paginate_path: /page:num # don't change this unless for special need
+# The editorial homepage is not a paginated blog. Selecting it as a pagination
+# template duplicates its explicit '/' permalink and overwrites index.html.
+# The lecture archive at /docs/ lists site.posts directly without pagination.
+paginate: null
+paginate_path: /page:num
 
 
 ## => Sources
@@ -200,6 +203,10 @@ exclude:
 #  - /screenshots
 #  - /test
   - /vendor
+  # Legacy landing page also claims /index.html; index.html owns the homepage.
+  - landing.html
+  - /test
+  - /tools
 
 collections_dir: docs
 collections:

@@ -10,9 +10,9 @@ article_header: false
 
 <span class="kf-eyebrow"><i class="ph ph-hammer"></i> Agent workbench</span>
 
-# Small things agents can build, check, and improve.
+# Practical tools to test an operational workflow before giving an agent authority.
 
-<p class="kf-page-lead">This page is deliberately broader than AI in operations. Some experiments support the business material directly. Others are here because they show a useful pattern: an agent should inspect the source, make a bounded change, verify the result, and leave something a human can review.</p>
+<p class="kf-page-lead">A small set of practical tools for operations teams: explore who owns each decision with the operations map, assess workflow boundaries, data readiness, failure visibility, and human review with the readiness canvas, and inspect the methods and source behind the public cases. Repeat the loop that matters — inspect → act → verify → hand over. The prototypes are educational and are not production automation.</p>
 
 <div class="kf-note"><strong>My rule:</strong> a polished answer is not proof. A working page, repository, test result, or deployment link is much more interesting.</div>
 
@@ -22,7 +22,7 @@ article_header: false
   <div class="kf-card">
     <div class="kf-icon"><i class="ph ph-graph"></i></div>
     <h3><a href="/operations-intelligence-map/">Operations intelligence map</a></h3>
-    <p>Twenty-seven decisions connected through six lenses: SCOR process, operating area, roles, systems, data, and AI role. Change the lens instead of pretending one diagram explains the whole operating system.</p>
+    <p>A decision map explored through six lenses: SCOR process, operating area, roles, systems, data, and AI role. Change the lens instead of pretending one diagram explains the whole operating system.</p>
     <p><a href="/operations-intelligence-map/">Explore the map</a></p>
   </div>
   <div class="kf-card">
@@ -34,7 +34,7 @@ article_header: false
   <div class="kf-card">
     <div class="kf-icon"><i class="ph ph-presentation-chart"></i></div>
     <h3><a href="https://kienlef.github.io/operations_use_case_selection/index.html">One-page operations case library</a></h3>
-    <p>Twenty-five searchable analytical briefs across source, transform, plan, and fulfill. The methods, data requirements, and KPIs now live on one page; the original slide versions remain available.</p>
+    <p>A library of searchable analytical briefs across source, transform, plan, and fulfill. The methods, data requirements, and KPIs now live on one page; the original slide versions remain available.</p>
     <p><a href="https://kienlef.github.io/operations_use_case_selection/index.html">Open all cases on one page</a> · <a href="https://github.com/kienlef/operations_use_case_selection">Inspect the source</a></p>
   </div>
 </div>
@@ -55,11 +55,8 @@ article_header: false
   <p class="kf-page-actions"><a class="button button--primary button--pill" href="/github-projects/">View curated GitHub projects</a> <a class="button button--secondary button--pill" href="https://github.com/kienlef">Open the GitHub account</a></p>
 </section>
 
-## What belongs here next
+## What earns a place in the workbench
 
-- compact HTML explainers that make a difficult operating idea easier to inspect,
-- small decision tools with synthetic or public data,
-- agent workflows with visible review and failure paths,
-- reproducible best practices that another person can run without private infrastructure.
+The workbench is for artifacts that turn a difficult operational question into something people can examine: a clear model, an interactive decision aid, or a bounded agent workflow with visible assumptions, failure paths, and review points. Each artifact should stand on its own, use public or synthetic material, and be reproducible without access to private infrastructure.
 
-What does not belong here: private dashboards, credentials, employer material, or a demo that only works while somebody narrates over the cracks.
+That standard is deliberate. No private data, hidden credentials, or employer-specific material — and no demo that depends on narration to conceal its limits. If another person cannot inspect the evidence, understand the boundary, and repeat the result, it is not ready to publish here.

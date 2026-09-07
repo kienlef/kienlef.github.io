@@ -5,20 +5,33 @@ permalink: /contact/
 show_date: false
 sharing: false
 license: false
+article_header: false
 aside:
   toc: true
 ---
 
 <span class="kf-eyebrow"><i class="ph ph-megaphone"></i> Contact</span>
 
-# Selected talks and professional education should connect back to public learning paths.
+# Propose a talk, guest lecture, or professional education session.
 
-<p class="kf-page-lead">For selected talks, guest lectures, or professional education inquiries, contact Frank Kienle.</p>
+<p class="kf-page-lead">To invite Frank for a talk, guest lecture, or professional education session, send him a message on LinkedIn.</p>
+
+<p class="kf-page-actions"><a class="button button--primary button--pill" href="https://www.linkedin.com/in/frank-kienle-0040b99b"><i class="ph ph-linkedin-logo"></i> Message Frank on LinkedIn</a></p>
+
+## What Frank speaks on
 
 <div class="kf-grid-2">
-  <div class="kf-card"><div class="kf-icon"><i class="ph ph-chalkboard-teacher"></i></div><h3>Suitable inquiries</h3><p>Guest lectures, talks, and professional education formats connected to analytics, AI, operations, and agent readiness.</p></div>
-  <div class="kf-card"><div class="kf-icon"><i class="ph ph-compass"></i></div><h3>Start with the knowledge hub</h3><p>If you are looking for learning material, begin with the public topic pages and proof artifacts.</p><p><a href="/topics/">Open topics</a></p></div>
+  <div class="kf-card"><div class="kf-icon"><i class="ph ph-chalkboard-teacher"></i></div><h3>Talks and guest lectures</h3><p>Analytics, AI, and operations — for professional audiences, classrooms, and student groups.</p></div>
+  <div class="kf-card"><div class="kf-icon"><i class="ph ph-graduation-cap"></i></div><h3>Professional education</h3><p>Bounded agent workflows, data readiness, and analytics translation for teams.</p></div>
 </div>
+
+## What to include in your inquiry
+
+<ol>
+  <li><strong>Audience</strong> — who the session is for and how many people.</li>
+  <li><strong>Topic</strong> — the focus area you have in mind (analytics, AI in operations, agent readiness, or analytics translation).</li>
+  <li><strong>Format and date</strong> — talk, lecture, or workshop; online or in person; preferred timing.</li>
+</ol>
 
 ## Public profiles
 
@@ -28,4 +41,4 @@ aside:
   <a class="kf-repo-chip" href="https://www.youtube.com/@frankkienle7312"><i class="ph ph-youtube-logo"></i><div><span>YouTube</span><small>Frank Kienle</small></div></a>
 </div>
 
-<p class="kf-note">This route is intentionally secondary. The main purpose of the site is to organize educational material, GitHub proof artifacts, topic pages, registration placeholders, and future knowledge packages — not to create a consulting-first funnel.</p>
+<p class="kf-note">Looking for learning material instead? Start with Frank's <a href="/about.html">background</a> or the public <a href="/topics/">topics</a> and proof artifacts.</p>
